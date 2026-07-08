@@ -28,3 +28,24 @@ if (!supportsObserver || prefersReducedMotion) {
 
   revealNodes.forEach((node) => observer.observe(node));
 }
+
+const explorerTabs = document.querySelectorAll('[data-profile]');
+const explorerViews = document.querySelectorAll('[data-profile-view]');
+
+if (explorerTabs.length && explorerViews.length) {
+  const activateProfile = (profile) => {
+    explorerTabs.forEach((tab) => {
+      const isActive = tab.dataset.profile === profile;
+      tab.classList.toggle('is-active', isActive);
+      tab.setAttribute('aria-selected', String(isActive));
+    });
+
+    explorerViews.forEach((view) => {
+      view.classList.toggle('is-active', view.dataset.profileView === profile);
+    });
+  };
+
+  explorerTabs.forEach((tab) => {
+    tab.addEventListener('click', () => activateProfile(tab.dataset.profile));
+  });
+}

@@ -491,6 +491,101 @@ h1 {
   gap: 18px;
 }
 
+.explorer-panel {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow);
+}
+
+.explorer-tabs {
+  display: grid;
+  gap: 12px;
+}
+
+.explorer-tab {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.explorer-tab.is-active {
+  background: var(--primary);
+  color: #fff;
+  border-color: rgba(21, 99, 71, 0.4);
+}
+
+.explorer-content {
+  position: relative;
+}
+
+.profile-view {
+  display: none;
+  gap: 18px;
+}
+
+.profile-view.is-active {
+  display: grid;
+}
+
+.profile-summary {
+  padding: 24px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(21, 99, 71, 0.96), rgba(9, 64, 46, 0.96));
+  color: #fff;
+}
+
+.profile-summary span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.profile-summary h3 {
+  margin: 0 0 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.profile-summary p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.profile-products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.profile-product {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-strong);
+}
+
+.profile-product strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
 .journey-grid article,
 .audience-grid article,
 .proof-panel,
@@ -594,6 +689,57 @@ h1 {
   display: inline-flex;
   margin-top: 16px;
   font-weight: 800;
+  color: var(--primary);
+}
+
+.policy-explorer {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 22px;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow);
+}
+
+.policy-explorer-copy h3 {
+  margin: 0 0 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  line-height: 1.06;
+}
+
+.policy-explorer-copy p:last-child,
+.policy-item p {
+  color: var(--muted);
+}
+
+.policy-accordion {
+  display: grid;
+  gap: 12px;
+}
+
+.policy-item {
+  padding: 0 18px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-strong);
+}
+
+.policy-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  font-weight: 800;
+}
+
+.policy-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.policy-item[open] summary {
   color: var(--primary);
 }
 
@@ -731,10 +877,16 @@ h1 {
   .hero-highlights,
   .quick-strip,
   .journey-grid,
+  .profile-products,
   .trust-grid,
+  .policy-explorer,
   .proof-panel,
   .contact-card,
   .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .explorer-panel {
     grid-template-columns: 1fr;
   }
 
@@ -777,9 +929,14 @@ h1 {
   .hero-copy,
   .hero-aside,
   .quick-strip article,
+  .explorer-panel,
   .product-card,
   .journey-grid article,
+  .profile-summary,
+  .profile-product,
   .audience-grid article,
+  .policy-explorer,
+  .policy-item,
   .proof-panel,
   .contact-card,
   .legal-header,
