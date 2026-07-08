@@ -138,6 +138,12 @@ strong {
   gap: 12px;
 }
 
+.brand-text {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
 .brand-icon {
   width: 42px;
   height: 42px;
@@ -152,6 +158,15 @@ strong {
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text);
+}
+
+.brand-tagline {
+  margin-top: 3px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .nav-links {
@@ -251,7 +266,7 @@ h1 {
 
 .hero-highlights {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 14px;
   margin-top: 28px;
 }
@@ -304,36 +319,27 @@ h1 {
   opacity: 0.84;
 }
 
-.story-list {
+.platform-map {
   display: grid;
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
 
-.story-list article {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px;
-  align-items: start;
+.platform-map article {
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.story-list span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  font-weight: 800;
+.platform-map strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
 }
 
-.story-list strong {
-  margin-bottom: 4px;
-  font-size: 1rem;
-}
-
-.story-list p {
-  color: rgba(255, 255, 255, 0.82);
+.platform-map p {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .hero-mini-grid {
@@ -378,6 +384,45 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin: 28px 0 10px;
+}
+
+.visual-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 16px 0 32px;
+}
+
+.visual-group {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.visual-group span {
+  display: inline-flex;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.visual-group h2 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.visual-group p {
+  color: var(--muted);
+  max-width: 28ch;
 }
 
 .quick-strip article {
@@ -876,6 +921,7 @@ h1 {
   .hero-grid,
   .hero-highlights,
   .quick-strip,
+  .visual-groups,
   .journey-grid,
   .profile-products,
   .trust-grid,
@@ -959,6 +1005,10 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .platform-map {
+    grid-template-columns: 1fr;
+  }
+
   .brand-icon {
     width: 36px;
     height: 36px;
@@ -966,6 +1016,10 @@ h1 {
 
   .brand-wordmark {
     font-size: 1.18rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.63rem;
   }
 
   h1 {
