@@ -90,10 +90,15 @@ ul {
 }
 
 .brand {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: -0.04em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  width: auto;
+  height: 44px;
+  flex: 0 0 auto;
+  display: block;
 }
 
 .nav-links {
@@ -487,6 +492,10 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 34px;
+  }
+
+  .brand-logo {
+    height: 36px;
   }
 
   h1 {
