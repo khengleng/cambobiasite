@@ -92,13 +92,24 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 12px;
 }
 
-.brand-logo {
-  width: auto;
-  height: 44px;
+.brand-icon {
+  width: 42px;
+  height: 42px;
   flex: 0 0 auto;
   display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(23, 63, 44, 0.16);
+}
+
+.brand-wordmark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: var(--text);
 }
 
 .nav-links {
@@ -494,8 +505,13 @@ h1 {
     margin-bottom: 34px;
   }
 
-  .brand-logo {
+  .brand-icon {
+    width: 36px;
     height: 36px;
+  }
+
+  .brand-wordmark {
+    font-size: 1.18rem;
   }
 
   h1 {
