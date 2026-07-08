@@ -5,14 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/postbuild.mjs",
     "preview": "vite preview",
-    "start": "serve -s dist -l tcp://0.0.0.0:${PORT:-4173}"
-  },
-  "dependencies": {
-    "serve": "^14.2.4"
+    "start": "node server.mjs"
   },
   "devDependencies": {
-    "vite": "^5.4.19"
+    "vite": "^6.4.3"
   }
 }
