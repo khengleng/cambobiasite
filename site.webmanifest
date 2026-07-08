@@ -1,0 +1,15 @@
+{
+  "name": "Cambobia",
+  "short_name": "Cambobia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5efe3",
+  "theme_color": "#156347",
+  "icons": [
+    {
+      "src": "/cambobia-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
