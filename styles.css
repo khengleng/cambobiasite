@@ -1013,7 +1013,7 @@ h1 {
 
 .profile-products {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -1028,6 +1028,10 @@ h1 {
   display: block;
   margin-bottom: 8px;
   font-size: 1rem;
+}
+
+.profile-product p {
+  line-height: 1.7;
 }
 
 .journey-grid article,

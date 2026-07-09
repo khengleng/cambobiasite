@@ -174,6 +174,64 @@ const phraseTranslations = {
     'Schools and Students': 'សាលារៀន និងសិស្ស',
     'Banks and Training': 'ធនាគារ និងការបណ្តុះបណ្តាល',
     'Micro Lenders and SMEs': 'អ្នកឥណទានខ្នាតតូច និង SME',
+    'For customer outreach, messaging campaigns, conversational selling, and stronger order flow from first contact to checkout.':
+      'សម្រាប់ការឈានដល់អតិថិជន យុទ្ធនាការផ្ញើសារ ការលក់តាមការសន្ទនា និងលំហូរការបញ្ជាទិញដែលរឹងមាំជាងមុនចាប់ពីការទាក់ទងដំបូងរហូតដល់ការទូទាត់។',
+    'Messenger Hub and the Micro-SME Platform create a simple front-to-back sales path for outreach, product inquiry, and order capture.':
+      'Messenger Hub និងវេទិកា Micro-SME បង្កើតផ្លូវលក់សាមញ្ញពីមុខរហូតដល់ក្រោយសម្រាប់ការផ្សព្វផ្សាយ សំណួរអំពីផលិតផល និងការទទួលការបញ្ជាទិញ។',
+    'Start with Messenger Hub for campaigns, promotions, and announcements, then let CXDot handle AI-led product questions, guided buying, and order conversations.':
+      'ចាប់ផ្តើមជាមួយ Messenger Hub សម្រាប់យុទ្ធនាការ ប្រូម៉ូសិន និងសេចក្តីជូនដំណឹង បន្ទាប់មកឲ្យ CXDot គ្រប់គ្រងសំណួរផលិតផលដោយជំនួយ AI ការទិញដែលមានការណែនាំ និងការសន្ទនាអំពីការបញ្ជាទិញ។',
+    'Improve customer reach, generate more response, capture more orders, and give operators better visibility into sales activity across channels.':
+      'បង្កើនការឈានដល់អតិថិជន បង្កើនការឆ្លើយតប ទទួលបានការបញ្ជាទិញកាន់តែច្រើន និងផ្តល់ឲ្យអ្នកប្រតិបត្តិការមើលឃើញសកម្មភាពលក់កាន់តែច្បាស់តាមឆានែលផ្សេងៗ។',
+    'Begin with one campaign use case, define how replies should be handled, and then connect the sales conversation flow to CXDot for follow-through.':
+      'ចាប់ផ្តើមពីករណីប្រើប្រាស់យុទ្ធនាការមួយ កំណត់របៀបដោះស្រាយការឆ្លើយតប ហើយបន្ទាប់មកភ្ជាប់លំហូរការសន្ទនាលក់ទៅកាន់ CXDot សម្រាប់ការបន្តការងារ។',
+    'Best fit organizations': 'អង្គការដែលសមស្របបំផុត',
+    'Good for retailers, service businesses, distributors, schools, training teams, and customer-facing operators that sell through messaging.':
+      'សមស្របសម្រាប់ហាងលក់រាយ អាជីវកម្មសេវាកម្ម អ្នកចែកចាយ សាលារៀន ក្រុមបណ្តុះបណ្តាល និងអ្នកប្រតិបត្តិការដែលលក់តាមរយៈការផ្ញើសារ។',
+    'Why this combination works': 'ហេតុអ្វីការរួមបញ្ចូលនេះមានប្រសិទ្ធភាព',
+    'One product helps you reach people at scale, while the other keeps the conversation useful enough to convert interest into action and orders.':
+      'ផលិតផលមួយជួយអ្នកឲ្យឈានដល់មនុស្សជាច្រើន ខណៈដែលមួយទៀតធ្វើឲ្យការសន្ទនាមានប្រយោជន៍គ្រប់គ្រាន់ដើម្បីបម្លែងចំណាប់អារម្មណ៍ឲ្យទៅជាសកម្មភាព និងការបញ្ជាទិញ។',
+    'For students, teachers, revision, quizzes, focus practice, and clearer day-to-day learning support.':
+      'សម្រាប់សិស្ស គ្រូ ការរៀនត្រៀមប្រឡង សំណួរ ការហ្វឹកហាត់ការផ្តោតអារម្មណ៍ និងការគាំទ្រការសិក្សាប្រចាំថ្ងៃដែលកាន់តែច្បាស់។',
+    'AI Learning Center, Student Portal, Teacher Portal, and Pair Me Up support structured study, classroom oversight, and focus-building activities.':
+      'AI Learning Center, Student Portal, Teacher Portal និង Pair Me Up គាំទ្រការសិក្សាដែលមានរចនាសម្ព័ន្ធ ការត្រួតពិនិត្យថ្នាក់រៀន និងសកម្មភាពបង្កើនការផ្តោតអារម្មណ៍។',
+    'Use the Student Portal for lessons, quizzes, and revision, then Pair Me Up for focus support, with Teacher Portal oversight when teachers need visibility and control.':
+      'ប្រើ Student Portal សម្រាប់មេរៀន សំណួរ និងការរៀនត្រៀមប្រឡង បន្ទាប់មកប្រើ Pair Me Up សម្រាប់គាំទ្រការផ្តោតអារម្មណ៍ ដោយមាន Teacher Portal សម្រាប់ការត្រួតពិនិត្យនៅពេលគ្រូត្រូវការមើលឃើញ និងគ្រប់គ្រង។',
+    'Strengthen study routines, improve revision consistency, and give teachers and families a clearer structure around learner progress and support.':
+      'ពង្រឹងទម្លាប់សិក្សា បង្កើនស្ថិរភាពនៃការរៀនត្រៀមប្រឡង និងផ្តល់រចនាសម្ព័ន្ធច្បាស់លាស់ជាងមុនដល់គ្រូ និងគ្រួសារ ជុំវិញវឌ្ឍនភាព និងការគាំទ្រអ្នកសិក្សា។',
+    'Start with one subject or quiz path, then add focus-based practice and teacher oversight where learners need more consistency.':
+      'ចាប់ផ្តើមជាមួយមុខវិជ្ជាមួយ ឬផ្លូវសំណួរមួយ បន្ទាប់មកបន្ថែមការហ្វឹកហាត់ផ្អែកលើការផ្តោតអារម្មណ៍ និងការត្រួតពិនិត្យរបស់គ្រូ នៅកន្លែងដែលអ្នកសិក្សាត្រូវការស្ថិរភាពបន្ថែម។',
+    'Good for schools, tutoring programs, student communities, education projects, and families that want both study tools and learning structure.':
+      'សមស្របសម្រាប់សាលារៀន កម្មវិធីបង្រៀនបន្ថែម សហគមន៍សិស្ស គម្រោងអប់រំ និងគ្រួសារដែលចង់បានទាំងឧបករណ៍សិក្សា និងរចនាសម្ព័ន្ធការសិក្សា។',
+    'Academic learning improves when curriculum, practice, supervision, and concentration support are treated as one connected experience instead of separate tools.':
+      'ការសិក្សាផ្នែកអប់រំកាន់តែប្រសើរនៅពេលកម្មវិធីសិក្សា ការហ្វឹកហាត់ ការត្រួតពិនិត្យ និងការគាំទ្រការផ្តោតអារម្មណ៍ ត្រូវបានដាក់ជាបទពិសោធន៍តភ្ជាប់គ្នាមួយ ជំនួសឲ្យឧបករណ៍ដាច់ដោយឡែក។',
+    'For banking training, knowledge checks, staff preparation, and clearer progress tracking across teams.':
+      'សម្រាប់ការបណ្តុះបណ្តាលវិស័យធនាគារ ការត្រួតពិនិត្យចំណេះដឹង ការរៀបចំបុគ្គលិក និងការតាមដានវឌ្ឍនភាពកាន់តែច្បាស់នៅទូទាំងក្រុម។',
+    'AI Learning Center and Banking Skills Academy provide structured training content, guided quizzes, and a dedicated learning path for financial institutions.':
+      'AI Learning Center និង Banking Skills Academy ផ្តល់មាតិកាបណ្តុះបណ្តាលដែលមានរចនាសម្ព័ន្ធ សំណួរដែលមានការណែនាំ និងផ្លូវសិក្សាផ្តាច់មុខសម្រាប់ស្ថាប័នហិរញ្ញវត្ថុ។',
+    'Pair Banking Skills Academy with the Teacher Portal when a team needs structured learning delivery together with administrative visibility, review, and oversight.':
+      'ផ្គូផ្គង Banking Skills Academy ជាមួយ Teacher Portal នៅពេលក្រុមត្រូវការការផ្តល់ការសិក្សាដែលមានរចនាសម្ព័ន្ធ ជាមួយនឹងការមើលឃើញ រដ្ឋបាល ការពិនិត្យ និងការត្រួតពិនិត្យ។',
+    'Improve training structure, increase exam readiness, and make progress easier to track across branches, departments, or learner groups.':
+      'បង្កើនរចនាសម្ព័ន្ធបណ្តុះបណ្តាល បង្កើនការត្រៀមខ្លួនសម្រាប់ប្រឡង និងធ្វើឲ្យវឌ្ឍនភាពងាយស្រួលតាមដាននៅទូទាំងសាខា ផ្នែក ឬក្រុមអ្នកសិក្សា។',
+    'Start with one internal training track, assign quizzes to the relevant team, and use the Teacher Portal to review completion and quality.':
+      'ចាប់ផ្តើមជាមួយផ្លូវបណ្តុះបណ្តាលផ្ទៃក្នុងមួយ កំណត់សំណួរទៅកាន់ក្រុមពាក់ព័ន្ធ ហើយប្រើ Teacher Portal ដើម្បីពិនិត្យការបញ្ចប់ និងគុណភាព។',
+    'Good for banks, microfinance institutions, training departments, compliance teams, and managers who need repeatable knowledge development.':
+      'សមស្របសម្រាប់ធនាគារ ស្ថាប័នហិរញ្ញវត្ថុខ្នាតតូច ផ្នែកបណ្តុះបណ្តាល ក្រុមអនុលោម និងអ្នកគ្រប់គ្រងដែលត្រូវការការអភិវឌ្ឍចំណេះដឹងដែលធ្វើឡើងវិញបាន។',
+    'Training becomes more valuable when content delivery, testing, and oversight are linked together rather than managed through disconnected internal processes.':
+      'ការបណ្តុះបណ្តាលកាន់តែមានតម្លៃនៅពេលការផ្តល់មាតិកា ការធ្វើតេស្ត និងការត្រួតពិនិត្យត្រូវបានភ្ជាប់ជាមួយគ្នា ជំនួសឲ្យការគ្រប់គ្រងតាមដំណើរការផ្ទៃក្នុងដែលបែកចេញពីគ្នា។',
+    'For borrower records, lending books, stock control, sales flow, and day-to-day operating discipline.':
+      'សម្រាប់កំណត់ត្រាអ្នកខ្ចី សៀវភៅឥណទាន ការគ្រប់គ្រងស្តុក លំហូរការលក់ និងវិន័យប្រតិបត្តិការប្រចាំថ្ងៃ។',
+    'Micro-Lending Platform and Micro-SME Platform support lending operations, commerce flow, stock visibility, and more organized record-keeping.':
+      'វេទិកា Micro-Lending និង Micro-SME គាំទ្រប្រតិបត្តិការឥណទាន លំហូរពាណិជ្ជកម្ម ការមើលឃើញស្តុក និងការរក្សាកំណត់ត្រាឲ្យមានរបៀបរៀបរយជាងមុន។',
+    'Use CXDot for AI-assisted commerce, gold or FX inquiry, and customer bot flow, then use DBank for loan records, borrower management, and repayment operations.':
+      'ប្រើ CXDot សម្រាប់ពាណិជ្ជកម្មដោយជំនួយ AI សំណួរអំពីមាស ឬ FX និងលំហូរបុតអតិថិជន បន្ទាប់មកប្រើ DBank សម្រាប់កំណត់ត្រាប្រាក់កម្ចី ការគ្រប់គ្រងអ្នកខ្ចី និងប្រតិបត្តិការសងប្រាក់។',
+    'Keep cleaner records, reduce operating friction, and make it easier to manage both customer-facing trade activity and back-office lending work.':
+      'រក្សាកំណត់ត្រាឲ្យស្អាតជាងមុន កាត់បន្ថយភាពរអាក់រអួលក្នុងប្រតិបត្តិការ និងធ្វើឲ្យការគ្រប់គ្រងទាំងសកម្មភាពជួញដូរដែលប៉ះពាល់អតិថិជន និងការងារឥណទានខាងក្រោយកាន់តែងាយស្រួល។',
+    'Start with the workflow that causes the most daily pain first, then add the second system to connect customer transactions with financial records.':
+      'ចាប់ផ្តើមជាមួយលំហូរការងារដែលបង្កការលំបាកប្រចាំថ្ងៃខ្លាំងបំផុតជាមុន បន្ទាប់មកបន្ថែមប្រព័ន្ធទីពីរ ដើម្បីភ្ជាប់ប្រតិបត្តិការអតិថិជនជាមួយកំណត់ត្រាហិរញ្ញវត្ថុ។',
+    'Good for micro lenders, hybrid SMEs, trading businesses, community finance operators, and teams handling both sales and borrower relationships.':
+      'សមស្របសម្រាប់អ្នកឥណទានខ្នាតតូច SME រួមបញ្ចូលគ្នា អាជីវកម្មជួញដូរ អ្នកប្រតិបត្តិការហិរញ្ញវត្ថុសហគមន៍ និងក្រុមដែលគ្រប់គ្រងទាំងការលក់ និងទំនាក់ទំនងជាមួយអ្នកខ្ចី។',
+    'It gives one organization a way to manage front-office customer interaction and back-office financial discipline without splitting operations into unrelated tools.':
+      'វាផ្តល់ឲ្យអង្គការមួយនូវវិធីសាស្ត្រគ្រប់គ្រងទាំងការទំនាក់ទំនងអតិថិជនខាងមុខ និងវិន័យហិរញ្ញវត្ថុខាងក្រោយ ដោយមិនចែកប្រតិបត្តិការទៅជាឧបករណ៍ដាច់ដោយឡែកដែលមិនពាក់ព័ន្ធគ្នា។',
     'Who It Serves': 'អ្នកដែលយើងបម្រើ',
     'Different products, one clear goal: make work and learning easier.':
       'ផលិតផលខុសៗគ្នា ប៉ុន្តែគោលដៅមួយច្បាស់លាស់៖ ធ្វើឲ្យការងារ និងការសិក្សាងាយស្រួលជាងមុន។',
