@@ -314,6 +314,21 @@ const phraseTranslations = {
     'Current public footprint investors can verify today.': 'ស្ថានភាពសាធារណៈបច្ចុប្បន្នដែលវិនិយោគិនអាចផ្ទៀងផ្ទាត់បានថ្ងៃនេះ។',
     'These are public, visible signals of operating momentum. Detailed commercial metrics can be shared through a private investor brief.':
       'ទាំងនេះជាសញ្ញាសាធារណៈដែលអាចមើលឃើញពីសន្ទុះប្រតិបត្តិការ។ ទិន្នន័យពាណិជ្ជកម្មលម្អិតអាចចែករំលែកតាមរយៈសង្ខេបវិនិយោគឯកជន។',
+    'Core public products': 'ផលិតផលសាធារណៈស្នូល',
+    'Messenger Hub, AI Learning Center, Micro-SME Platform, Micro-Lending Platform, and Pair Me Up are already presented through a public website with supporting student and teacher portals.':
+      'Messenger Hub, AI Learning Center, វេទិកា Micro-SME, វេទិកា Micro-Lending និង Pair Me Up ត្រូវបានបង្ហាញរួចហើយតាមរយៈគេហទំព័រសាធារណៈ ជាមួយវេទិកាគាំទ្រសិស្ស និងគ្រូ។',
+    'This gives investors a visible product surface they can review today, rather than a concept-stage narrative without operating proof.':
+      'នេះផ្តល់ឲ្យវិនិយោគិននូវផ្ទៃផលិតផលដែលអាចមើលឃើញ និងពិនិត្យបានភ្លាមៗ ជំនួសឲ្យការរៀបរាប់គំនិតដែលមិនទាន់មានភស្តុតាងប្រតិបត្តិការ។',
+    'Primary market wedges': 'ច្រកចូលទីផ្សារសំខាន់',
+    'The strongest commercial entry points are customer communication, SME operations, lending records, and structured learning workflows for schools and banking-related training.':
+      'ច្រកចូលពាណិជ្ជកម្មដែលខ្លាំងបំផុតគឺការទំនាក់ទំនងអតិថិជន ប្រតិបត្តិការ SME កំណត់ត្រាឥណទាន និងលំហូរការសិក្សាដែលមានរចនាសម្ព័ន្ធសម្រាប់សាលារៀន និងការបណ្តុះបណ្តាលពាក់ព័ន្ធនឹងធនាគារ។',
+    'These are practical wedges because they map to repeatable daily processes where software can improve speed, consistency, visibility, and operating discipline.':
+      'ទាំងនេះជាច្រកចូលជាក់ស្តែង ព្រោះវាភ្ជាប់ទៅនឹងដំណើរការប្រចាំថ្ងៃដែលកើតឡើងម្តងហើយម្តងទៀត ដែលសូហ្វវែរអាចបង្កើនល្បឿន ស្ថិរភាព ភាពមើលឃើញ និងវិន័យប្រតិបត្តិការ។',
+    'Next investor step': 'ជំហានបន្ទាប់សម្រាប់វិនិយោគិន',
+    'Request the private investor brief for traction, pipeline, partnership progress, founder discussion, and financial detail that is not published on the public site.':
+      'ស្នើសុំសង្ខេបវិនិយោគឯកជន សម្រាប់ទិន្នន័យ traction បំពង់លក់ វឌ្ឍនភាពដៃគូ ការពិភាក្សាជាមួយស្ថាបនិក និងព័ត៌មានហិរញ្ញវត្ថុដែលមិនបានបោះពុម្ពលើគេហទំព័រសាធារណៈ។',
+    'The public layer is designed to establish clarity and trust first, then support a deeper investor conversation with private operating material.':
+      'ស្រទាប់សាធារណៈត្រូវបានរចនាឡើងដើម្បីបង្កើតភាពច្បាស់លាស់ និងទំនុកចិត្តជាមុន បន្ទាប់មកគាំទ្រការពិភាក្សាជ្រាលជ្រៅជាមួយវិនិយោគិន ដោយប្រើសម្ភារៈប្រតិបត្តិការឯកជន។',
     'How It Fits Together': 'របៀបដែលវាចូលគ្នា',
     'See CamboBIA as a simple business flow.': 'មើល CamboBIA ជាលំហូរអាជីវកម្មសាមញ្ញមួយ។',
     'Reach people, train them, and run operations with the right product group.':
