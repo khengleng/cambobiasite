@@ -10,6 +10,8 @@ export default defineConfig({
         termsOfUse: resolve(__dirname, 'terms-of-use.html'),
         privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
         dataPrivacy: resolve(__dirname, 'data-privacy.html'),
+        investors: resolve(__dirname, 'investors.html'),
+        companyUpdates: resolve(__dirname, 'company-updates.html'),
         messengerHub: resolve(__dirname, 'messenger-hub.html'),
         aiLearningCenter: resolve(__dirname, 'ai-learning-center.html'),
         studentPortal: resolve(__dirname, 'student-portal.html'),

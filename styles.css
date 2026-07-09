@@ -443,6 +443,9 @@ h1 {
 }
 
 .route-grid,
+.thesis-grid,
+.traction-grid,
+.team-grid,
 .rollout-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -450,6 +453,9 @@ h1 {
 }
 
 .route-card,
+.thesis-grid article,
+.traction-grid article,
+.team-grid article,
 .rollout-grid article {
   padding: 24px;
   border: 1px solid var(--line);
@@ -459,6 +465,7 @@ h1 {
 }
 
 .route-card span,
+.thesis-grid span,
 .rollout-grid span {
   display: block;
   margin-bottom: 14px;
@@ -470,6 +477,9 @@ h1 {
 }
 
 .route-card h3,
+.thesis-grid h3,
+.traction-grid strong,
+.team-grid h3,
 .rollout-grid h3 {
   margin: 0 0 10px;
   font-family: 'Space Grotesk', sans-serif;
@@ -478,6 +488,9 @@ h1 {
 }
 
 .route-card p,
+.thesis-grid p,
+.traction-grid p,
+.team-grid p,
 .rollout-grid p {
   color: var(--muted);
 }
@@ -487,6 +500,14 @@ h1 {
   margin-top: 16px;
   color: var(--primary);
   font-weight: 800;
+}
+
+.traction-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.traction-grid strong {
+  display: block;
 }
 
 .quick-strip article {
@@ -779,6 +800,12 @@ h1 {
 
 .rollout-section .section-heading {
   max-width: 720px;
+}
+
+.team-section .section-heading,
+.traction-section .section-heading,
+.thesis-section .section-heading {
+  max-width: 760px;
 }
 
 .contact-card {
@@ -1159,7 +1186,10 @@ h1 {
   .quick-strip,
   .visual-groups,
   .route-grid,
+  .thesis-grid,
   .journey-grid,
+  .traction-grid,
+  .team-grid,
   .rollout-grid,
   .detail-hero,
   .detail-grid,
