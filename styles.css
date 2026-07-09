@@ -853,6 +853,32 @@ h1 {
   color: var(--muted);
 }
 
+.product-detail-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.product-detail-block,
+.product-detail-grid div {
+  padding: 16px;
+  border: 1px solid rgba(30, 43, 44, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.product-detail-block strong,
+.product-detail-grid strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
 .portal-links,
 .product-links {
   display: flex;
@@ -1604,7 +1630,8 @@ h1 {
   }
 
   .product-grid,
-  .audience-grid {
+  .audience-grid,
+  .product-detail-grid {
     grid-template-columns: 1fr;
   }
 

@@ -192,6 +192,18 @@ const phraseTranslations = {
     'Send promotions and announcements': 'ផ្ញើប្រូម៉ូសិន និងសេចក្តីជូនដំណឹង',
     'Reduce manual messaging work': 'កាត់បន្ថយការងារផ្ញើសារដោយដៃ',
     'Best for: sales, outreach, customer updates': 'សមស្របសម្រាប់៖ ការលក់ ការផ្សព្វផ្សាយ និងការធ្វើបច្ចុប្បន្នភាពអតិថិជន',
+    'Typical business uses': 'ការប្រើប្រាស់អាជីវកម្មទូទៅ',
+    'Launch promotions, announce branch updates, remind customers, and keep sales teams aligned on outbound campaigns.':
+      'ប្រើសម្រាប់បើកយុទ្ធនាការប្រូម៉ូសិន ប្រកាសព័ត៌មានសាខា រំលឹកអតិថិជន និងឲ្យក្រុមលក់ធ្វើការផ្សព្វផ្សាយបានស្របគ្នា។',
+    'Recommended pairing': 'ការផ្គូផ្គងដែលណែនាំ',
+    'Pair Messenger Hub with the Micro-SME Platform when you want broadcast reach first, then AI-assisted order conversations after the customer replies.':
+      'ផ្គូផ្គង Messenger Hub ជាមួយវេទិកា Micro-SME នៅពេលអ្នកចង់ផ្សព្វផ្សាយឲ្យដល់អតិថិជនជាមុន ហើយបន្ទាប់មកបន្តការសន្ទនាការបញ្ជាទិញដោយជំនួយ AI បន្ទាប់ពីអតិថិជនឆ្លើយតប។',
+    'Fits best': 'សមស្របបំផុតសម្រាប់',
+    'Retailers, schools, banks, distributors, and service teams.':
+      'ហាងលក់រាយ សាលារៀន ធនាគារ អ្នកចែកចាយ និងក្រុមសេវាកម្ម។',
+    'Primary outcome': 'លទ្ធផលសំខាន់',
+    'Faster outreach with more consistent customer follow-up.':
+      'ការឈានដល់អតិថិជនលឿនជាងមុន ជាមួយការតាមដានអតិថិជនដែលមានស្ថិរភាពជាងមុន។',
     'Learn more': 'ស្វែងយល់បន្ថែម',
     'Visit Messenger Hub': 'ចូលទៅ Messenger Hub',
     'Learning tools for students, teachers, and banking teams.': 'ឧបករណ៍សិក្សាសម្រាប់សិស្ស គ្រូ និងក្រុមធនាគារ។',
