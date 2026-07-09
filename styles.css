@@ -357,46 +357,48 @@ h1 {
 
 .cambodia-scene {
   display: grid;
-  align-content: end;
-  padding: 18px;
-  padding-top: 140px;
+  gap: 14px;
+  padding: 0;
   background:
     radial-gradient(circle at 82% 16%, rgba(211, 155, 52, 0.18), transparent 20%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(6, 39, 29, 0.18)),
     rgba(6, 39, 29, 0.3);
 }
 
+.scene-photo-frame {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+}
+
 .hero-photo {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   filter: saturate(0.96) contrast(1.02);
+  display: block;
 }
 
-.cambodia-scene::after {
+.scene-photo-frame::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8, 34, 26, 0.12), rgba(8, 34, 26, 0.68));
+  background: linear-gradient(180deg, rgba(8, 34, 26, 0.08), rgba(8, 34, 26, 0.18));
 }
 
-.scene-caption,
-.scene-tags {
-  position: relative;
-  z-index: 1;
+.scene-copy {
+  display: grid;
+  gap: 14px;
+  padding: 0 18px 18px;
 }
 
 .scene-caption {
-  max-width: 30ch;
   display: grid;
   gap: 6px;
   padding: 14px 16px;
   border-radius: 18px;
-  background: rgba(7, 36, 27, 0.56);
-  backdrop-filter: blur(8px);
+  background: rgba(7, 36, 27, 0.72);
 }
 
 .scene-caption strong {
@@ -412,8 +414,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 14px;
-  padding: 0 2px 2px;
 }
 
 .scene-tags span {
@@ -423,7 +423,7 @@ h1 {
   padding: 0 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.08em;
