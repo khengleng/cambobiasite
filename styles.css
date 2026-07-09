@@ -366,17 +366,21 @@ h1 {
     rgba(6, 39, 29, 0.3);
 }
 
-.cambodia-scene svg {
+.hero-photo {
   position: absolute;
-  inset: 6px 0 auto 0;
+  inset: 0;
   width: 100%;
-  height: 68%;
-  color: rgba(255, 255, 255, 0.94);
-  stroke: currentColor;
-  stroke-width: 3;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.96) contrast(1.02);
+}
+
+.cambodia-scene::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 34, 26, 0.12), rgba(8, 34, 26, 0.68));
 }
 
 .scene-caption,
@@ -697,39 +701,12 @@ h1 {
   stroke-linejoin: round;
 }
 
-.product-visual-messaging {
-  color: #156347;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(21, 99, 71, 0.12), transparent 28%),
-    linear-gradient(135deg, rgba(223, 247, 241, 0.86), rgba(255, 255, 255, 0.66));
-}
-
-.product-visual-learning {
-  color: #9a6b10;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(211, 155, 52, 0.16), transparent 30%),
-    linear-gradient(135deg, rgba(255, 241, 203, 0.86), rgba(255, 255, 255, 0.66));
-}
-
-.product-visual-commerce {
-  color: #315f96;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(49, 95, 150, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(220, 236, 255, 0.9), rgba(255, 255, 255, 0.7));
-}
-
-.product-visual-lending {
-  color: #4c7f3c;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(76, 127, 60, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(226, 244, 223, 0.88), rgba(255, 255, 255, 0.66));
-}
-
-.product-visual-focus {
-  color: #b45c45;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(180, 92, 69, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(255, 226, 219, 0.88), rgba(255, 255, 255, 0.68));
+.product-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .product-feature {
