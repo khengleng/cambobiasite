@@ -6,6 +6,6 @@ const distDir = resolve(rootDir, 'dist');
 
 await mkdir(distDir, { recursive: true });
 
-for (const fileName of ['robots.txt', 'sitemap.xml']) {
+for (const fileName of ['robots.txt', 'sitemap.xml', 'llms.txt']) {
   await copyFile(resolve(rootDir, fileName), resolve(distDir, fileName));
 }
