@@ -1,4 +1,4 @@
-# Cambobia Marketing Site
+# CamboBIA Marketing Site
 
 Single-page marketing website for `cambobia.com`, built with Vite and prepared for Railway deployment.
 
