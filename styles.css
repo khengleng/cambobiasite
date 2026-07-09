@@ -210,26 +210,26 @@ strong {
 }
 
 .eyebrow {
-  margin-bottom: 16px;
-  font-size: 0.8rem;
+  margin-bottom: 12px;
+  font-size: 0.74rem;
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary);
 }
 
 h1 {
   margin: 0;
-  max-width: 11ch;
+  max-width: 13ch;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(3.2rem, 6.7vw, 5.9rem);
-  line-height: 0.94;
+  font-size: clamp(2.6rem, 5.3vw, 4.6rem);
+  line-height: 0.98;
 }
 
 .hero-text {
-  margin-top: 18px;
-  max-width: 62ch;
-  font-size: 1.08rem;
+  margin-top: 16px;
+  max-width: 58ch;
+  font-size: 1rem;
   color: var(--muted);
 }
 
