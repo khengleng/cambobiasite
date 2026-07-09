@@ -49,8 +49,16 @@ const SECURITY_HEADERS = {
 const CLEAN_ROUTES = new Map([
   ['/', 'index.html'],
   ['/404', '404.html'],
+  ['/ai-learning-center', 'ai-learning-center.html'],
+  ['/banking-skills-academy', 'banking-skills-academy.html'],
   ['/data-privacy', 'data-privacy.html'],
+  ['/messenger-hub', 'messenger-hub.html'],
+  ['/micro-lending-platform', 'micro-lending-platform.html'],
+  ['/micro-sme-platform', 'micro-sme-platform.html'],
+  ['/pair-me-up', 'pair-me-up.html'],
   ['/privacy-policy', 'privacy-policy.html'],
+  ['/student-portal', 'student-portal.html'],
+  ['/teacher-portal', 'teacher-portal.html'],
   ['/terms-of-use', 'terms-of-use.html'],
 ]);
 
