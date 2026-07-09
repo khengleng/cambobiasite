@@ -240,6 +240,23 @@ h1 {
   margin-top: 28px;
 }
 
+.hero-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.hero-shortcuts a {
+  padding: 9px 14px;
+  border: 1px solid rgba(30, 43, 44, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -425,6 +442,53 @@ h1 {
   max-width: 28ch;
 }
 
+.route-grid,
+.rollout-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.route-card,
+.rollout-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: var(--shadow);
+}
+
+.route-card span,
+.rollout-grid span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.route-card h3,
+.rollout-grid h3 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.08;
+}
+
+.route-card p,
+.rollout-grid p {
+  color: var(--muted);
+}
+
+.route-card a {
+  display: inline-flex;
+  margin-top: 16px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
 .quick-strip article {
   padding: 22px;
   border-radius: 22px;
@@ -508,6 +572,36 @@ h1 {
 .proof-points p,
 .footer p {
   color: var(--muted);
+}
+
+.portal-links,
+.product-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.portal-links a,
+.product-link,
+.product-links span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(30, 43, 44, 0.1);
+  background: rgba(255, 255, 255, 0.68);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.product-links span {
+  color: var(--muted);
+}
+
+.product-link {
+  color: var(--primary);
 }
 
 .accent-cyan {
@@ -683,6 +777,10 @@ h1 {
   font-size: 1.06rem;
 }
 
+.rollout-section .section-heading {
+  max-width: 720px;
+}
+
 .contact-card {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -811,6 +909,10 @@ h1 {
   letter-spacing: 0.03em;
 }
 
+.contact-link-secondary {
+  background: transparent;
+}
+
 .contact-note {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
@@ -922,7 +1024,9 @@ h1 {
   .hero-highlights,
   .quick-strip,
   .visual-groups,
+  .route-grid,
   .journey-grid,
+  .rollout-grid,
   .profile-products,
   .trust-grid,
   .policy-explorer,
