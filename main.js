@@ -38,6 +38,18 @@ const phraseTranslations = {
     'Micro-Lending Platform for borrower, loan, and record management': 'វេទិកា Micro-Lending សម្រាប់គ្រប់គ្រងអ្នកខ្ចី ប្រាក់កម្ចី និងកំណត់ត្រា',
     'Focus Game': 'ហ្គេមផ្តោតអារម្មណ៍',
     'Pair Me Up for memory and attention practice': 'Pair Me Up សម្រាប់ហ្វឹកហាត់ការចងចាំ និងការផ្តោតអារម្មណ៍',
+    'How organizations start': 'របៀបដែលអង្គការចាប់ផ្តើម',
+    'Most teams begin with one visible workflow first: customer messaging, student learning, banking training, SME commerce, or lending records.':
+      'ក្រុមភាគច្រើនចាប់ផ្តើមពីលំហូរការងារមួយដែលមើលឃើញជាមុនសិន៖ ការផ្ញើសារអតិថិជន ការសិក្សារបស់សិស្ស ការបណ្តុះបណ្តាលធនាគារ ពាណិជ្ជកម្ម SME ឬកំណត់ត្រាឥណទាន។',
+    'What happens next': 'អ្វីកើតឡើងបន្ទាប់',
+    'After the first workflow is working, they add the second matching product to connect outreach with operations, or learning with oversight.':
+      'បន្ទាប់ពីលំហូរការងារដំបូងដំណើរការបានល្អ ពួកគេបន្ថែមផលិតផលទីពីរដែលសមស្រប ដើម្បីភ្ជាប់ការផ្សព្វផ្សាយជាមួយប្រតិបត្តិការ ឬការសិក្សាជាមួយការត្រួតពិនិត្យ។',
+    'Why this site matters': 'ហេតុអ្វីគេហទំព័រនេះសំខាន់',
+    'This landing page helps customers, partners, and investors understand where each platform fits and which combination is the right entry point.':
+      'ទំព័រដំបូងនេះជួយអតិថិជន ដៃគូ និងវិនិយោគិន ឲ្យយល់ថាវេទិកានីមួយៗសមស្របនៅកន្លែងណា និងការរួមបញ្ចូលណាដែលជាចំណុចចូលត្រឹមត្រូវ។',
+    'Visible today': 'អ្វីដែលមើលឃើញថ្ងៃនេះ',
+    'Seven public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
+      'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៧ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Visual Overview': 'ទិដ្ឋភាពសង្ខេប',
     'Cambodia in the digital and AI era': 'កម្ពុជាក្នុងយុគសម័យឌីជីថល និង AI',
     'Khmer-market software for messaging, learning, commerce, and finance.': 'សូហ្វវែរសម្រាប់ទីផ្សារខ្មែរ ផ្នែកផ្ញើសារ ការសិក្សា ពាណិជ្ជកម្ម និងហិរញ្ញវត្ថុ។',
@@ -239,6 +251,13 @@ const phraseTranslations = {
     'Talk to the team about product demos, deployment, partnerships, or business use.':
       'និយាយជាមួយក្រុមការងារអំពីការបង្ហាញផលិតផល ការដាក់ប្រើ ភាពជាដៃគូ ឬការប្រើប្រាស់អាជីវកម្ម។',
     'Review policies first': 'មើលគោលការណ៍ជាមុន',
+    Company: 'ក្រុមហ៊ុន',
+    'Business And Finance': 'អាជីវកម្ម និងហិរញ្ញវត្ថុ',
+    'Education Platforms': 'វេទិកាអប់រំ',
+    'Trust And Legal': 'ទំនុកចិត្ត និងផ្នែកច្បាប់',
+    Updates: 'បច្ចុប្បន្នភាព',
+    'Public-facing policy pages are available so customers and partners can review use, privacy, and data-handling expectations before engagement.':
+      'ទំព័រគោលការណ៍សាធារណៈមានរួចជាស្រេច ដើម្បីឲ្យអតិថិជន និងដៃគូអាចពិនិត្យការប្រើប្រាស់ ភាពឯកជន និងការរំពឹងទុកអំពីការគ្រប់គ្រងទិន្នន័យ មុនពេលចូលរួម។',
     'All rights reserved.': 'រក្សាសិទ្ធិគ្រប់យ៉ាង។',
     'Back to Home': 'ត្រឡប់ទៅទំព័រដើម',
     'Product Portfolio': 'ក្រុមផលិតផល',
