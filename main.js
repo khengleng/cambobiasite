@@ -446,10 +446,19 @@ const ensureLanguageSwitcher = () => {
   const switcher = document.createElement('div');
   switcher.className = 'lang-switcher';
   switcher.setAttribute('aria-label', 'Language switcher');
-  switcher.innerHTML = `
-    <button type="button" class="lang-button" data-lang-button="en">English</button>
-    <button type="button" class="lang-button" data-lang-button="km">ខ្មែរ</button>
-  `;
+  const languages = [
+    { code: 'en', label: 'English' },
+    { code: 'km', label: 'ខ្មែរ' }
+  ];
+
+  languages.forEach(({ code, label }) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'lang-button';
+    button.dataset.langButton = code;
+    button.textContent = label;
+    switcher.appendChild(button);
+  });
 
   const topbar = document.querySelector('.topbar');
   const legalHeader = document.querySelector('.legal-header');

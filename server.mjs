@@ -5,6 +5,9 @@ import { extname, join, normalize, resolve } from 'node:path';
 
 const DIST_DIR = resolve('dist');
 const PORT = Number.parseInt(process.env.PORT ?? '4173', 10);
+const REQUEST_TIMEOUT_MS = 15_000;
+const HEADERS_TIMEOUT_MS = 10_000;
+const KEEP_ALIVE_TIMEOUT_MS = 5_000;
 
 const MIME_TYPES = {
   '.css': 'text/css; charset=utf-8',
@@ -65,17 +68,29 @@ const CLEAN_ROUTES = new Map([
 ]);
 
 const sendBuffer = (res, statusCode, body, headers = {}) => {
+  if (res.headersSent) {
+    res.end(body);
+    return;
+  }
+
   res.writeHead(statusCode, { ...SECURITY_HEADERS, ...headers });
   res.end(body);
 };
 
 const sendHtmlFile = async (res, fileName, statusCode) => {
-  const filePath = join(DIST_DIR, fileName);
-  const body = await readFile(filePath);
-  sendBuffer(res, statusCode, body, {
-    'Cache-Control': 'no-store',
-    'Content-Type': MIME_TYPES['.html'],
-  });
+  try {
+    const filePath = join(DIST_DIR, fileName);
+    const body = await readFile(filePath);
+    sendBuffer(res, statusCode, body, {
+      'Cache-Control': 'no-store',
+      'Content-Type': MIME_TYPES['.html'],
+    });
+  } catch {
+    sendBuffer(res, 500, 'Internal Server Error', {
+      'Cache-Control': 'no-store',
+      'Content-Type': 'text/plain; charset=utf-8',
+    });
+  }
 };
 
 const getCacheControl = (filePath) => {
@@ -111,62 +126,82 @@ const resolveRequestPath = (pathname) => {
 };
 
 const server = createServer(async (req, res) => {
-  if (req.method !== 'GET' && req.method !== 'HEAD') {
-    sendBuffer(res, 405, 'Method Not Allowed', {
-      'Allow': 'GET, HEAD',
-      'Cache-Control': 'no-store',
-      'Content-Type': 'text/plain; charset=utf-8',
-    });
-    return;
-  }
-
-  let url;
-
   try {
-    url = new URL(req.url ?? '/', `http://${req.headers.host ?? 'localhost'}`);
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      sendBuffer(res, 405, 'Method Not Allowed', {
+        'Allow': 'GET, HEAD',
+        'Cache-Control': 'no-store',
+        'Content-Type': 'text/plain; charset=utf-8',
+      });
+      return;
+    }
+
+    let url;
+
+    try {
+      url = new URL(req.url ?? '/', `http://${req.headers.host ?? 'localhost'}`);
+    } catch {
+      sendBuffer(res, 400, 'Bad Request', {
+        'Cache-Control': 'no-store',
+        'Content-Type': 'text/plain; charset=utf-8',
+      });
+      return;
+    }
+
+    let pathname;
+
+    try {
+      pathname = decodeURIComponent(url.pathname);
+    } catch {
+      sendBuffer(res, 400, 'Bad Request', {
+        'Cache-Control': 'no-store',
+        'Content-Type': 'text/plain; charset=utf-8',
+      });
+      return;
+    }
+
+    const filePath = resolveRequestPath(pathname);
+
+    if (!filePath) {
+      await sendHtmlFile(res, '404.html', 404);
+      return;
+    }
+
+    const fileExtension = extname(filePath).toLowerCase();
+    const contentType = MIME_TYPES[fileExtension] ?? 'application/octet-stream';
+    const headers = {
+      'Cache-Control': getCacheControl(filePath),
+      'Content-Type': contentType,
+    };
+
+    res.writeHead(200, { ...SECURITY_HEADERS, ...headers });
+
+    if (req.method === 'HEAD') {
+      res.end();
+      return;
+    }
+
+    const stream = createReadStream(filePath);
+
+    stream.on('error', () => {
+      sendBuffer(res, 500, 'Internal Server Error', {
+        'Cache-Control': 'no-store',
+        'Content-Type': 'text/plain; charset=utf-8',
+      });
+    });
+
+    stream.pipe(res);
   } catch {
-    sendBuffer(res, 400, 'Bad Request', {
+    sendBuffer(res, 500, 'Internal Server Error', {
       'Cache-Control': 'no-store',
       'Content-Type': 'text/plain; charset=utf-8',
     });
-    return;
   }
-
-  let pathname;
-
-  try {
-    pathname = decodeURIComponent(url.pathname);
-  } catch {
-    sendBuffer(res, 400, 'Bad Request', {
-      'Cache-Control': 'no-store',
-      'Content-Type': 'text/plain; charset=utf-8',
-    });
-    return;
-  }
-
-  const filePath = resolveRequestPath(pathname);
-
-  if (!filePath) {
-    await sendHtmlFile(res, '404.html', 404);
-    return;
-  }
-
-  const fileExtension = extname(filePath).toLowerCase();
-  const contentType = MIME_TYPES[fileExtension] ?? 'application/octet-stream';
-  const headers = {
-    'Cache-Control': getCacheControl(filePath),
-    'Content-Type': contentType,
-  };
-
-  res.writeHead(200, { ...SECURITY_HEADERS, ...headers });
-
-  if (req.method === 'HEAD') {
-    res.end();
-    return;
-  }
-
-  createReadStream(filePath).pipe(res);
 });
+
+server.requestTimeout = REQUEST_TIMEOUT_MS;
+server.headersTimeout = HEADERS_TIMEOUT_MS;
+server.keepAliveTimeout = KEEP_ALIVE_TIMEOUT_MS;
 
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`Cambobia listening on ${PORT}`);
