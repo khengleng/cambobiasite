@@ -774,6 +774,14 @@ h1 {
   stroke-linejoin: round;
 }
 
+.quick-strip-icon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
 .quick-strip strong {
   margin-bottom: 8px;
   font-family: 'Space Grotesk', sans-serif;
