@@ -1,0 +1,128 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#EAF4FF"/>
+    </linearGradient>
+    <linearGradient id="primary" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1F73FF"/>
+      <stop offset="1" stop-color="#0B4ACB"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0E234F"/>
+      <stop offset="1" stop-color="#091735"/>
+    </linearGradient>
+    <filter id="shadow" x="-40" y="-40" width="1280" height="840" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#173B7A" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="154" cy="128" r="74" fill="#FFFFFF" opacity="0.88"/>
+  <circle cx="1062" cy="102" r="90" fill="#FFFFFF" opacity="0.72"/>
+
+  <g opacity="0.14" stroke="#1F73FF" stroke-width="3">
+    <path d="M140 592L204 520L268 592H140Z"/>
+    <path d="M210 592V548"/>
+    <path d="M262 592V560"/>
+    <path d="M950 202L1002 138L1054 202H950Z"/>
+    <path d="M1002 202V162"/>
+    <path d="M180 662H460"/>
+    <path d="M834 632H1082"/>
+  </g>
+
+  <g transform="translate(64 56)">
+    <rect width="256" height="256" rx="52" fill="#FFFFFF"/>
+    <path d="M66 54C66 31.9 83.9 14 106 14H202C224.1 14 242 31.9 242 54V202C242 224.1 224.1 242 202 242H146" stroke="#1F73FF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M106 66H170C198.7 66 222 89.3 222 118C222 146.7 198.7 170 170 170H126L116 226H84L96 152H160C176.6 152 190 138.6 190 122C190 105.4 176.6 92 160 92H110L106 66Z" fill="url(#primary)"/>
+    <path d="M84 198H124L116 242H78C63.6 242 52 230.4 52 216V198H84Z" fill="#E12D2D"/>
+    <path d="M148 96L198 136L148 176V148H106V124H148V96Z" fill="#FFFFFF"/>
+  </g>
+
+  <g transform="translate(356 86)">
+    <text x="0" y="82" fill="#0B1731" font-size="104" font-family="Arial, Helvetica, sans-serif" font-weight="700">pay</text>
+    <text x="324" y="82" fill="#1F73FF" font-size="104" font-family="Arial, Helvetica, sans-serif" font-weight="700">KH</text>
+    <text x="2" y="142" fill="#0B1731" font-size="34" font-family="Arial, Helvetica, sans-serif">Pay Smart.</text>
+    <text x="186" y="142" fill="#1F73FF" font-size="34" font-family="Arial, Helvetica, sans-serif">Grow Together.</text>
+    <text x="0" y="254" fill="#1C3F7F" font-size="58" font-family="Arial, Helvetica, sans-serif" font-weight="700">Fast. Secure.</text>
+    <text x="0" y="314" fill="#1F73FF" font-size="58" font-family="Arial, Helvetica, sans-serif" font-weight="700">Made for Cambodia.</text>
+    <text x="0" y="372" fill="#4D617F" font-size="26" font-family="Arial, Helvetica, sans-serif">Digital payments for merchants, checkout flow,</text>
+    <text x="0" y="408" fill="#4D617F" font-size="26" font-family="Arial, Helvetica, sans-serif">KHQR collection, and trusted transaction support.</text>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(476 168)">
+    <rect x="0" y="0" width="284" height="516" rx="40" fill="#10223F"/>
+    <rect x="14" y="14" width="256" height="488" rx="32" fill="#FFFFFF"/>
+    <rect x="14" y="14" width="256" height="144" rx="32" fill="url(#primary)"/>
+    <text x="42" y="78" fill="#FFFFFF" font-size="18" font-family="Arial, Helvetica, sans-serif">PayKH Wallet</text>
+    <text x="42" y="120" fill="#FFFFFF" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">$168.50</text>
+    <rect x="178" y="56" width="48" height="48" rx="16" fill="#FFFFFF" opacity="0.18"/>
+    <path d="M201 70V90M191 80H211" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="30" y="188" width="224" height="196" rx="24" fill="#FFFFFF" stroke="#D7E6FF" stroke-width="2"/>
+    <text x="46" y="228" fill="#0B1731" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Scan KHQR</text>
+    <rect x="58" y="246" width="168" height="112" rx="10" fill="#F7FBFF"/>
+    <rect x="76" y="264" width="28" height="28" fill="#111"/>
+    <rect x="180" y="264" width="28" height="28" fill="#111"/>
+    <rect x="76" y="320" width="28" height="28" fill="#111"/>
+    <rect x="180" y="320" width="28" height="28" fill="#111"/>
+    <rect x="114" y="274" width="56" height="56" rx="12" fill="url(#primary)"/>
+    <path d="M128 292H150C164 292 173 300 173 314C173 327 164 336 150 336H135L130 362H112L118 314H146C153 314 158 309 158 302C158 295 153 290 146 290H130L128 292Z" fill="#FFFFFF" opacity="0.98"/>
+    <text x="78" y="382" fill="#4D617F" font-size="14" font-family="Arial, Helvetica, sans-serif">KHQR Ready</text>
+
+    <g transform="translate(40 410)">
+      <rect width="52" height="52" rx="16" fill="#EAF4FF"/>
+      <rect x="72" width="52" height="52" rx="16" fill="#EAF4FF"/>
+      <rect x="144" width="52" height="52" rx="16" fill="#EAF4FF"/>
+      <path d="M26 12V40M12 26H40" stroke="#1F73FF" stroke-width="4" stroke-linecap="round"/>
+      <path d="M88 18H108M88 28H108M88 38H100" stroke="#1F73FF" stroke-width="4" stroke-linecap="round"/>
+      <path d="M170 16H192L182 36H198" stroke="#1F73FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="6" y="72" fill="#4D617F" font-size="12" font-family="Arial, Helvetica, sans-serif">Top up</text>
+      <text x="74" y="72" fill="#4D617F" font-size="12" font-family="Arial, Helvetica, sans-serif">History</text>
+      <text x="146" y="72" fill="#4D617F" font-size="12" font-family="Arial, Helvetica, sans-serif">Fast</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(776 112)">
+    <rect width="366" height="254" rx="28" fill="#FFFFFF"/>
+    <text x="30" y="42" fill="#0B1731" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="700">Merchant Dashboard</text>
+    <rect x="30" y="64" width="108" height="74" rx="18" fill="#F8FBFF" stroke="#DCE8FF"/>
+    <rect x="148" y="64" width="92" height="74" rx="18" fill="#F8FBFF" stroke="#DCE8FF"/>
+    <rect x="250" y="64" width="86" height="74" rx="18" fill="#F8FBFF" stroke="#DCE8FF"/>
+    <text x="46" y="88" fill="#5F7392" font-size="14" font-family="Arial, Helvetica, sans-serif">Total Sales</text>
+    <text x="46" y="120" fill="#0B1731" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700">$2,450</text>
+    <text x="160" y="88" fill="#5F7392" font-size="14" font-family="Arial, Helvetica, sans-serif">Transactions</text>
+    <text x="160" y="120" fill="#0B1731" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700">128</text>
+    <text x="262" y="88" fill="#5F7392" font-size="14" font-family="Arial, Helvetica, sans-serif">Success</text>
+    <text x="262" y="120" fill="#0B1731" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700">99.6%</text>
+    <rect x="30" y="154" width="226" height="74" rx="18" fill="#F8FBFF" stroke="#DCE8FF"/>
+    <path d="M48 206C68 196 76 170 98 174C120 178 132 202 150 198C170 194 182 160 206 166C220 170 234 190 246 184" stroke="#1F73FF" stroke-width="4" stroke-linecap="round"/>
+    <rect x="270" y="154" width="66" height="74" rx="18" fill="#F8FBFF" stroke="#DCE8FF"/>
+    <circle cx="303" cy="191" r="20" stroke="#1F73FF" stroke-width="8"/>
+    <path d="M303 171A20 20 0 0 1 323 191" stroke="#0B1731" stroke-width="8"/>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(820 402)">
+    <rect width="300" height="212" rx="28" fill="#FFFFFF"/>
+    <text x="28" y="40" fill="#0B1731" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Secure Checkout</text>
+    <text x="28" y="84" fill="#5F7392" font-size="14" font-family="Arial, Helvetica, sans-serif">Payment Method</text>
+    <rect x="28" y="98" width="244" height="46" rx="14" fill="#F7FBFF" stroke="#D7E6FF"/>
+    <text x="48" y="126" fill="#0B1731" font-size="16" font-family="Arial, Helvetica, sans-serif">KHQR</text>
+    <rect x="28" y="152" width="244" height="46" rx="14" fill="#F7FBFF" stroke="#D7E6FF"/>
+    <text x="48" y="180" fill="#0B1731" font-size="16" font-family="Arial, Helvetica, sans-serif">Visa</text>
+    <rect x="28" y="162" width="10" height="10" rx="5" fill="#1F73FF"/>
+    <text x="216" y="84" fill="#1F73FF" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700">$68</text>
+    <rect x="28" y="182" width="244" height="18" rx="9" fill="url(#primary)" opacity="0.12"/>
+    <rect x="28" y="152" width="244" height="46" rx="14" fill="transparent" stroke="none"/>
+    <rect x="28" y="204" width="244" height="46" rx="16" fill="url(#primary)"/>
+    <text x="113" y="233" fill="#FFFFFF" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="700">Pay $68</text>
+  </g>
+
+  <g transform="translate(62 618)">
+    <rect width="1076" height="86" rx="28" fill="url(#dark)"/>
+    <text x="34" y="54" fill="#FFFFFF" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">Secure Payments</text>
+    <text x="330" y="54" fill="#FFFFFF" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">KHQR Ready</text>
+    <text x="598" y="54" fill="#FFFFFF" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">Fast Checkout</text>
+    <text x="842" y="54" fill="#FFFFFF" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">Trusted Platform</text>
+  </g>
+</svg>
