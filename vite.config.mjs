@@ -19,6 +19,7 @@ export default defineConfig({
         bankingSkillsAcademy: resolve(__dirname, 'banking-skills-academy.html'),
         microLendingPlatform: resolve(__dirname, 'micro-lending-platform.html'),
         microSmePlatform: resolve(__dirname, 'micro-sme-platform.html'),
+        paykh: resolve(__dirname, 'paykh.html'),
         pairMeUp: resolve(__dirname, 'pair-me-up.html'),
       },
     },

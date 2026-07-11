@@ -60,6 +60,7 @@ const CLEAN_ROUTES = new Map([
   ['/messenger-hub', 'messenger-hub.html'],
   ['/micro-lending-platform', 'micro-lending-platform.html'],
   ['/micro-sme-platform', 'micro-sme-platform.html'],
+  ['/paykh', 'paykh.html'],
   ['/pair-me-up', 'pair-me-up.html'],
   ['/privacy-policy', 'privacy-policy.html'],
   ['/student-portal', 'student-portal.html'],
