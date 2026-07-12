@@ -7,6 +7,9 @@ Public website:
 - Investors: https://www.cambobia.com/investors
 - Company Updates: https://www.cambobia.com/company-updates
 
+Website interaction:
+- The public website includes an on-site assistant for visitor guidance, product discovery, and direct contact routing.
+
 Core platform pages:
 - Messenger Hub: https://www.cambobia.com/messenger-hub
 - AI Learning Center: https://www.cambobia.com/ai-learning-center
