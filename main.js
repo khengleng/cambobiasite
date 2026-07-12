@@ -496,6 +496,8 @@ const inverseTranslations = Object.fromEntries(
   Object.entries(phraseTranslations.km).map(([en, km]) => [km, en])
 );
 
+let syncSiteAssistant = () => {};
+
 const textNodes = [];
 
 const collectTextNodes = () => {
@@ -611,6 +613,8 @@ const applyLanguage = (lang) => {
       metaDescription.setAttribute('content', originalMetaDescription || '');
     }
   }
+
+  syncSiteAssistant(resolvedLang);
 };
 
 ensureLanguageSwitcher();
@@ -666,3 +670,328 @@ if (explorerTabs.length && explorerViews.length) {
     tab.addEventListener('click', () => activateProfile(tab.dataset.profile));
   });
 }
+
+const siteAssistantCopy = {
+  en: {
+    toggleLabel: 'Open site assistant',
+    heading: 'CamboBIA Assistant',
+    status: 'Ask about products, pairings, or contact.',
+    intro:
+      'I can help visitors find the right Cambodia Boutique Investment Advisory platform and show how to contact the team.',
+    inputPlaceholder: 'Ask about Messenger Hub, CXDot, PayKH, learning, or contact...',
+    send: 'Send',
+    quickLabel: 'Quick questions',
+    chips: [
+      'Which product fits my business?',
+      'How do I contact Cambobia?',
+      'Tell me about payments',
+      'Tell me about learning'
+    ],
+    fallback:
+      'I can help with messaging, education, SME commerce, lending, payments, or direct contact. Try asking about a product or use the contact option.',
+    contact:
+      'The best direct contact is contact@cambobia.com. You can also use the Contact section on this site or open an email now.',
+    business:
+      'For customer outreach, start with Messenger Hub. For conversational selling and operations, use CXDot. For payment completion, add PayKH.',
+    learning:
+      'For education, use the AI Learning Center family: mytv for students, admintv for teachers, skill for banking training, and Pair Me Up for focus support.',
+    payments:
+      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. It pairs well with CXDot and Messenger Hub.',
+    lending:
+      'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records.',
+    products:
+      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, and PayKH.',
+    linksLabel: 'Helpful links',
+    openEmail: 'Email contact@cambobia.com',
+    productsLink: 'View product portfolio',
+    messengerLink: 'Messenger Hub',
+    commerceLink: 'Micro-SME Platform',
+    paymentsLink: 'PayKH',
+    learningLink: 'AI Learning Center'
+  },
+  km: {
+    toggleLabel: 'បើកជំនួយការគេហទំព័រ',
+    heading: 'ជំនួយការ CamboBIA',
+    status: 'សួរអំពីផលិតផល ការផ្គូផ្គង ឬទំនាក់ទំនង។',
+    intro:
+      'ខ្ញុំអាចជួយអ្នកទស្សនារកវេទិកា Cambodia Boutique Investment Advisory ដែលសមស្រប និងបង្ហាញរបៀបទំនាក់ទំនងក្រុមការងារ។',
+    inputPlaceholder: 'សួរអំពី Messenger Hub, CXDot, PayKH, ការសិក្សា ឬទំនាក់ទំនង...',
+    send: 'ផ្ញើ',
+    quickLabel: 'សំណួររហ័ស',
+    chips: [
+      'ផលិតផលមួយណាសមនឹងអាជីវកម្មខ្ញុំ?',
+      'តើខ្ញុំទាក់ទង Cambobia ដូចម្តេច?',
+      'ប្រាប់ខ្ញុំអំពីការទូទាត់',
+      'ប្រាប់ខ្ញុំអំពីការសិក្សា'
+    ],
+    fallback:
+      'ខ្ញុំអាចជួយអំពីការផ្ញើសារ ការអប់រំ ពាណិជ្ជកម្ម SME ឥណទាន ការទូទាត់ ឬទំនាក់ទំនងដោយផ្ទាល់។ សូមសួរអំពីផលិតផលមួយ ឬប្រើជម្រើសទំនាក់ទំនង។',
+    contact:
+      'ការទំនាក់ទំនងដោយផ្ទាល់ល្អបំផុតគឺ contact@cambobia.com។ អ្នកក៏អាចប្រើផ្នែក Contact នៅលើគេហទំព័រនេះ ឬបើកអ៊ីមែលឥឡូវនេះ។',
+    business:
+      'សម្រាប់ការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ សម្រាប់ការលក់តាមការសន្ទនា និងប្រតិបត្តិការ សូមប្រើ CXDot។ សម្រាប់ការបញ្ចប់ការទូទាត់ សូមបន្ថែម PayKH។',
+    learning:
+      'សម្រាប់ការអប់រំ សូមប្រើគ្រួសារ AI Learning Center: mytv សម្រាប់សិស្ស admintv សម្រាប់គ្រូ skill សម្រាប់ការបណ្តុះបណ្តាលធនាគារ និង Pair Me Up សម្រាប់ការគាំទ្រការផ្តោតអារម្មណ៍។',
+    payments:
+      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ វាផ្គូផ្គងបានល្អជាមួយ CXDot និង Messenger Hub។',
+    lending:
+      'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។',
+    products:
+      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up និង PayKH។',
+    linksLabel: 'តំណមានប្រយោជន៍',
+    openEmail: 'ផ្ញើអ៊ីមែលទៅ contact@cambobia.com',
+    productsLink: 'មើលក្រុមផលិតផល',
+    messengerLink: 'Messenger Hub',
+    commerceLink: 'វេទិកា Micro-SME',
+    paymentsLink: 'PayKH',
+    learningLink: 'AI Learning Center'
+  }
+};
+
+const siteAssistantLinks = [
+  { key: 'openEmail', href: 'mailto:contact@cambobia.com?subject=CamboBIA%20Website%20Inquiry' },
+  { key: 'productsLink', href: '/index.html#products' },
+  { key: 'messengerLink', href: '/messenger-hub' },
+  { key: 'commerceLink', href: '/micro-sme-platform' },
+  { key: 'paymentsLink', href: '/paykh' },
+  { key: 'learningLink', href: '/ai-learning-center' }
+];
+
+const createAssistantElement = (tag, className, text) => {
+  const node = document.createElement(tag);
+
+  if (className) {
+    node.className = className;
+  }
+
+  if (typeof text === 'string') {
+    node.textContent = text;
+  }
+
+  return node;
+};
+
+const mountSiteAssistant = () => {
+  const assistant = createAssistantElement('section', 'site-assistant');
+  assistant.setAttribute('aria-label', 'Site assistant');
+
+  const toggle = createAssistantElement('button', 'site-assistant-toggle');
+  toggle.type = 'button';
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-controls', 'site-assistant-panel');
+
+  const toggleDot = createAssistantElement('span', 'site-assistant-toggle-dot');
+  const toggleText = createAssistantElement('span', 'site-assistant-toggle-text');
+  toggle.append(toggleDot, toggleText);
+
+  const panel = createAssistantElement('div', 'site-assistant-panel');
+  panel.id = 'site-assistant-panel';
+  panel.hidden = true;
+
+  const header = createAssistantElement('div', 'site-assistant-header');
+  const titleWrap = createAssistantElement('div', 'site-assistant-title-wrap');
+  const title = createAssistantElement('strong', 'site-assistant-title');
+  const status = createAssistantElement('p', 'site-assistant-status');
+  titleWrap.append(title, status);
+  const closeButton = createAssistantElement('button', 'site-assistant-close', '×');
+  closeButton.type = 'button';
+  closeButton.setAttribute('aria-label', 'Close site assistant');
+  header.append(titleWrap, closeButton);
+
+  const messages = createAssistantElement('div', 'site-assistant-messages');
+  messages.setAttribute('role', 'log');
+  messages.setAttribute('aria-live', 'polite');
+
+  const chipLabel = createAssistantElement('p', 'site-assistant-chip-label');
+  const chipRow = createAssistantElement('div', 'site-assistant-chips');
+
+  const form = createAssistantElement('form', 'site-assistant-form');
+  const input = createAssistantElement('input', 'site-assistant-input');
+  input.type = 'text';
+  input.name = 'assistant_message';
+  input.autocomplete = 'off';
+  const sendButton = createAssistantElement('button', 'site-assistant-send');
+  sendButton.type = 'submit';
+  form.append(input, sendButton);
+
+  const linkLabel = createAssistantElement('p', 'site-assistant-links-label');
+  const links = createAssistantElement('div', 'site-assistant-links');
+
+  panel.append(header, messages, chipLabel, chipRow, form, linkLabel, links);
+  assistant.append(toggle, panel);
+  document.body.appendChild(assistant);
+
+  const appendMessage = (type, text) => {
+    const message = createAssistantElement('div', `site-assistant-message site-assistant-message-${type}`);
+    const bubble = createAssistantElement('p', 'site-assistant-bubble', text);
+    message.appendChild(bubble);
+    messages.appendChild(message);
+    messages.scrollTop = messages.scrollHeight;
+  };
+
+  const getResponse = (value, copy) => {
+    const normalized = value.trim().toLowerCase();
+
+    if (!normalized) {
+      return copy.fallback;
+    }
+
+    if (
+      normalized.includes('contact') ||
+      normalized.includes('email') ||
+      normalized.includes('demo') ||
+      normalized.includes('ទំនាក់ទំនង') ||
+      normalized.includes('អ៊ីមែល')
+    ) {
+      return copy.contact;
+    }
+
+    if (
+      normalized.includes('payment') ||
+      normalized.includes('paykh') ||
+      normalized.includes('khqr') ||
+      normalized.includes('ការទូទាត់')
+    ) {
+      return copy.payments;
+    }
+
+    if (
+      normalized.includes('learn') ||
+      normalized.includes('student') ||
+      normalized.includes('teacher') ||
+      normalized.includes('school') ||
+      normalized.includes('banking') ||
+      normalized.includes('education') ||
+      normalized.includes('ការសិក្សា') ||
+      normalized.includes('សិស្ស') ||
+      normalized.includes('គ្រូ')
+    ) {
+      return copy.learning;
+    }
+
+    if (
+      normalized.includes('lend') ||
+      normalized.includes('loan') ||
+      normalized.includes('dbank') ||
+      normalized.includes('borrower') ||
+      normalized.includes('ឥណទាន') ||
+      normalized.includes('ប្រាក់កម្ចី')
+    ) {
+      return copy.lending;
+    }
+
+    if (
+      normalized.includes('business') ||
+      normalized.includes('sale') ||
+      normalized.includes('sme') ||
+      normalized.includes('cxdot') ||
+      normalized.includes('msghub') ||
+      normalized.includes('messenger') ||
+      normalized.includes('អាជីវកម្ម') ||
+      normalized.includes('លក់')
+    ) {
+      return copy.business;
+    }
+
+    if (
+      normalized.includes('platform') ||
+      normalized.includes('product') ||
+      normalized.includes('what do you have') ||
+      normalized.includes('ផលិតផល') ||
+      normalized.includes('វេទិកា')
+    ) {
+      return copy.products;
+    }
+
+    return copy.fallback;
+  };
+
+  const openAssistant = () => {
+    panel.hidden = false;
+    assistant.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    input.focus();
+  };
+
+  const closeAssistant = () => {
+    panel.hidden = true;
+    assistant.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  toggle.addEventListener('click', () => {
+    if (assistant.classList.contains('is-open')) {
+      closeAssistant();
+      return;
+    }
+
+    openAssistant();
+  });
+
+  closeButton.addEventListener('click', closeAssistant);
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const value = input.value.trim();
+    const lang = document.documentElement.lang === 'km' ? 'km' : 'en';
+    const copy = siteAssistantCopy[lang];
+
+    if (!value) {
+      return;
+    }
+
+    appendMessage('user', value);
+    appendMessage('bot', getResponse(value, copy));
+    input.value = '';
+  });
+
+  syncSiteAssistant = (lang) => {
+    const copy = siteAssistantCopy[lang === 'km' ? 'km' : 'en'];
+
+    toggle.setAttribute('aria-label', copy.toggleLabel);
+    toggleText.textContent = copy.heading;
+    title.textContent = copy.heading;
+    status.textContent = copy.status;
+    input.placeholder = copy.inputPlaceholder;
+    sendButton.textContent = copy.send;
+    chipLabel.textContent = copy.quickLabel;
+    linkLabel.textContent = copy.linksLabel;
+    closeButton.setAttribute('aria-label', lang === 'km' ? 'បិទជំនួយការគេហទំព័រ' : 'Close site assistant');
+
+    chipRow.replaceChildren();
+    copy.chips.forEach((label) => {
+      const chip = createAssistantElement('button', 'site-assistant-chip', label);
+      chip.type = 'button';
+      chip.addEventListener('click', () => {
+        appendMessage('user', label);
+        appendMessage('bot', getResponse(label, copy));
+        openAssistant();
+      });
+      chipRow.appendChild(chip);
+    });
+
+    links.replaceChildren();
+    siteAssistantLinks.forEach(({ key, href }) => {
+      const link = createAssistantElement('a', 'site-assistant-link', copy[key]);
+      link.href = href;
+
+      if (href.startsWith('http') || href.startsWith('mailto:')) {
+        link.target = href.startsWith('mailto:') ? '_self' : '_blank';
+        if (href.startsWith('http')) {
+          link.rel = 'noreferrer';
+        }
+      }
+
+      links.appendChild(link);
+    });
+
+    if (!messages.childElementCount) {
+      appendMessage('bot', copy.intro);
+    }
+  };
+
+  syncSiteAssistant(document.documentElement.lang === 'km' ? 'km' : 'en');
+};
+
+mountSiteAssistant();
