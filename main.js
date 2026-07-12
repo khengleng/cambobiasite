@@ -324,6 +324,15 @@ const phraseTranslations = {
     'Student Portal for exam practice': 'Student Portal សម្រាប់ហ្វឹកហាត់ប្រឡង',
     'Teacher Portal for class management': 'Teacher Portal សម្រាប់គ្រប់គ្រងថ្នាក់រៀន',
     'Banking Skills Academy for industry learning': 'Banking Skills Academy សម្រាប់ការសិក្សាវិស័យធនាគារ',
+    'Typical education uses': 'ការប្រើប្រាស់អប់រំទូទៅ',
+    'Support grade 2 to grade 12 study, teacher oversight, curriculum-aligned quizzes, and banking-industry training from one connected learning family.':
+      'គាំទ្រការសិក្សាពីថ្នាក់ទី ២ ដល់ថ្នាក់ទី ១២ ការត្រួតពិនិត្យរបស់គ្រូ សំណួរដែលស្របតាមកម្មវិធីសិក្សា និងការបណ្តុះបណ្តាលវិស័យធនាគារ ពីគ្រួសារសិក្សាដែលតភ្ជាប់គ្នាមួយ។',
+    'Start with the Student Portal for learner activity, add the Teacher Portal for class control, and use the Banking Skills Academy when structured institutional training is needed.':
+      'ចាប់ផ្តើមពី Student Portal សម្រាប់សកម្មភាពអ្នកសិក្សា បន្ថែម Teacher Portal សម្រាប់ការគ្រប់គ្រងថ្នាក់ ហើយប្រើ Banking Skills Academy នៅពេលត្រូវការការបណ្តុះបណ្តាលស្ថាប័នដែលមានរចនាសម្ព័ន្ធ។',
+    'Schools, tutoring programs, teacher teams, families, and banking training departments.':
+      'សាលារៀន កម្មវិធីបង្រៀនបន្ថែម ក្រុមគ្រូ គ្រួសារ និងផ្នែកបណ្តុះបណ្តាលធនាគារ។',
+    'Clearer study, stronger oversight, and a more organized learning experience across audiences.':
+      'ការសិក្សាច្បាស់លាស់ជាងមុន ការត្រួតពិនិត្យកាន់តែខ្លាំង និងបទពិសោធន៍សិក្សាដែលមានរបៀបរៀបរយជាងមុនសម្រាប់អ្នកប្រើគ្រប់ក្រុម។',
     'Learning center': 'មជ្ឈមណ្ឌលសិក្សា',
     'Student portal page': 'ទំព័រវេទិកាសិស្ស',
     'Teacher portal page': 'ទំព័រវេទិកាគ្រូ',
@@ -332,6 +341,14 @@ const phraseTranslations = {
     'Let customers buy through conversational bots': 'អនុញ្ញាតឲ្យអតិថិជនទិញតាមរយៈ bot សន្ទនា',
     'Support gold, FX, and sales inquiries': 'គាំទ្រសំណួរអំពីមាស FX និងការលក់',
     'Handle stock, POS, and guided financial conversations': 'គ្រប់គ្រងស្តុក POS និងការសន្ទនាហិរញ្ញវត្ថុដែលមានការណែនាំ',
+    'Handle AI-led product questions, sales conversations, gold and FX inquiries, bot-assisted trade, stock flow, and checkout operations for small merchants.':
+      'គ្រប់គ្រងសំណួរផលិតផលដោយជំនួយ AI ការសន្ទនាលក់ សំណួរអំពីមាស និង FX ការជួញដូរដោយជំនួយ bot លំហូរស្តុក និងប្រតិបត្តិការទូទាត់ចុងក្រោយសម្រាប់អាជីវករខ្នាតតូច។',
+    'Pair CXDot with Messenger Hub for customer acquisition first, then add PayKH when the same customer flow needs payment completion and merchant checkout support.':
+      'ផ្គូផ្គង CXDot ជាមួយ Messenger Hub សម្រាប់ការទទួលបានអតិថិជនជាមុនសិន បន្ទាប់មកបន្ថែម PayKH នៅពេលលំហូរអតិថិជនដូចគ្នាត្រូវការការបញ្ចប់ការទូទាត់ និងការគាំទ្រការទូទាត់របស់អាជីវករ។',
+    'Retailers, trading businesses, AI-led merchants, and SMEs with sales, support, and stock workflows.':
+      'ហាងលក់រាយ អាជីវកម្មជួញដូរ អាជីវករដឹកនាំដោយ AI និង SME ដែលមានលំហូរការងារលក់ ការគាំទ្រ និងស្តុក។',
+    'Convert customer conversations into structured orders and day-to-day operating actions.':
+      'បម្លែងការសន្ទនាជាមួយអតិថិជនទៅជាការបញ្ជាទិញដែលមានរចនាសម្ព័ន្ធ និងសកម្មភាពប្រតិបត្តិការប្រចាំថ្ងៃ។',
     'Best for: micro-SMEs, conversational commerce, AI-led customer engagement':
       'សមស្របសម្រាប់៖ អាជីវកម្មខ្នាតតូច ពាណិជ្ជកម្មតាមការសន្ទនា និងការចូលរួមអតិថិជនដោយ AI',
     'Visit Micro-SME Platform': 'ចូលទៅវេទិកា Micro-SME',
@@ -339,12 +356,30 @@ const phraseTranslations = {
     'Manage borrower profiles': 'គ្រប់គ្រងប្រវត្តិអ្នកខ្ចី',
     'Track loans and repayments': 'តាមដានប្រាក់កម្ចី និងការសងប្រាក់',
     'Keep lending books organized': 'រក្សាសៀវភៅឥណទានឲ្យមានរបៀបរៀបរយ',
+    'Typical lending uses': 'ការប្រើប្រាស់ឥណទានទូទៅ',
+    'Keep borrower profiles, loan books, repayment follow-up, and lending records more organized in daily operator workflows.':
+      'រក្សាប្រវត្តិអ្នកខ្ចី សៀវភៅឥណទាន ការតាមដានការសងប្រាក់ និងកំណត់ត្រាឥណទានឲ្យមានរបៀបរៀបរយជាងមុន ក្នុងលំហូរការងារប្រចាំថ្ងៃរបស់អ្នកប្រតិបត្តិការ។',
+    'Pair DBank with CXDot when the same organization manages sales or trading activity, and add PayKH when collection flow also needs a visible payment layer.':
+      'ផ្គូផ្គង DBank ជាមួយ CXDot នៅពេលអង្គការដូចគ្នាគ្រប់គ្រងសកម្មភាពលក់ ឬជួញដូរ ហើយបន្ថែម PayKH នៅពេលលំហូរប្រមូលប្រាក់ក៏ត្រូវការស្រទាប់ការទូទាត់ដែលមើលឃើញបានផងដែរ។',
+    'Micro lenders, credit operators, finance teams, and hybrid SMEs with borrower-facing workflows.':
+      'អ្នកឥណទានខ្នាតតូច អ្នកប្រតិបត្តិឥណទាន ក្រុមហិរញ្ញវត្ថុ និង SME ចម្រុះដែលមានលំហូរការងារប៉ះពាល់អ្នកខ្ចី។',
+    'Cleaner records, more reliable follow-up, and stronger operational discipline in lending activity.':
+      'កំណត់ត្រាស្អាតជាងមុន ការតាមដានដែលទុកចិត្តបានជាងមុន និងវិន័យប្រតិបត្តិការកាន់តែខ្លាំងក្នុងសកម្មភាពឥណទាន។',
     'Best for: micro lenders, borrower tracking, loan books': 'សមស្របសម្រាប់៖ អ្នកឥណទានខ្នាតតូច ការតាមដានអ្នកខ្ចី និងសៀវភៅឥណទាន',
     'Visit Micro-Lending Platform': 'ចូលទៅវេទិកា Micro-Lending',
     'Memory game for focus and attention practice.': 'ហ្គេមចងចាំសម្រាប់ហ្វឹកហាត់ការផ្តោតអារម្មណ៍ និងការយកចិត្តទុកដាក់។',
     'Train recall with matching play': 'ហ្វឹកហាត់ការចងចាំតាមរយៈការផ្គូផ្គង',
     'Browser-based and simple to access': 'ប្រើបានតាម browser និងចូលប្រើបានងាយ',
     'Works alongside learning activities': 'ដំណើរការជាមួយសកម្មភាពសិក្សាបានល្អ',
+    'Typical learning uses': 'ការប្រើប្រាស់សិក្សាទូទៅ',
+    'Use Pair Me Up as a light support activity during revision, study breaks, attention practice, and family-led learning routines.':
+      'ប្រើ Pair Me Up ជាសកម្មភាពគាំទ្រស្រាលមួយក្នុងអំឡុងពេលរៀនត្រៀមប្រឡង ពេលសម្រាកពីការសិក្សា ការហ្វឹកហាត់ការផ្តោតអារម្មណ៍ និងទម្លាប់សិក្សាដឹកនាំដោយគ្រួសារ។',
+    'Pair the game with the Student Portal when learners need curriculum and quiz practice first, then a simple focus-support tool to reinforce consistency.':
+      'ផ្គូផ្គងហ្គេមនេះជាមួយ Student Portal នៅពេលអ្នកសិក្សាត្រូវការកម្មវិធីសិក្សា និងការហ្វឹកហាត់សំណួរជាមុនសិន បន្ទាប់មកឧបករណ៍គាំទ្រការផ្តោតអារម្មណ៍សាមញ្ញមួយ ដើម្បីពង្រឹងស្ថិរភាព។',
+    'Students, families, tutoring programs, and schools that want a low-friction focus activity.':
+      'សិស្ស គ្រួសារ កម្មវិធីបង្រៀនបន្ថែម និងសាលារៀនដែលចង់បានសកម្មភាពផ្តោតអារម្មណ៍ដែលប្រើបានងាយ។',
+    'Support concentration, recall, and repeatable study habits through accessible play.':
+      'គាំទ្រការផ្តោតអារម្មណ៍ ការចងចាំ និងទម្លាប់សិក្សាដែលធ្វើឡើងវិញបាន តាមរយៈការលេងដែលចូលប្រើបានងាយ។',
     'Best for: learning support, focus, memory practice': 'សមស្របសម្រាប់៖ ការគាំទ្រការសិក្សា ការផ្តោតអារម្មណ៍ និងការហ្វឹកហាត់ការចងចាំ',
     'Play Pair Me Up': 'លេង Pair Me Up',
     'Digital payment platform for merchant payment flow, transaction support, and checkout operations.':
