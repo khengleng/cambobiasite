@@ -675,9 +675,9 @@ const siteAssistantCopy = {
   en: {
     toggleLabel: 'Open site assistant',
     heading: 'CamboBIA Assistant',
-    status: 'Ask about products, pairings, or contact.',
+    status: 'Ask about products, pairings, contact, or what fits your needs.',
     intro:
-      'I can help visitors find the right Cambodia Boutique Investment Advisory platform and show how to contact the team.',
+      'I can help visitors find the right Cambodia Boutique Investment Advisory platform, explain how the products fit together, and show how to contact the team.',
     inputPlaceholder: 'Ask about Messenger Hub, CXDot, PayKH, learning, or contact...',
     send: 'Send',
     quickLabel: 'Quick questions',
@@ -688,19 +688,37 @@ const siteAssistantCopy = {
       'Tell me about learning'
     ],
     fallback:
-      'I can help with messaging, education, SME commerce, lending, payments, or direct contact. Try asking about a product or use the contact option.',
+      'I can help with messaging, education, SME commerce, lending, payments, or direct contact. If you want, tell me whether you are asking for business, school, banking, lending, or merchant payment needs.',
+    greeting:
+      'Hello. Tell me what you want to solve and I will point you to the best CamboBIA platform or platform combination.',
+    thanks:
+      'You’re welcome. If useful, I can also suggest the best platform pairing or give you the direct contact path.',
     contact:
-      'The best direct contact is contact@cambobia.com. You can also use the Contact section on this site or open an email now.',
+      'The best direct contact is contact@cambobia.com. You can use it for product demos, partnership discussion, investor questions, or business inquiries. If you want, I can also suggest which product page to review before you email.',
     business:
-      'For customer outreach, start with Messenger Hub. For conversational selling and operations, use CXDot. For payment completion, add PayKH.',
+      'If your priority is customer outreach, start with Messenger Hub. If you need conversational selling, stock, POS, or AI customer interaction, add CXDot. If you also need payment completion, bring in PayKH.',
     learning:
-      'For education, use the AI Learning Center family: mytv for students, admintv for teachers, skill for banking training, and Pair Me Up for focus support.',
+      'For education, use the AI Learning Center family: mytv for students, admintv for teachers and admin teams, skill for banking training, and Pair Me Up for focus support beside study routines.',
     payments:
-      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. It pairs well with CXDot and Messenger Hub.',
+      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. It fits especially well after Messenger Hub or CXDot when the business already has customer demand and now needs a cleaner payment step.',
     lending:
-      'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records.',
+      'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records. It is a strong fit for micro lenders or hybrid operators who need more structure around lending books.',
     products:
-      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, and PayKH.',
+      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, and PayKH. I can narrow that down if you tell me what kind of organization you are.',
+    moreBusiness:
+      'A simple business path is: Messenger Hub for outreach, CXDot for AI-led product conversation and order flow, then PayKH for payment completion. That is usually the clearest public-facing combination.',
+    moreLearning:
+      'A simple learning path is: mytv for student study, admintv for oversight and question management, skill for banking-related training, and Pair Me Up when learners benefit from extra focus support.',
+    morePayments:
+      'PayKH is strongest when payment is not treated as a separate manual step. It works best when checkout is tied back to the customer journey created through Messenger Hub or CXDot.',
+    moreLending:
+      'DBank becomes more useful as borrower records, repayments, and portfolio visibility grow. If the same operator also handles commerce, CXDot and PayKH can sit around it.',
+    businessQuestion: 'Are you trying to improve outreach, conversational selling, or payment collection?',
+    learningQuestion: 'Is your focus mainly students, teachers, or banking training?',
+    paymentsQuestion: 'Do you need checkout for merchants, or are you pairing payments with sales conversations too?',
+    lendingQuestion: 'Is this for a pure lending workflow, or for a business that also sells products or services?',
+    contactQuestion: 'Would you like the direct email path, or do you want me to suggest which product page to review first?',
+    generalQuestion: 'Tell me the type of visitor you are: business, school, bank, micro lender, or merchant.',
     linksLabel: 'Helpful links',
     openEmail: 'Email contact@cambobia.com',
     productsLink: 'View product portfolio',
@@ -712,9 +730,9 @@ const siteAssistantCopy = {
   km: {
     toggleLabel: 'បើកជំនួយការគេហទំព័រ',
     heading: 'ជំនួយការ CamboBIA',
-    status: 'សួរអំពីផលិតផល ការផ្គូផ្គង ឬទំនាក់ទំនង។',
+    status: 'សួរអំពីផលិតផល ការផ្គូផ្គង ទំនាក់ទំនង ឬអ្វីដែលសមនឹងតម្រូវការ។',
     intro:
-      'ខ្ញុំអាចជួយអ្នកទស្សនារកវេទិកា Cambodia Boutique Investment Advisory ដែលសមស្រប និងបង្ហាញរបៀបទំនាក់ទំនងក្រុមការងារ។',
+      'ខ្ញុំអាចជួយអ្នកទស្សនារកវេទិកា Cambodia Boutique Investment Advisory ដែលសមស្រប ពន្យល់ថាផលិតផលនីមួយៗភ្ជាប់គ្នាយ៉ាងដូចម្តេច និងបង្ហាញរបៀបទំនាក់ទំនងក្រុមការងារ។',
     inputPlaceholder: 'សួរអំពី Messenger Hub, CXDot, PayKH, ការសិក្សា ឬទំនាក់ទំនង...',
     send: 'ផ្ញើ',
     quickLabel: 'សំណួររហ័ស',
@@ -725,19 +743,37 @@ const siteAssistantCopy = {
       'ប្រាប់ខ្ញុំអំពីការសិក្សា'
     ],
     fallback:
-      'ខ្ញុំអាចជួយអំពីការផ្ញើសារ ការអប់រំ ពាណិជ្ជកម្ម SME ឥណទាន ការទូទាត់ ឬទំនាក់ទំនងដោយផ្ទាល់។ សូមសួរអំពីផលិតផលមួយ ឬប្រើជម្រើសទំនាក់ទំនង។',
+      'ខ្ញុំអាចជួយអំពីការផ្ញើសារ ការអប់រំ ពាណិជ្ជកម្ម SME ឥណទាន ការទូទាត់ ឬទំនាក់ទំនងដោយផ្ទាល់។ បើចង់បាន សូមប្រាប់ថាអ្នកកំពុងសួរសម្រាប់អាជីវកម្ម សាលារៀន ធនាគារ អ្នកឥណទាន ឬអាជីវករ។',
+    greeting:
+      'សួស្តី។ សូមប្រាប់ខ្ញុំថាអ្នកចង់ដោះស្រាយបញ្ហាអ្វី ហើយខ្ញុំនឹងណែនាំវេទិកា CamboBIA ឬការផ្គូផ្គងដែលសមស្រប។',
+    thanks:
+      'មិនអីទេ។ បើចង់បាន ខ្ញុំក៏អាចណែនាំការផ្គូផ្គងវេទិកាដែលសមស្របបំផុត ឬផ្លូវទំនាក់ទំនងដោយផ្ទាល់ផងដែរ។',
     contact:
-      'ការទំនាក់ទំនងដោយផ្ទាល់ល្អបំផុតគឺ contact@cambobia.com។ អ្នកក៏អាចប្រើផ្នែក Contact នៅលើគេហទំព័រនេះ ឬបើកអ៊ីមែលឥឡូវនេះ។',
+      'ការទំនាក់ទំនងដោយផ្ទាល់ល្អបំផុតគឺ contact@cambobia.com។ អ្នកអាចប្រើវាសម្រាប់ការបង្ហាញផលិតផល ភាពជាដៃគូ សំណួរពីវិនិយោគិន ឬសំណួរអាជីវកម្ម។ បើចង់បាន ខ្ញុំក៏អាចណែនាំទំព័រផលិតផលដែលគួរមើលមុនផ្ញើអ៊ីមែលផងដែរ។',
     business:
-      'សម្រាប់ការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ សម្រាប់ការលក់តាមការសន្ទនា និងប្រតិបត្តិការ សូមប្រើ CXDot។ សម្រាប់ការបញ្ចប់ការទូទាត់ សូមបន្ថែម PayKH។',
+      'បើអាទិភាពរបស់អ្នកគឺការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ បើត្រូវការការលក់តាមការសន្ទនា ស្តុក POS ឬការទំនាក់ទំនងអតិថិជនដោយ AI សូមបន្ថែម CXDot។ បើត្រូវការការបញ្ចប់ការទូទាត់ សូមនាំ PayKH ចូលមកផងដែរ។',
     learning:
-      'សម្រាប់ការអប់រំ សូមប្រើគ្រួសារ AI Learning Center: mytv សម្រាប់សិស្ស admintv សម្រាប់គ្រូ skill សម្រាប់ការបណ្តុះបណ្តាលធនាគារ និង Pair Me Up សម្រាប់ការគាំទ្រការផ្តោតអារម្មណ៍។',
+      'សម្រាប់ការអប់រំ សូមប្រើគ្រួសារ AI Learning Center: mytv សម្រាប់សិស្ស admintv សម្រាប់គ្រូ និងក្រុមគ្រប់គ្រង skill សម្រាប់ការបណ្តុះបណ្តាលធនាគារ និង Pair Me Up សម្រាប់ការគាំទ្រការផ្តោតអារម្មណ៍ជាមួយទម្លាប់សិក្សា។',
     payments:
-      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ វាផ្គូផ្គងបានល្អជាមួយ CXDot និង Messenger Hub។',
+      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ វាសមជាពិសេសបន្ទាប់ពី Messenger Hub ឬ CXDot នៅពេលអាជីវកម្មមានតម្រូវការអតិថិជនរួចហើយ ហើយត្រូវការជំហានទូទាត់ដែលស្អាតជាងមុន។',
     lending:
-      'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។',
+      'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។ វាសមល្អសម្រាប់អ្នកឥណទានខ្នាតតូច ឬប្រតិបត្តិករចម្រុះដែលត្រូវការរចនាសម្ព័ន្ធកាន់តែច្បាស់ជុំវិញសៀវភៅឥណទាន។',
     products:
-      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up និង PayKH។',
+      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up និង PayKH។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
+    moreBusiness:
+      'ផ្លូវអាជីវកម្មសាមញ្ញមួយគឺ៖ Messenger Hub សម្រាប់ការផ្សព្វផ្សាយ CXDot សម្រាប់ការសន្ទនាផលិតផល និងលំហូរការបញ្ជាទិញដោយជំនួយ AI ហើយបន្ទាប់មក PayKH សម្រាប់ការបញ្ចប់ការទូទាត់។ នេះជាការផ្គូផ្គងសាធារណៈដែលច្បាស់ជាងគេ។',
+    moreLearning:
+      'ផ្លូវសិក្សាសាមញ្ញមួយគឺ៖ mytv សម្រាប់ការសិក្សារបស់សិស្ស admintv សម្រាប់ការត្រួតពិនិត្យ និងការគ្រប់គ្រងសំណួរ skill សម្រាប់ការបណ្តុះបណ្តាលពាក់ព័ន្ធនឹងធនាគារ និង Pair Me Up នៅពេលអ្នកសិក្សាត្រូវការការគាំទ្រការផ្តោតអារម្មណ៍បន្ថែម។',
+    morePayments:
+      'PayKH ខ្លាំងបំផុតនៅពេលការទូទាត់មិនត្រូវបានទុកជាជំហានដាច់ដោយឡែកដែលធ្វើដោយដៃ។ វាធ្វើការល្អបំផុតនៅពេល checkout ត្រូវបានភ្ជាប់ត្រឡប់ទៅដំណើរអតិថិជនដែលបង្កើតដោយ Messenger Hub ឬ CXDot។',
+    moreLending:
+      'DBank កាន់តែមានប្រយោជន៍នៅពេលកំណត់ត្រាអ្នកខ្ចី ការសងប្រាក់ និងភាពមើលឃើញនៃសៀវភៅឥណទានកើនឡើង។ បើប្រតិបត្តិករដូចគ្នាក៏គ្រប់គ្រងពាណិជ្ជកម្មដែរ CXDot និង PayKH អាចស្ថិតនៅជុំវិញវាបាន។',
+    businessQuestion: 'តើអ្នកចង់បង្កើនការផ្សព្វផ្សាយ ការលក់តាមការសន្ទនា ឬការប្រមូលការទូទាត់?',
+    learningQuestion: 'តើការផ្តោតសំខាន់របស់អ្នកគឺសិស្ស គ្រូ ឬការបណ្តុះបណ្តាលធនាគារ?',
+    paymentsQuestion: 'តើអ្នកត្រូវការការទូទាត់សម្រាប់អាជីវករ ឬក៏ចង់ផ្គូផ្គងការទូទាត់ជាមួយការសន្ទនាលក់ផងដែរ?',
+    lendingQuestion: 'តើនេះសម្រាប់លំហូរឥណទានសុទ្ធៗ ឬសម្រាប់អាជីវកម្មដែលក៏លក់ផលិតផល ឬសេវាកម្មផងដែរ?',
+    contactQuestion: 'តើអ្នកចង់បានផ្លូវអ៊ីមែលដោយផ្ទាល់ ឬចង់ឲ្យខ្ញុំណែនាំទំព័រផលិតផលដែលគួរមើលមុន?',
+    generalQuestion: 'សូមប្រាប់ខ្ញុំថាអ្នកជាអ្នកទស្សនាប្រភេទណា៖ អាជីវកម្ម សាលារៀន ធនាគារ អ្នកឥណទានខ្នាតតូច ឬអាជីវករ។',
     linksLabel: 'តំណមានប្រយោជន៍',
     openEmail: 'ផ្ញើអ៊ីមែលទៅ contact@cambobia.com',
     productsLink: 'មើលក្រុមផលិតផល',
@@ -821,6 +857,11 @@ const mountSiteAssistant = () => {
   assistant.append(toggle, panel);
   document.body.appendChild(assistant);
 
+  const conversationState = {
+    lastTopic: 'general',
+    turnCount: 0
+  };
+
   const appendMessage = (type, text) => {
     const message = createAssistantElement('div', `site-assistant-message site-assistant-message-${type}`);
     const bubble = createAssistantElement('p', 'site-assistant-bubble', text);
@@ -829,11 +870,36 @@ const mountSiteAssistant = () => {
     messages.scrollTop = messages.scrollHeight;
   };
 
-  const getResponse = (value, copy) => {
+  const detectTopic = (value) => {
     const normalized = value.trim().toLowerCase();
 
     if (!normalized) {
-      return copy.fallback;
+      return 'general';
+    }
+
+    if (
+      ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening', 'សួស្តី'].some((term) =>
+        normalized.includes(term)
+      )
+    ) {
+      return 'greeting';
+    }
+
+    if (
+      ['thanks', 'thank you', 'appreciate', 'អរគុណ'].some((term) => normalized.includes(term))
+    ) {
+      return 'thanks';
+    }
+
+    if (
+      normalized.includes('more') ||
+      normalized.includes('tell me more') ||
+      normalized.includes('what next') ||
+      normalized.includes('next step') ||
+      normalized.includes('បន្ថែម') ||
+      normalized.includes('បន្ត')
+    ) {
+      return 'followup';
     }
 
     if (
@@ -843,7 +909,7 @@ const mountSiteAssistant = () => {
       normalized.includes('ទំនាក់ទំនង') ||
       normalized.includes('អ៊ីមែល')
     ) {
-      return copy.contact;
+      return 'contact';
     }
 
     if (
@@ -852,7 +918,7 @@ const mountSiteAssistant = () => {
       normalized.includes('khqr') ||
       normalized.includes('ការទូទាត់')
     ) {
-      return copy.payments;
+      return 'payments';
     }
 
     if (
@@ -866,7 +932,7 @@ const mountSiteAssistant = () => {
       normalized.includes('សិស្ស') ||
       normalized.includes('គ្រូ')
     ) {
-      return copy.learning;
+      return 'learning';
     }
 
     if (
@@ -877,7 +943,7 @@ const mountSiteAssistant = () => {
       normalized.includes('ឥណទាន') ||
       normalized.includes('ប្រាក់កម្ចី')
     ) {
-      return copy.lending;
+      return 'lending';
     }
 
     if (
@@ -890,7 +956,7 @@ const mountSiteAssistant = () => {
       normalized.includes('អាជីវកម្ម') ||
       normalized.includes('លក់')
     ) {
-      return copy.business;
+      return 'business';
     }
 
     if (
@@ -900,7 +966,67 @@ const mountSiteAssistant = () => {
       normalized.includes('ផលិតផល') ||
       normalized.includes('វេទិកា')
     ) {
-      return copy.products;
+      return 'products';
+    }
+
+    return 'general';
+  };
+
+  const buildResponse = (topic, copy) => {
+    if (topic === 'followup') {
+      if (conversationState.lastTopic === 'business') {
+        return `${copy.moreBusiness} ${copy.businessQuestion}`;
+      }
+
+      if (conversationState.lastTopic === 'learning') {
+        return `${copy.moreLearning} ${copy.learningQuestion}`;
+      }
+
+      if (conversationState.lastTopic === 'payments') {
+        return `${copy.morePayments} ${copy.paymentsQuestion}`;
+      }
+
+      if (conversationState.lastTopic === 'lending') {
+        return `${copy.moreLending} ${copy.lendingQuestion}`;
+      }
+
+      if (conversationState.lastTopic === 'contact') {
+        return `${copy.contact} ${copy.contactQuestion}`;
+      }
+
+      return `${copy.products} ${copy.generalQuestion}`;
+    }
+
+    if (topic === 'greeting') {
+      return copy.greeting;
+    }
+
+    if (topic === 'thanks') {
+      return copy.thanks;
+    }
+
+    if (topic === 'contact') {
+      return `${copy.contact} ${copy.contactQuestion}`;
+    }
+
+    if (topic === 'business') {
+      return `${copy.business} ${copy.businessQuestion}`;
+    }
+
+    if (topic === 'learning') {
+      return `${copy.learning} ${copy.learningQuestion}`;
+    }
+
+    if (topic === 'payments') {
+      return `${copy.payments} ${copy.paymentsQuestion}`;
+    }
+
+    if (topic === 'lending') {
+      return `${copy.lending} ${copy.lendingQuestion}`;
+    }
+
+    if (topic === 'products') {
+      return `${copy.products} ${copy.generalQuestion}`;
     }
 
     return copy.fallback;
@@ -941,8 +1067,13 @@ const mountSiteAssistant = () => {
       return;
     }
 
+    const topic = detectTopic(value);
     appendMessage('user', value);
-    appendMessage('bot', getResponse(value, copy));
+    appendMessage('bot', buildResponse(topic, copy));
+    if (!['greeting', 'thanks', 'followup'].includes(topic)) {
+      conversationState.lastTopic = topic;
+    }
+    conversationState.turnCount += 1;
     input.value = '';
   });
 
@@ -964,8 +1095,13 @@ const mountSiteAssistant = () => {
       const chip = createAssistantElement('button', 'site-assistant-chip', label);
       chip.type = 'button';
       chip.addEventListener('click', () => {
+        const topic = detectTopic(label);
         appendMessage('user', label);
-        appendMessage('bot', getResponse(label, copy));
+        appendMessage('bot', buildResponse(topic, copy));
+        if (!['greeting', 'thanks', 'followup'].includes(topic)) {
+          conversationState.lastTopic = topic;
+        }
+        conversationState.turnCount += 1;
         openAssistant();
       });
       chipRow.appendChild(chip);
