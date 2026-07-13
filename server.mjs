@@ -70,6 +70,7 @@ const CLEAN_ROUTES = new Map([
   ['/404', '404.html'],
   ['/ai-learning-center', 'ai-learning-center.html'],
   ['/banking-skills-academy', 'banking-skills-academy.html'],
+  ['/biz-platform', 'biz-platform.html'],
   ['/company-updates', 'company-updates.html'],
   ['/data-privacy', 'data-privacy.html'],
   ['/investors', 'investors.html'],
@@ -101,7 +102,7 @@ const ASSISTANT_PRODUCTS = {
     summary: 'Support merchant checkout, KHQR-ready payment flow, and transaction collection.',
   },
   biz_platform: {
-    href: 'https://biz.cambobia.com',
+    href: '/biz-platform',
     label: 'Biz Platform',
     summary: 'Support broader business workflow access through the Biz platform.',
   },

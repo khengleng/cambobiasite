@@ -32,7 +32,7 @@ Direct product domains:
 - https://paykh.cambobia.com
 
 Audience summary:
-- MSGHub is a messenger hub for business broadcast messaging through WhatsApp, Telegram, and Signal.
+- Messenger Hub is the business broadcast messaging platform for WhatsApp, Telegram, and Signal.
 - AI Learning Center supports students, teachers, and banking-industry learning.
 - mytv is the student portal.
 - admintv is the teacher and administration portal.

@@ -483,6 +483,10 @@ const pageTitleTranslations = {
   '/index.html': {
     en: 'CamboBIA | Digital Products for Growth, Learning, and Operations',
     km: 'CamboBIA | ផលិតផលឌីជីថលសម្រាប់ការលូតលាស់ ការសិក្សា និងប្រតិបត្តិការ'
+  },
+  '/biz-platform': {
+    en: 'Biz Platform | CamboBIA',
+    km: 'វេទិកា Biz | CamboBIA'
   }
 };
 
@@ -494,6 +498,10 @@ const metaDescriptionTranslations = {
   '/index.html': {
     en: 'CamboBIA, short for Cambodia Boutique Investment Advisory, builds practical digital products for messaging, education, SME commerce, micro lending, and focus-based learning games.',
     km: 'CamboBIA ដែលមានន័យថា Cambodia Boutique Investment Advisory បង្កើតផលិតផលឌីជីថលជាក់ស្តែងសម្រាប់ការផ្ញើសារ ការអប់រំ ពាណិជ្ជកម្ម SME ឥណទានខ្នាតតូច និងហ្គេមហ្វឹកហាត់ការផ្តោតអារម្មណ៍។'
+  },
+  '/biz-platform': {
+    en: 'Biz Platform by CamboBIA presents a broader business workspace path for teams that need a practical operating layer around day-to-day business activity.',
+    km: 'វេទិកា Biz របស់ CamboBIA បង្ហាញផ្លូវមួយសម្រាប់កន្លែងការងារអាជីវកម្មទូលំទូលាយ សម្រាប់ក្រុមដែលត្រូវការស្រទាប់ប្រតិបត្តិការជាក់ស្តែងជុំវិញសកម្មភាពអាជីវកម្មប្រចាំថ្ងៃ។'
   }
 };
 
@@ -822,7 +830,7 @@ const siteAssistantProductActions = {
     km: 'PayKH'
   },
   biz_platform: {
-    href: 'https://biz.cambobia.com',
+    href: '/biz-platform',
     en: 'Biz Platform',
     km: 'វេទិកា Biz'
   },
