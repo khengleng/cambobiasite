@@ -100,6 +100,11 @@ const ASSISTANT_PRODUCTS = {
     label: 'PayKH',
     summary: 'Support merchant checkout, KHQR-ready payment flow, and transaction collection.',
   },
+  biz_platform: {
+    href: 'https://biz.cambobia.com',
+    label: 'Biz Platform',
+    summary: 'Support broader business workflow access through the Biz platform.',
+  },
   micro_lending_platform: {
     href: '/micro-lending-platform',
     label: 'Micro-Lending Platform',

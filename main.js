@@ -54,6 +54,8 @@ const phraseTranslations = {
       'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៧ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Eight public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
       'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៨ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
+    'Nine public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
+      'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៩ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Visual Overview': 'ទិដ្ឋភាពសង្ខេប',
     'Cambodia in the digital and AI era': 'កម្ពុជាក្នុងយុគសម័យឌីជីថល និង AI',
     'Khmer-market software for messaging, learning, commerce, and finance.': 'សូហ្វវែរសម្រាប់ទីផ្សារខ្មែរ ផ្នែកផ្ញើសារ ការសិក្សា ពាណិជ្ជកម្ម និងហិរញ្ញវត្ថុ។',
@@ -67,6 +69,7 @@ const phraseTranslations = {
     'Banking Skill': 'ជំនាញធនាគារ',
     'Micro SME': 'Micro SME',
     Lending: 'ឥណទាន',
+    'Business Ops': 'ប្រតិបត្តិការអាជីវកម្ម',
     'Student Portal': 'វេទិកាសិស្ស',
     'Teacher Portal': 'វេទិកាគ្រូ',
     'Banking Skills Academy': 'សាលាជំនាញធនាគារ',
@@ -75,6 +78,7 @@ const phraseTranslations = {
     'Broadcast messaging.': 'ការផ្សព្វផ្សាយសារជាក្រុម។',
     PayKH: 'PayKH',
     'Payment platform.': 'វេទិកាទូទាត់។',
+    'Biz Platform': 'វេទិកា Biz',
     'AI Learning Center': 'មជ្ឈមណ្ឌលសិក្សា AI',
     'Student, teacher, and banking skill learning platform.': 'វេទិកាសិក្សាសម្រាប់សិស្ស គ្រូ និងជំនាញធនាគារ។',
     'Micro-SME + Micro-Lending': 'Micro-SME + Micro-Lending',
@@ -96,6 +100,8 @@ const phraseTranslations = {
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៧ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'The company story is not eight unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, and operational record-keeping still have large room for digitization.':
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៨ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
+    'The company story is not nine unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, and operational record-keeping still have large room for digitization.':
+      'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៩ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'Priority 01': 'អាទិភាព ០១',
     'Customer communication': 'ការទំនាក់ទំនងអតិថិជន',
     'Messenger Hub is the clearest growth entry for businesses that already depend on chat-based customer engagement.':
@@ -404,9 +410,12 @@ const phraseTranslations = {
     'Operating Footprint': 'ស្នាមជើងប្រតិបត្តិការ',
     'Current public footprint investors can verify today.': 'ស្ថានភាពសាធារណៈបច្ចុប្បន្នដែលវិនិយោគិនអាចផ្ទៀងផ្ទាត់បានថ្ងៃនេះ។',
     '8 public platform endpoints': 'ចំណុចចូលវេទិកាសាធារណៈ ៨',
+    '9 public platform endpoints': 'ចំណុចចូលវេទិកាសាធារណៈ ៩',
     '4 operating pillars': 'សសរស្តម្ភប្រតិបត្តិការ ៤',
     'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, and PayKH are all publicly represented.':
       'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up និង PayKH ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
+    'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, PayKH, and Biz Platform are all publicly represented.':
+      'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up, PayKH និងវេទិកា Biz ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
     'These are public, visible signals of operating momentum. Detailed commercial metrics can be shared through a private investor brief.':
       'ទាំងនេះជាសញ្ញាសាធារណៈដែលអាចមើលឃើញពីសន្ទុះប្រតិបត្តិការ។ ទិន្នន័យពាណិជ្ជកម្មលម្អិតអាចចែករំលែកតាមរយៈសង្ខេបវិនិយោគឯកជន។',
     'Core public products': 'ផលិតផលសាធារណៈស្នូល',
@@ -414,6 +423,8 @@ const phraseTranslations = {
       'Messenger Hub, AI Learning Center, វេទិកា Micro-SME, វេទិកា Micro-Lending និង Pair Me Up ត្រូវបានបង្ហាញរួចហើយតាមរយៈគេហទំព័រសាធារណៈ ជាមួយវេទិកាគាំទ្រសិស្ស និងគ្រូ។',
     'Messenger Hub, AI Learning Center, Micro-SME Platform, PayKH, Micro-Lending Platform, and Pair Me Up are already presented through a public website with supporting student and teacher portals.':
       'Messenger Hub, AI Learning Center, វេទិកា Micro-SME, PayKH, វេទិកា Micro-Lending និង Pair Me Up ត្រូវបានបង្ហាញរួចហើយតាមរយៈគេហទំព័រសាធារណៈ ជាមួយវេទិកាគាំទ្រសិស្ស និងគ្រូ។',
+    'Messenger Hub, AI Learning Center, Micro-SME Platform, PayKH, Biz Platform, Micro-Lending Platform, and Pair Me Up are already presented through a public website with supporting student and teacher portals.':
+      'Messenger Hub, AI Learning Center, វេទិកា Micro-SME, PayKH, វេទិកា Biz, វេទិកា Micro-Lending និង Pair Me Up ត្រូវបានបង្ហាញរួចហើយតាមរយៈគេហទំព័រសាធារណៈ ជាមួយវេទិកាគាំទ្រសិស្ស និងគ្រូ។',
     'This gives investors a visible product surface they can review today, rather than a concept-stage narrative without operating proof.':
       'នេះផ្តល់ឲ្យវិនិយោគិននូវផ្ទៃផលិតផលដែលអាចមើលឃើញ និងពិនិត្យបានភ្លាមៗ ជំនួសឲ្យការរៀបរាប់គំនិតដែលមិនទាន់មានភស្តុតាងប្រតិបត្តិការ។',
     'This gives investors a visible product surface they can review today, including commerce, payments, learning, and operational finance rather than a concept-stage narrative without operating proof.':
@@ -707,7 +718,7 @@ const siteAssistantCopy = {
     lending:
       'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records. It is a strong fit for micro lenders or hybrid operators who need more structure around lending books.',
     products:
-      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, and PayKH. I can narrow that down if you tell me what kind of organization you are.',
+      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, and Biz Platform. I can narrow that down if you tell me what kind of organization you are.',
     moreBusiness:
       'A simple business path is: Messenger Hub for outreach, CXDot for AI-led product conversation and order flow, then PayKH for payment completion. That is usually the clearest public-facing combination.',
     moreLearning:
@@ -767,7 +778,7 @@ const siteAssistantCopy = {
     lending:
       'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។ វាសមល្អសម្រាប់អ្នកឥណទានខ្នាតតូច ឬប្រតិបត្តិករចម្រុះដែលត្រូវការរចនាសម្ព័ន្ធកាន់តែច្បាស់ជុំវិញសៀវភៅឥណទាន។',
     products:
-      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up និង PayKH។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
+      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH និងវេទិកា Biz។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
     moreBusiness:
       'ផ្លូវអាជីវកម្មសាមញ្ញមួយគឺ៖ Messenger Hub សម្រាប់ការផ្សព្វផ្សាយ CXDot សម្រាប់ការសន្ទនាផលិតផល និងលំហូរការបញ្ជាទិញដោយជំនួយ AI ហើយបន្ទាប់មក PayKH សម្រាប់ការបញ្ចប់ការទូទាត់។ នេះជាការផ្គូផ្គងសាធារណៈដែលច្បាស់ជាងគេ។',
     moreLearning:
@@ -794,15 +805,6 @@ const siteAssistantCopy = {
   }
 };
 
-const siteAssistantLinks = [
-  { key: 'openEmail', href: 'mailto:contact@cambobia.com?subject=CamboBIA%20Website%20Inquiry' },
-  { key: 'productsLink', href: '/index.html#products' },
-  { key: 'messengerLink', href: '/messenger-hub' },
-  { key: 'commerceLink', href: '/micro-sme-platform' },
-  { key: 'paymentsLink', href: '/paykh' },
-  { key: 'learningLink', href: '/ai-learning-center' }
-];
-
 const siteAssistantProductActions = {
   messenger_hub: {
     href: '/messenger-hub',
@@ -818,6 +820,11 @@ const siteAssistantProductActions = {
     href: '/paykh',
     en: 'PayKH',
     km: 'PayKH'
+  },
+  biz_platform: {
+    href: 'https://biz.cambobia.com',
+    en: 'Biz Platform',
+    km: 'វេទិកា Biz'
   },
   micro_lending_platform: {
     href: '/micro-lending-platform',
@@ -896,9 +903,6 @@ const mountSiteAssistant = () => {
   messages.setAttribute('role', 'log');
   messages.setAttribute('aria-live', 'polite');
 
-  const chipLabel = createAssistantElement('p', 'site-assistant-chip-label');
-  const chipRow = createAssistantElement('div', 'site-assistant-chips');
-
   const form = createAssistantElement('form', 'site-assistant-form');
   const input = createAssistantElement('input', 'site-assistant-input');
   input.type = 'text';
@@ -908,10 +912,7 @@ const mountSiteAssistant = () => {
   sendButton.type = 'submit';
   form.append(input, sendButton);
 
-  const linkLabel = createAssistantElement('p', 'site-assistant-links-label');
-  const links = createAssistantElement('div', 'site-assistant-links');
-
-  panel.append(header, messages, chipLabel, chipRow, form, linkLabel, links);
+  panel.append(header, messages, form);
   assistant.append(toggle, panel);
   document.body.appendChild(assistant);
 
@@ -1379,38 +1380,7 @@ const mountSiteAssistant = () => {
     syncStatusText(copy);
     input.placeholder = copy.inputPlaceholder;
     sendButton.textContent = conversationState.isBusy ? copy.thinking : copy.send;
-    chipLabel.textContent = copy.quickLabel;
-    linkLabel.textContent = copy.linksLabel;
     closeButton.setAttribute('aria-label', lang === 'km' ? 'បិទជំនួយការគេហទំព័រ' : 'Close site assistant');
-
-    chipRow.replaceChildren();
-    copy.chips.forEach((label) => {
-      const chip = createAssistantElement('button', 'site-assistant-chip', label);
-      chip.type = 'button';
-      chip.addEventListener('click', () => {
-        if (conversationState.isBusy) {
-          return;
-        }
-
-        submitAssistantMessage(label);
-      });
-      chipRow.appendChild(chip);
-    });
-
-    links.replaceChildren();
-    siteAssistantLinks.forEach(({ key, href }) => {
-      const link = createAssistantElement('a', 'site-assistant-link', copy[key]);
-      link.href = href;
-
-      if (href.startsWith('http') || href.startsWith('mailto:')) {
-        link.target = href.startsWith('mailto:') ? '_self' : '_blank';
-        if (href.startsWith('http')) {
-          link.rel = 'noreferrer';
-        }
-      }
-
-      links.appendChild(link);
-    });
 
     if (!messages.childElementCount) {
       appendMessage('bot', copy.intro);
