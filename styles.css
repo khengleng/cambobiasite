@@ -1694,6 +1694,13 @@ h1 {
   margin-top: 10px;
 }
 
+.site-assistant-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 88%;
+}
+
 .site-assistant-chip,
 .site-assistant-link {
   display: inline-flex;
@@ -1708,6 +1715,7 @@ h1 {
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .site-assistant-form {
@@ -1738,6 +1746,12 @@ h1 {
   font: inherit;
   font-weight: 800;
   cursor: pointer;
+}
+
+.site-assistant-input:disabled,
+.site-assistant-send:disabled {
+  opacity: 0.72;
+  cursor: wait;
 }
 
 .legal-header {

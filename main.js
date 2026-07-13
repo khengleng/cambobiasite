@@ -675,11 +675,14 @@ const siteAssistantCopy = {
   en: {
     toggleLabel: 'Open site assistant',
     heading: 'CamboBIA Assistant',
-    status: 'Ask about products, pairings, contact, or what fits your needs.',
+    statusFallback: 'Ask about products, pairings, contact, or what fits your needs.',
+    statusLive: 'AI assistant is live. Ask what fits your business, school, or payment workflow.',
     intro:
       'I can help visitors find the right Cambodia Boutique Investment Advisory platform, explain how the products fit together, and show how to contact the team.',
     inputPlaceholder: 'Ask about Messenger Hub, CXDot, PayKH, learning, or contact...',
     send: 'Send',
+    thinking: 'Thinking...',
+    fallbackNotice: 'The live AI assistant is unavailable right now, so I will continue with the built-in site guide.',
     quickLabel: 'Quick questions',
     chips: [
       'Which product fits my business?',
@@ -725,16 +728,21 @@ const siteAssistantCopy = {
     messengerLink: 'Messenger Hub',
     commerceLink: 'Micro-SME Platform',
     paymentsLink: 'PayKH',
-    learningLink: 'AI Learning Center'
+    learningLink: 'AI Learning Center',
+    contactCta: 'Prepare contact email',
+    fitCta: 'Best-fit page'
   },
   km: {
     toggleLabel: 'បើកជំនួយការគេហទំព័រ',
     heading: 'ជំនួយការ CamboBIA',
-    status: 'សួរអំពីផលិតផល ការផ្គូផ្គង ទំនាក់ទំនង ឬអ្វីដែលសមនឹងតម្រូវការ។',
+    statusFallback: 'សួរអំពីផលិតផល ការផ្គូផ្គង ទំនាក់ទំនង ឬអ្វីដែលសមនឹងតម្រូវការ។',
+    statusLive: 'ជំនួយការ AI កំពុងដំណើរការ។ សូមសួរថាអ្វីសមនឹងអាជីវកម្ម សាលារៀន ឬលំហូរការទូទាត់របស់អ្នក។',
     intro:
       'ខ្ញុំអាចជួយអ្នកទស្សនារកវេទិកា Cambodia Boutique Investment Advisory ដែលសមស្រប ពន្យល់ថាផលិតផលនីមួយៗភ្ជាប់គ្នាយ៉ាងដូចម្តេច និងបង្ហាញរបៀបទំនាក់ទំនងក្រុមការងារ។',
     inputPlaceholder: 'សួរអំពី Messenger Hub, CXDot, PayKH, ការសិក្សា ឬទំនាក់ទំនង...',
     send: 'ផ្ញើ',
+    thinking: 'កំពុងគិត...',
+    fallbackNotice: 'ជំនួយការ AI មិនអាចប្រើបានបណ្តោះអាសន្នទេ ដូច្នេះខ្ញុំនឹងបន្តជួយតាមមគ្គុទ្ទេសក៍ក្នុងគេហទំព័រ។',
     quickLabel: 'សំណួររហ័ស',
     chips: [
       'ផលិតផលមួយណាសមនឹងអាជីវកម្មខ្ញុំ?',
@@ -780,7 +788,9 @@ const siteAssistantCopy = {
     messengerLink: 'Messenger Hub',
     commerceLink: 'វេទិកា Micro-SME',
     paymentsLink: 'PayKH',
-    learningLink: 'AI Learning Center'
+    learningLink: 'AI Learning Center',
+    contactCta: 'រៀបចំអ៊ីមែលទំនាក់ទំនង',
+    fitCta: 'ទំព័រដែលសមស្របបំផុត'
   }
 };
 
@@ -792,6 +802,54 @@ const siteAssistantLinks = [
   { key: 'paymentsLink', href: '/paykh' },
   { key: 'learningLink', href: '/ai-learning-center' }
 ];
+
+const siteAssistantProductActions = {
+  messenger_hub: {
+    href: '/messenger-hub',
+    en: 'Messenger Hub',
+    km: 'Messenger Hub'
+  },
+  micro_sme_platform: {
+    href: '/micro-sme-platform',
+    en: 'Micro-SME Platform',
+    km: 'វេទិកា Micro-SME'
+  },
+  paykh: {
+    href: '/paykh',
+    en: 'PayKH',
+    km: 'PayKH'
+  },
+  micro_lending_platform: {
+    href: '/micro-lending-platform',
+    en: 'Micro-Lending Platform',
+    km: 'វេទិកា Micro-Lending'
+  },
+  ai_learning_center: {
+    href: '/ai-learning-center',
+    en: 'AI Learning Center',
+    km: 'AI Learning Center'
+  },
+  student_portal: {
+    href: '/student-portal',
+    en: 'Student Portal',
+    km: 'វេទិកាសិស្ស'
+  },
+  teacher_portal: {
+    href: '/teacher-portal',
+    en: 'Teacher Portal',
+    km: 'វេទិកាគ្រូ'
+  },
+  banking_skills_academy: {
+    href: '/banking-skills-academy',
+    en: 'Banking Skills Academy',
+    km: 'Banking Skills Academy'
+  },
+  pair_me_up: {
+    href: '/pair-me-up',
+    en: 'Pair Me Up',
+    km: 'Pair Me Up'
+  }
+};
 
 const createAssistantElement = (tag, className, text) => {
   const node = document.createElement(tag);
@@ -859,7 +917,12 @@ const mountSiteAssistant = () => {
 
   const conversationState = {
     lastTopic: 'general',
-    turnCount: 0
+    turnCount: 0,
+    messages: [],
+    aiEnabled: false,
+    statusLoaded: false,
+    isBusy: false,
+    fallbackNoticeShown: false
   };
 
   const appendMessage = (type, text) => {
@@ -867,6 +930,36 @@ const mountSiteAssistant = () => {
     const bubble = createAssistantElement('p', 'site-assistant-bubble', text);
     message.appendChild(bubble);
     messages.appendChild(message);
+    messages.scrollTop = messages.scrollHeight;
+    return message;
+  };
+
+  const appendActionRow = (actions) => {
+    if (!actions.length) {
+      return;
+    }
+
+    const row = createAssistantElement('div', 'site-assistant-message site-assistant-message-bot');
+    const actionWrap = createAssistantElement('div', 'site-assistant-action-row');
+
+    actions.forEach((action) => {
+      const link = createAssistantElement('a', 'site-assistant-link', action.label);
+      link.href = action.href;
+
+      if (action.href.startsWith('mailto:')) {
+        link.target = '_self';
+      } else if (action.href.startsWith('http')) {
+        link.target = '_blank';
+        link.rel = 'noreferrer';
+      } else {
+        link.target = '_self';
+      }
+
+      actionWrap.appendChild(link);
+    });
+
+    row.appendChild(actionWrap);
+    messages.appendChild(row);
     messages.scrollTop = messages.scrollHeight;
   };
 
@@ -1032,6 +1125,215 @@ const mountSiteAssistant = () => {
     return copy.fallback;
   };
 
+  const buildFallbackActions = (topic, lang, copy, value) => {
+    const productKeysByTopic = {
+      business: ['messenger_hub', 'micro_sme_platform', 'paykh'],
+      learning: ['ai_learning_center', 'student_portal', 'teacher_portal'],
+      payments: ['paykh', 'micro_sme_platform'],
+      lending: ['micro_lending_platform', 'micro_sme_platform'],
+      products: ['messenger_hub', 'ai_learning_center', 'paykh'],
+      contact: []
+    };
+
+    const productActions = (productKeysByTopic[topic] || [])
+      .map((key) => siteAssistantProductActions[key])
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((item) => ({
+        label: item[lang],
+        href: item.href
+      }));
+
+    const mailBody = [
+      lang === 'km' ? 'សួស្តី ក្រុមការងារ CamboBIA,' : 'Hello CamboBIA team,',
+      '',
+      lang === 'km'
+        ? `ខ្ញុំចង់សាកសួរអំពី៖ ${value}`
+        : `I would like to discuss: ${value}`,
+      '',
+      lang === 'km' ? 'សូមទាក់ទងមកខ្ញុំវិញ។' : 'Please contact me with the best next step.'
+    ].join('\n');
+
+    if (topic === 'contact' || topic === 'business' || topic === 'payments' || topic === 'lending') {
+      productActions.unshift({
+        label: copy.contactCta,
+        href: `mailto:contact@cambobia.com?subject=${encodeURIComponent(
+          lang === 'km' ? 'សំណួរពីគេហទំព័រ CamboBIA' : 'CamboBIA Website Inquiry'
+        )}&body=${encodeURIComponent(mailBody)}`
+      });
+    }
+
+    return productActions.slice(0, 3);
+  };
+
+  const normalizeApiActions = (payload, lang, copy) => {
+    const productActions = Array.isArray(payload.recommendedProducts)
+      ? payload.recommendedProducts
+          .map((key) => siteAssistantProductActions[key])
+          .filter(Boolean)
+          .slice(0, 2)
+          .map((item) => ({
+            label: item[lang],
+            href: item.href
+          }))
+      : [];
+
+    if (payload.shouldOfferContact) {
+      const recommendedLabels = productActions.map((item) => item.label).join(', ');
+      const summary = payload.contactSummary || '';
+      const latestUserMessage =
+        conversationState.messages
+          .filter((message) => message.role === 'user')
+          .at(-1)?.content || '';
+
+      const body = [
+        lang === 'km' ? 'សួស្តី ក្រុមការងារ CamboBIA,' : 'Hello CamboBIA team,',
+        '',
+        lang === 'km'
+          ? 'ខ្ញុំបានចូលមកតាមគេហទំព័រ CamboBIA ហើយចង់បន្តការពិភាក្សា។'
+          : 'I came through the CamboBIA website and would like to continue the discussion.',
+        summary ? `${lang === 'km' ? 'សេចក្តីសង្ខេប' : 'Summary'}: ${summary}` : '',
+        latestUserMessage ? `${lang === 'km' ? 'អ្វីដែលខ្ញុំកំពុងស្វែងរក' : 'What I am looking for'}: ${latestUserMessage}` : '',
+        recommendedLabels
+          ? `${lang === 'km' ? 'វេទិកាដែលបានណែនាំ' : 'Recommended platforms'}: ${recommendedLabels}`
+          : '',
+        '',
+        lang === 'km'
+          ? 'សូមទាក់ទងមកខ្ញុំវិញជាមួយជំហានបន្ទាប់ដែលសមស្រប។'
+          : 'Please contact me with the best next step.',
+      ]
+        .filter(Boolean)
+        .join('\n');
+
+      productActions.unshift({
+        label: copy.contactCta,
+        href: `mailto:contact@cambobia.com?subject=${encodeURIComponent(
+          payload.contactSubject || 'CamboBIA Website Inquiry'
+        )}&body=${encodeURIComponent(body)}`
+      });
+    }
+
+    return productActions.slice(0, 3);
+  };
+
+  const setBusy = (isBusy, copy) => {
+    conversationState.isBusy = isBusy;
+    input.disabled = isBusy;
+    sendButton.disabled = isBusy;
+    sendButton.textContent = isBusy ? copy.thinking : copy.send;
+  };
+
+  const syncStatusText = (copy) => {
+    status.textContent = conversationState.aiEnabled ? copy.statusLive : copy.statusFallback;
+  };
+
+  const refreshAssistantStatus = async (lang) => {
+    if (conversationState.statusLoaded) {
+      syncStatusText(siteAssistantCopy[lang]);
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/assistant/status', {
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        const payload = await response.json();
+        conversationState.aiEnabled = Boolean(payload.enabled);
+      }
+    } catch {
+      conversationState.aiEnabled = false;
+    } finally {
+      conversationState.statusLoaded = true;
+      syncStatusText(siteAssistantCopy[lang]);
+    }
+  };
+
+  const submitAssistantMessage = async (value) => {
+    const lang = document.documentElement.lang === 'km' ? 'km' : 'en';
+    const copy = siteAssistantCopy[lang];
+    const topic = detectTopic(value);
+
+    appendMessage('user', value);
+    openAssistant();
+
+    conversationState.messages.push({
+      role: 'user',
+      content: value
+    });
+
+    if (!['greeting', 'thanks', 'followup'].includes(topic)) {
+      conversationState.lastTopic = topic;
+    }
+
+    conversationState.turnCount += 1;
+    input.value = '';
+
+    if (conversationState.aiEnabled) {
+      setBusy(true, copy);
+
+      try {
+        const response = await fetch('/api/assistant', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json'
+          },
+          body: JSON.stringify({
+            lang,
+            page: window.location.pathname,
+            messages: conversationState.messages.slice(-8)
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error(`Assistant request failed with ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const responseText = [payload.reply, payload.followUpQuestion].filter(Boolean).join(' ');
+        appendMessage('bot', responseText);
+        conversationState.messages.push({
+          role: 'assistant',
+          content: responseText
+        });
+        appendActionRow(normalizeApiActions(payload, lang, copy));
+      } catch {
+        conversationState.aiEnabled = false;
+
+        if (!conversationState.fallbackNoticeShown) {
+          appendMessage('bot', copy.fallbackNotice);
+          conversationState.fallbackNoticeShown = true;
+        }
+
+        const fallbackReply = buildResponse(topic, copy);
+        appendMessage('bot', fallbackReply);
+        conversationState.messages.push({
+          role: 'assistant',
+          content: fallbackReply
+        });
+        appendActionRow(buildFallbackActions(topic, lang, copy, value));
+      } finally {
+        setBusy(false, copy);
+        syncStatusText(copy);
+      }
+
+      return;
+    }
+
+    const fallbackReply = buildResponse(topic, copy);
+    appendMessage('bot', fallbackReply);
+    conversationState.messages.push({
+      role: 'assistant',
+      content: fallbackReply
+    });
+    appendActionRow(buildFallbackActions(topic, lang, copy, value));
+    syncStatusText(copy);
+  };
+
   const openAssistant = () => {
     panel.hidden = false;
     assistant.classList.add('is-open');
@@ -1060,21 +1362,12 @@ const mountSiteAssistant = () => {
     event.preventDefault();
 
     const value = input.value.trim();
-    const lang = document.documentElement.lang === 'km' ? 'km' : 'en';
-    const copy = siteAssistantCopy[lang];
 
-    if (!value) {
+    if (!value || conversationState.isBusy) {
       return;
     }
 
-    const topic = detectTopic(value);
-    appendMessage('user', value);
-    appendMessage('bot', buildResponse(topic, copy));
-    if (!['greeting', 'thanks', 'followup'].includes(topic)) {
-      conversationState.lastTopic = topic;
-    }
-    conversationState.turnCount += 1;
-    input.value = '';
+    submitAssistantMessage(value);
   });
 
   syncSiteAssistant = (lang) => {
@@ -1083,9 +1376,9 @@ const mountSiteAssistant = () => {
     toggle.setAttribute('aria-label', copy.toggleLabel);
     toggleText.textContent = copy.heading;
     title.textContent = copy.heading;
-    status.textContent = copy.status;
+    syncStatusText(copy);
     input.placeholder = copy.inputPlaceholder;
-    sendButton.textContent = copy.send;
+    sendButton.textContent = conversationState.isBusy ? copy.thinking : copy.send;
     chipLabel.textContent = copy.quickLabel;
     linkLabel.textContent = copy.linksLabel;
     closeButton.setAttribute('aria-label', lang === 'km' ? 'បិទជំនួយការគេហទំព័រ' : 'Close site assistant');
@@ -1095,14 +1388,11 @@ const mountSiteAssistant = () => {
       const chip = createAssistantElement('button', 'site-assistant-chip', label);
       chip.type = 'button';
       chip.addEventListener('click', () => {
-        const topic = detectTopic(label);
-        appendMessage('user', label);
-        appendMessage('bot', buildResponse(topic, copy));
-        if (!['greeting', 'thanks', 'followup'].includes(topic)) {
-          conversationState.lastTopic = topic;
+        if (conversationState.isBusy) {
+          return;
         }
-        conversationState.turnCount += 1;
-        openAssistant();
+
+        submitAssistantMessage(label);
       });
       chipRow.appendChild(chip);
     });
@@ -1125,6 +1415,8 @@ const mountSiteAssistant = () => {
     if (!messages.childElementCount) {
       appendMessage('bot', copy.intro);
     }
+
+    refreshAssistantStatus(lang === 'km' ? 'km' : 'en');
   };
 
   syncSiteAssistant(document.documentElement.lang === 'km' ? 'km' : 'en');
