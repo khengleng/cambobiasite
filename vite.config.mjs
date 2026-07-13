@@ -14,6 +14,7 @@ export default defineConfig({
         companyUpdates: resolve(__dirname, 'company-updates.html'),
         messengerHub: resolve(__dirname, 'messenger-hub.html'),
         aiLearningCenter: resolve(__dirname, 'ai-learning-center.html'),
+        bizPlatform: resolve(__dirname, 'biz-platform.html'),
         studentPortal: resolve(__dirname, 'student-portal.html'),
         teacherPortal: resolve(__dirname, 'teacher-portal.html'),
         bankingSkillsAcademy: resolve(__dirname, 'banking-skills-academy.html'),
