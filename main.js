@@ -695,59 +695,45 @@ const siteAssistantCopy = {
     toggleLabel: 'Open site assistant',
     heading: 'CamboBIA Assistant',
     statusFallback: 'Ask about products, pairings, contact, or what fits your needs.',
-    statusLive: 'AI assistant is live. Ask what fits your business, school, or payment workflow.',
+    statusLive: 'Chat with CamboBIA support about your business, school, payment, or operations needs.',
     intro:
-      'I can help visitors find the right Cambodia Boutique Investment Advisory platform, explain how the products fit together, and show how to contact the team.',
+      'Hello. I can help you understand which CamboBIA platform fits your situation and what the best next step should be.',
     inputPlaceholder: 'Ask about Messenger Hub, CXDot, PayKH, learning, or contact...',
     send: 'Send',
     thinking: 'Thinking...',
-    fallbackNotice: 'The live AI assistant is unavailable right now, so I will continue with the built-in site guide.',
-    quickLabel: 'Quick questions',
-    chips: [
-      'Which product fits my business?',
-      'How do I contact Cambobia?',
-      'Tell me about payments',
-      'Tell me about learning'
-    ],
+    fallbackNotice: 'The live AI assistant is unavailable right now, but I can still guide you like a service advisor using the site knowledge.',
     fallback:
-      'I can help with messaging, education, SME commerce, lending, payments, or direct contact. If you want, tell me whether you are asking for business, school, banking, lending, or merchant payment needs.',
+      'I can help with messaging, education, SME commerce, lending, payments, or direct contact. Tell me a little about your business or the problem you want to solve, and I will point you in the right direction.',
     greeting:
-      'Hello. Tell me what you want to solve and I will point you to the best CamboBIA platform or platform combination.',
+      'Hello. Tell me what you are trying to improve, and I will help you find the best CamboBIA platform or combination for it.',
     thanks:
-      'You’re welcome. If useful, I can also suggest the best platform pairing or give you the direct contact path.',
+      'You’re welcome. If helpful, I can also suggest the best platform combination or prepare the direct contact path for you.',
     contact:
-      'The best direct contact is contact@cambobia.com. You can use it for product demos, partnership discussion, investor questions, or business inquiries. If you want, I can also suggest which product page to review before you email.',
+      'The best direct contact is contact@cambobia.com. You can use it for demos, partnership discussion, investor questions, or business inquiries, and I can also help you decide what to mention before you email.',
     business:
-      'If your priority is customer outreach, start with Messenger Hub. If you need conversational selling, stock, POS, or AI customer interaction, add CXDot. If you also need payment completion, bring in PayKH.',
+      'If your priority is customer outreach, start with Messenger Hub. If you also need conversational selling, stock, POS, or AI customer interaction, CXDot is the next fit, and PayKH comes in when payment completion matters.',
     learning:
-      'For education, use the AI Learning Center family: mytv for students, admintv for teachers and admin teams, skill for banking training, and Pair Me Up for focus support beside study routines.',
+      'For education, the best path is usually the AI Learning Center family: mytv for students, admintv for teachers and admin teams, skill for banking training, and Pair Me Up when learners need extra focus support.',
     payments:
-      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. It fits especially well after Messenger Hub or CXDot when the business already has customer demand and now needs a cleaner payment step.',
+      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. It fits especially well when your business already has customer demand and now needs a cleaner payment step.',
     lending:
       'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records. It is a strong fit for micro lenders or hybrid operators who need more structure around lending books.',
     products:
-      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, and Biz Platform. I can narrow that down if you tell me what kind of organization you are.',
+      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, and Biz Platform. If you tell me what kind of organization you are, I can narrow that down quickly.',
     moreBusiness:
-      'A simple business path is: Messenger Hub for outreach, CXDot for AI-led product conversation and order flow, then PayKH for payment completion. That is usually the clearest public-facing combination.',
+      'A simple business path is Messenger Hub for outreach, CXDot for AI-led product conversation and order flow, then PayKH for payment completion. That is usually the clearest public-facing combination.',
     moreLearning:
-      'A simple learning path is: mytv for student study, admintv for oversight and question management, skill for banking-related training, and Pair Me Up when learners benefit from extra focus support.',
+      'A simple learning path is mytv for student study, admintv for oversight and question management, skill for banking-related training, and Pair Me Up when learners benefit from extra focus support.',
     morePayments:
       'PayKH is strongest when payment is not treated as a separate manual step. It works best when checkout is tied back to the customer journey created through Messenger Hub or CXDot.',
     moreLending:
       'DBank becomes more useful as borrower records, repayments, and portfolio visibility grow. If the same operator also handles commerce, CXDot and PayKH can sit around it.',
-    businessQuestion: 'Are you trying to improve outreach, conversational selling, or payment collection?',
+    businessQuestion: 'Is your main goal customer outreach, conversational selling, or payment collection?',
     learningQuestion: 'Is your focus mainly students, teachers, or banking training?',
-    paymentsQuestion: 'Do you need checkout for merchants, or are you pairing payments with sales conversations too?',
+    paymentsQuestion: 'Do you need merchant checkout only, or do you also want sales conversations to lead into payment?',
     lendingQuestion: 'Is this for a pure lending workflow, or for a business that also sells products or services?',
-    contactQuestion: 'Would you like the direct email path, or do you want me to suggest which product page to review first?',
-    generalQuestion: 'Tell me the type of visitor you are: business, school, bank, micro lender, or merchant.',
-    linksLabel: 'Helpful links',
-    openEmail: 'Email contact@cambobia.com',
-    productsLink: 'View product portfolio',
-    messengerLink: 'Messenger Hub',
-    commerceLink: 'Micro-SME Platform',
-    paymentsLink: 'PayKH',
-    learningLink: 'AI Learning Center',
+    contactQuestion: 'Would you like me to prepare the direct contact path, or help you choose the right product first?',
+    generalQuestion: 'Tell me what kind of organization you are and what problem you want to solve.',
     contactCta: 'Prepare contact email',
     fitCta: 'Best-fit page'
   },
@@ -755,34 +741,27 @@ const siteAssistantCopy = {
     toggleLabel: 'បើកជំនួយការគេហទំព័រ',
     heading: 'ជំនួយការ CamboBIA',
     statusFallback: 'សួរអំពីផលិតផល ការផ្គូផ្គង ទំនាក់ទំនង ឬអ្វីដែលសមនឹងតម្រូវការ។',
-    statusLive: 'ជំនួយការ AI កំពុងដំណើរការ។ សូមសួរថាអ្វីសមនឹងអាជីវកម្ម សាលារៀន ឬលំហូរការទូទាត់របស់អ្នក។',
+    statusLive: 'ជជែកជាមួយក្រុមគាំទ្រ CamboBIA អំពីតម្រូវការអាជីវកម្ម សាលារៀន ការទូទាត់ ឬប្រតិបត្តិការ។',
     intro:
-      'ខ្ញុំអាចជួយអ្នកទស្សនារកវេទិកា Cambodia Boutique Investment Advisory ដែលសមស្រប ពន្យល់ថាផលិតផលនីមួយៗភ្ជាប់គ្នាយ៉ាងដូចម្តេច និងបង្ហាញរបៀបទំនាក់ទំនងក្រុមការងារ។',
+      'សួស្តី។ ខ្ញុំអាចជួយអ្នកយល់ថាវេទិកា CamboBIA មួយណាសមនឹងស្ថានភាពរបស់អ្នក និងជំហានបន្ទាប់គួរធ្វើអ្វី។',
     inputPlaceholder: 'សួរអំពី Messenger Hub, CXDot, PayKH, ការសិក្សា ឬទំនាក់ទំនង...',
     send: 'ផ្ញើ',
     thinking: 'កំពុងគិត...',
-    fallbackNotice: 'ជំនួយការ AI មិនអាចប្រើបានបណ្តោះអាសន្នទេ ដូច្នេះខ្ញុំនឹងបន្តជួយតាមមគ្គុទ្ទេសក៍ក្នុងគេហទំព័រ។',
-    quickLabel: 'សំណួររហ័ស',
-    chips: [
-      'ផលិតផលមួយណាសមនឹងអាជីវកម្មខ្ញុំ?',
-      'តើខ្ញុំទាក់ទង Cambobia ដូចម្តេច?',
-      'ប្រាប់ខ្ញុំអំពីការទូទាត់',
-      'ប្រាប់ខ្ញុំអំពីការសិក្សា'
-    ],
+    fallbackNotice: 'ជំនួយការ AI មិនអាចប្រើបានបណ្តោះអាសន្នទេ ប៉ុន្តែខ្ញុំនៅតែអាចណែនាំអ្នកដូចជាអ្នកប្រឹក្សាសេវាអតិថិជនម្នាក់បាន។',
     fallback:
-      'ខ្ញុំអាចជួយអំពីការផ្ញើសារ ការអប់រំ ពាណិជ្ជកម្ម SME ឥណទាន ការទូទាត់ ឬទំនាក់ទំនងដោយផ្ទាល់។ បើចង់បាន សូមប្រាប់ថាអ្នកកំពុងសួរសម្រាប់អាជីវកម្ម សាលារៀន ធនាគារ អ្នកឥណទាន ឬអាជីវករ។',
+      'ខ្ញុំអាចជួយអំពីការផ្ញើសារ ការអប់រំ ពាណិជ្ជកម្ម SME ឥណទាន ការទូទាត់ ឬទំនាក់ទំនងដោយផ្ទាល់។ សូមប្រាប់ខ្ញុំបន្តិចអំពីអាជីវកម្ម ឬបញ្ហាដែលអ្នកចង់ដោះស្រាយ ហើយខ្ញុំនឹងណែនាំផ្លូវដែលសមស្រប។',
     greeting:
-      'សួស្តី។ សូមប្រាប់ខ្ញុំថាអ្នកចង់ដោះស្រាយបញ្ហាអ្វី ហើយខ្ញុំនឹងណែនាំវេទិកា CamboBIA ឬការផ្គូផ្គងដែលសមស្រប។',
+      'សួស្តី។ សូមប្រាប់ខ្ញុំថាអ្នកចង់កែលម្អអ្វី ហើយខ្ញុំនឹងជួយរកវេទិកា CamboBIA ឬការផ្គូផ្គងដែលសមស្របបំផុត។',
     thanks:
-      'មិនអីទេ។ បើចង់បាន ខ្ញុំក៏អាចណែនាំការផ្គូផ្គងវេទិកាដែលសមស្របបំផុត ឬផ្លូវទំនាក់ទំនងដោយផ្ទាល់ផងដែរ។',
+      'មិនអីទេ។ បើចង់បាន ខ្ញុំក៏អាចណែនាំការផ្គូផ្គងវេទិកាដែលសមស្របបំផុត ឬរៀបចំផ្លូវទំនាក់ទំនងដោយផ្ទាល់ឲ្យអ្នកបានផងដែរ។',
     contact:
-      'ការទំនាក់ទំនងដោយផ្ទាល់ល្អបំផុតគឺ contact@cambobia.com។ អ្នកអាចប្រើវាសម្រាប់ការបង្ហាញផលិតផល ភាពជាដៃគូ សំណួរពីវិនិយោគិន ឬសំណួរអាជីវកម្ម។ បើចង់បាន ខ្ញុំក៏អាចណែនាំទំព័រផលិតផលដែលគួរមើលមុនផ្ញើអ៊ីមែលផងដែរ។',
+      'ការទំនាក់ទំនងដោយផ្ទាល់ល្អបំផុតគឺ contact@cambobia.com។ អ្នកអាចប្រើវាសម្រាប់ demo ភាពជាដៃគូ សំណួរពីវិនិយោគិន ឬសំណួរអាជីវកម្ម ហើយខ្ញុំក៏អាចជួយអ្នកសម្រេចថាគួរនិយាយអ្វីមុនផ្ញើអ៊ីមែលផងដែរ។',
     business:
-      'បើអាទិភាពរបស់អ្នកគឺការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ បើត្រូវការការលក់តាមការសន្ទនា ស្តុក POS ឬការទំនាក់ទំនងអតិថិជនដោយ AI សូមបន្ថែម CXDot។ បើត្រូវការការបញ្ចប់ការទូទាត់ សូមនាំ PayKH ចូលមកផងដែរ។',
+      'បើអាទិភាពរបស់អ្នកគឺការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ បើត្រូវការការលក់តាមការសន្ទនា ស្តុក POS ឬការទំនាក់ទំនងអតិថិជនដោយ AI នោះ CXDot គឺសមបន្ទាប់ ហើយ PayKH ចូលមកនៅពេលការបញ្ចប់ការទូទាត់មានសារៈសំខាន់។',
     learning:
-      'សម្រាប់ការអប់រំ សូមប្រើគ្រួសារ AI Learning Center: mytv សម្រាប់សិស្ស admintv សម្រាប់គ្រូ និងក្រុមគ្រប់គ្រង skill សម្រាប់ការបណ្តុះបណ្តាលធនាគារ និង Pair Me Up សម្រាប់ការគាំទ្រការផ្តោតអារម្មណ៍ជាមួយទម្លាប់សិក្សា។',
+      'សម្រាប់ការអប់រំ ផ្លូវដែលសមបំផុតជាទូទៅគឺគ្រួសារ AI Learning Center: mytv សម្រាប់សិស្ស admintv សម្រាប់គ្រូ និងក្រុមគ្រប់គ្រង skill សម្រាប់ការបណ្តុះបណ្តាលធនាគារ និង Pair Me Up នៅពេលអ្នកសិក្សាត្រូវការការគាំទ្រការផ្តោតអារម្មណ៍បន្ថែម។',
     payments:
-      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ វាសមជាពិសេសបន្ទាប់ពី Messenger Hub ឬ CXDot នៅពេលអាជីវកម្មមានតម្រូវការអតិថិជនរួចហើយ ហើយត្រូវការជំហានទូទាត់ដែលស្អាតជាងមុន។',
+      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ វាសមជាពិសេសនៅពេលអាជីវកម្មមានតម្រូវការអតិថិជនរួចហើយ ហើយត្រូវការជំហានទូទាត់ដែលស្អាតជាងមុន។',
     lending:
       'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។ វាសមល្អសម្រាប់អ្នកឥណទានខ្នាតតូច ឬប្រតិបត្តិករចម្រុះដែលត្រូវការរចនាសម្ព័ន្ធកាន់តែច្បាស់ជុំវិញសៀវភៅឥណទាន។',
     products:
@@ -795,19 +774,12 @@ const siteAssistantCopy = {
       'PayKH ខ្លាំងបំផុតនៅពេលការទូទាត់មិនត្រូវបានទុកជាជំហានដាច់ដោយឡែកដែលធ្វើដោយដៃ។ វាធ្វើការល្អបំផុតនៅពេល checkout ត្រូវបានភ្ជាប់ត្រឡប់ទៅដំណើរអតិថិជនដែលបង្កើតដោយ Messenger Hub ឬ CXDot។',
     moreLending:
       'DBank កាន់តែមានប្រយោជន៍នៅពេលកំណត់ត្រាអ្នកខ្ចី ការសងប្រាក់ និងភាពមើលឃើញនៃសៀវភៅឥណទានកើនឡើង។ បើប្រតិបត្តិករដូចគ្នាក៏គ្រប់គ្រងពាណិជ្ជកម្មដែរ CXDot និង PayKH អាចស្ថិតនៅជុំវិញវាបាន។',
-    businessQuestion: 'តើអ្នកចង់បង្កើនការផ្សព្វផ្សាយ ការលក់តាមការសន្ទនា ឬការប្រមូលការទូទាត់?',
+    businessQuestion: 'តើគោលដៅសំខាន់របស់អ្នកគឺការផ្សព្វផ្សាយ ការលក់តាមការសន្ទនា ឬការប្រមូលការទូទាត់?',
     learningQuestion: 'តើការផ្តោតសំខាន់របស់អ្នកគឺសិស្ស គ្រូ ឬការបណ្តុះបណ្តាលធនាគារ?',
-    paymentsQuestion: 'តើអ្នកត្រូវការការទូទាត់សម្រាប់អាជីវករ ឬក៏ចង់ផ្គូផ្គងការទូទាត់ជាមួយការសន្ទនាលក់ផងដែរ?',
+    paymentsQuestion: 'តើអ្នកត្រូវការការទូទាត់សម្រាប់អាជីវករប៉ុណ្ណោះ ឬចង់ឲ្យការសន្ទនាលក់នាំទៅរកការទូទាត់ផងដែរ?',
     lendingQuestion: 'តើនេះសម្រាប់លំហូរឥណទានសុទ្ធៗ ឬសម្រាប់អាជីវកម្មដែលក៏លក់ផលិតផល ឬសេវាកម្មផងដែរ?',
-    contactQuestion: 'តើអ្នកចង់បានផ្លូវអ៊ីមែលដោយផ្ទាល់ ឬចង់ឲ្យខ្ញុំណែនាំទំព័រផលិតផលដែលគួរមើលមុន?',
-    generalQuestion: 'សូមប្រាប់ខ្ញុំថាអ្នកជាអ្នកទស្សនាប្រភេទណា៖ អាជីវកម្ម សាលារៀន ធនាគារ អ្នកឥណទានខ្នាតតូច ឬអាជីវករ។',
-    linksLabel: 'តំណមានប្រយោជន៍',
-    openEmail: 'ផ្ញើអ៊ីមែលទៅ contact@cambobia.com',
-    productsLink: 'មើលក្រុមផលិតផល',
-    messengerLink: 'Messenger Hub',
-    commerceLink: 'វេទិកា Micro-SME',
-    paymentsLink: 'PayKH',
-    learningLink: 'AI Learning Center',
+    contactQuestion: 'តើអ្នកចង់ឲ្យខ្ញុំរៀបចំផ្លូវទំនាក់ទំនងដោយផ្ទាល់ ឬជួយអ្នកជ្រើសផលិតផលដែលត្រឹមត្រូវជាមុន?',
+    generalQuestion: 'សូមប្រាប់ខ្ញុំថាអ្នកជាអង្គការប្រភេទណា និងបញ្ហាអ្វីដែលអ្នកចង់ដោះស្រាយ។',
     contactCta: 'រៀបចំអ៊ីមែលទំនាក់ទំនង',
     fitCta: 'ទំព័រដែលសមស្របបំផុត'
   }
