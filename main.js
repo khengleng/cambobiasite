@@ -56,6 +56,8 @@ const phraseTranslations = {
       'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៨ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Nine public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
       'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៩ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
+    'Ten public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
+      'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ១០ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Visual Overview': 'ទិដ្ឋភាពសង្ខេប',
     'Cambodia in the digital and AI era': 'កម្ពុជាក្នុងយុគសម័យឌីជីថល និង AI',
     'Khmer-market software for messaging, learning, commerce, and finance.': 'សូហ្វវែរសម្រាប់ទីផ្សារខ្មែរ ផ្នែកផ្ញើសារ ការសិក្សា ពាណិជ្ជកម្ម និងហិរញ្ញវត្ថុ។',
@@ -70,6 +72,7 @@ const phraseTranslations = {
     'Micro SME': 'Micro SME',
     Lending: 'ឥណទាន',
     'Business Ops': 'ប្រតិបត្តិការអាជីវកម្ម',
+    Investment: 'ការវិនិយោគ',
     'Student Portal': 'វេទិកាសិស្ស',
     'Teacher Portal': 'វេទិកាគ្រូ',
     'Banking Skills Academy': 'សាលាជំនាញធនាគារ',
@@ -79,6 +82,9 @@ const phraseTranslations = {
     PayKH: 'PayKH',
     'Payment platform.': 'វេទិកាទូទាត់។',
     'Biz Platform': 'វេទិកា Biz',
+    'BIA Marketplace': 'ទីផ្សារ BIA',
+    'Fundraising': 'ការរៃអង្គាសមូលនិធិ',
+    'BIA for SME fundraising and investor marketplace access': 'BIA សម្រាប់ការរៃអង្គាសមូលនិធិ SME និងការចូលទៅកាន់ទីផ្សារវិនិយោគិន',
     'AI Learning Center': 'មជ្ឈមណ្ឌលសិក្សា AI',
     'Student, teacher, and banking skill learning platform.': 'វេទិកាសិក្សាសម្រាប់សិស្ស គ្រូ និងជំនាញធនាគារ។',
     'Micro-SME + Micro-Lending': 'Micro-SME + Micro-Lending',
@@ -102,6 +108,8 @@ const phraseTranslations = {
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៨ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'The company story is not nine unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, and operational record-keeping still have large room for digitization.':
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៩ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
+    'The company story is not ten unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, fundraising access, and operational record-keeping still have large room for digitization.':
+      'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ១០ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ ការចូលដល់ការរៃអង្គាសមូលនិធិ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'Priority 01': 'អាទិភាព ០១',
     'Customer communication': 'ការទំនាក់ទំនងអតិថិជន',
     'Messenger Hub is the clearest growth entry for businesses that already depend on chat-based customer engagement.':
@@ -117,6 +125,9 @@ const phraseTranslations = {
     'Education and training': 'ការអប់រំ និងការបណ្តុះបណ្តាល',
     'AI Learning Center creates a longer-term learning vertical across school and banking-training use cases.':
       'AI Learning Center បង្កើតផ្នែកសិក្សារយៈពេលវែងសម្រាប់សាលារៀន និងការបណ្តុះបណ្តាលវិស័យធនាគារ។',
+    'Fundraising and investor access': 'ការរៃអង្គាសមូលនិធិ និងការចូលដល់វិនិយោគិន',
+    'BIA adds an advisory marketplace path where SMEs can raise funds and investors can review potential SME opportunities.':
+      'BIA បន្ថែមផ្លូវទីផ្សារប្រឹក្សាមួយ ដែល SME អាចរៃអង្គាសមូលនិធិ និងវិនិយោគិនអាចពិនិត្យមើលឱកាស SME ដែលមានសក្តានុពល។',
     'Start Here': 'ចាប់ផ្តើមនៅទីនេះ',
     'Start with the audience, not the software.': 'ចាប់ផ្តើមពីអ្នកប្រើ មិនមែនពីសូហ្វវែរ។',
     'Choose the closest role below and follow the most useful CamboBIA entry point first.':
@@ -157,6 +168,13 @@ const phraseTranslations = {
     'Typical fit: microfinance operators, trading businesses, and hybrid SMEs that need commerce tools, payment support, and structured financial records.':
       'សមស្របសម្រាប់ប្រតិបត្តិករហិរញ្ញវត្ថុខ្នាតតូច អាជីវកម្មជួញដូរ និង SME ចម្រុះដែលត្រូវការឧបករណ៍ពាណិជ្ជកម្ម ការគាំទ្រការទូទាត់ និងកំណត់ត្រាហិរញ្ញវត្ថុដែលមានរបៀបរៀបរយ។',
     'See operations path': 'មើលផ្លូវប្រតិបត្តិការ',
+    'SMEs and investors': 'SME និងវិនិយោគិន',
+    'Raise funding or review opportunities.': 'រៃអង្គាសមូលនិធិ ឬពិនិត្យឱកាសវិនិយោគ។',
+    'Best starting mix: BIA Marketplace for fundraising and investor discovery, then Biz Platform when the business needs wider operating support.':
+      'ការចាប់ផ្តើមល្អបំផុត៖ ទីផ្សារ BIA សម្រាប់ការរៃអង្គាសមូលនិធិ និងស្វែងរកវិនិយោគិន បន្ទាប់មកវេទិកា Biz នៅពេលអាជីវកម្មត្រូវការការគាំទ្រប្រតិបត្តិការកាន់តែទូលំទូលាយ។',
+    'Typical fit: SMEs preparing to raise capital and investors looking for potential SME opportunities in a more focused marketplace setting.':
+      'សមស្របសម្រាប់ SME ដែលកំពុងត្រៀមរៃអង្គាសដើមទុន និងវិនិយោគិនដែលកំពុងស្វែងរកឱកាស SME ក្នុងបរិបទទីផ្សារដែលផ្តោតច្បាស់ជាងមុន។',
+    'See marketplace path': 'មើលផ្លូវទីផ្សារ',
     'Recommended Pairings': 'ការផ្គូផ្គងដែលបានណែនាំ',
     'Choose the platform combination that fits your business operation.': 'ជ្រើសរើសការរួមបញ្ចូលវេទិកាដែលសមស្របនឹងប្រតិបត្តិការអាជីវកម្មរបស់អ្នក។',
     'Most organizations get better results by pairing one customer-facing system with one operational or learning system.':
@@ -407,15 +425,37 @@ const phraseTranslations = {
       'លំហូរទូទាត់ចុងក្រោយស្អាតជាងមុន ទំនុកចិត្តលើការទូទាត់កាន់តែខ្លាំង និងការសម្របសម្រួលប្រសើរជាងមុនរវាងសកម្មភាពលក់ និងការប្រមូលប្រាក់។',
     'Best for: payments, merchant checkout, transaction flow': 'សមស្របសម្រាប់៖ ការទូទាត់ ការទូទាត់ចុងក្រោយរបស់អាជីវករ និងលំហូរប្រតិបត្តិការ',
     'Visit PayKH': 'ចូលទៅ PayKH',
+    'Advisory Marketplace': 'ទីផ្សារប្រឹក្សា',
+    'Advisory marketplace for SMEs to raise funds and for investors to discover potential SME opportunities.':
+      'ទីផ្សារប្រឹក្សាសម្រាប់ SME រៃអង្គាសមូលនិធិ និងសម្រាប់វិនិយោគិនស្វែងរកឱកាស SME ដែលមានសក្តានុពល។',
+    'Help SMEs present fundraising opportunities': 'ជួយ SME បង្ហាញឱកាសរៃអង្គាសមូលនិធិ',
+    'Give investors a path to review potential SME deals': 'ផ្តល់ផ្លូវឲ្យវិនិយោគិនពិនិត្យកិច្ចព្រមព្រៀង SME ដែលអាចទៅរួច',
+    'Create a clearer marketplace entry for advisory-led capital matching': 'បង្កើតច្រកចូលទីផ្សារដែលច្បាស់ជាងមុនសម្រាប់ការផ្គូផ្គងដើមទុនដឹកនាំដោយការប្រឹក្សា',
+    'Typical marketplace use': 'ការប្រើប្រាស់ទីផ្សារជាទូទៅ',
+    'Use BIA when an SME needs a clearer public path to fundraising conversations or when an investor wants to review potential SME opportunities in one place.':
+      'ប្រើ BIA នៅពេល SME ត្រូវការផ្លូវសាធារណៈដែលច្បាស់ជាងមុនសម្រាប់ការពិភាក្សាអំពីការរៃអង្គាសមូលនិធិ ឬនៅពេលវិនិយោគិនចង់ពិនិត្យឱកាស SME ដែលមានសក្តានុពលនៅកន្លែងតែមួយ។',
+    'Pair BIA with Biz Platform when a company needs both investor access and broader business operating support behind the fundraising process.':
+      'ផ្គូផ្គង BIA ជាមួយវេទិកា Biz នៅពេលក្រុមហ៊ុនត្រូវការទាំងការចូលដល់វិនិយោគិន និងការគាំទ្រប្រតិបត្តិការអាជីវកម្មកាន់តែទូលំទូលាយនៅពីក្រោយដំណើរការរៃអង្គាសមូលនិធិ។',
+    'SMEs preparing to raise capital, advisory teams, and investors looking for curated SME opportunities.':
+      'SME ដែលកំពុងត្រៀមរៃអង្គាសដើមទុន ក្រុមប្រឹក្សា និងវិនិយោគិនដែលកំពុងស្វែងរកឱកាស SME ដែលបានជ្រើសរើស។',
+    'Create a clearer matchmaking path between capital-seeking SMEs and interested investors.':
+      'បង្កើតផ្លូវផ្គូផ្គងដែលច្បាស់ជាងមុនរវាង SME ដែលកំពុងស្វែងរកដើមទុន និងវិនិយោគិនដែលចាប់អារម្មណ៍។',
+    'Best for: SME fundraising, investor discovery, advisory marketplace': 'សមស្របសម្រាប់៖ ការរៃអង្គាសមូលនិធិ SME ការស្វែងរកវិនិយោគិន និងទីផ្សារប្រឹក្សា',
+    'Visit BIA Marketplace': 'ចូលទៅទីផ្សារ BIA',
     'Operating Footprint': 'ស្នាមជើងប្រតិបត្តិការ',
     'Current public footprint investors can verify today.': 'ស្ថានភាពសាធារណៈបច្ចុប្បន្នដែលវិនិយោគិនអាចផ្ទៀងផ្ទាត់បានថ្ងៃនេះ។',
     '8 public platform endpoints': 'ចំណុចចូលវេទិកាសាធារណៈ ៨',
     '9 public platform endpoints': 'ចំណុចចូលវេទិកាសាធារណៈ ៩',
+    '10 public platform endpoints': 'ចំណុចចូលវេទិកាសាធារណៈ ១០',
     '4 operating pillars': 'សសរស្តម្ភប្រតិបត្តិការ ៤',
     'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, and PayKH are all publicly represented.':
       'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up និង PayKH ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
     'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, PayKH, and Biz Platform are all publicly represented.':
       'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up, PayKH និងវេទិកា Biz ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
+    'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, PayKH, Biz Platform, and BIA Marketplace are all publicly represented.':
+      'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up, PayKH, វេទិកា Biz និងទីផ្សារ BIA ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
+    'The portfolio is organized around business communication, education, business operations, fundraising access, lending, and payment adjacency.':
+      'ក្រុមផលិតផលត្រូវបានរៀបចំជុំវិញការទំនាក់ទំនងអាជីវកម្ម ការអប់រំ ប្រតិបត្តិការអាជីវកម្ម ការចូលដល់ការរៃអង្គាសមូលនិធិ ឥណទាន និងការទូទាត់ដែលភ្ជាប់គ្នា។',
     'These are public, visible signals of operating momentum. Detailed commercial metrics can be shared through a private investor brief.':
       'ទាំងនេះជាសញ្ញាសាធារណៈដែលអាចមើលឃើញពីសន្ទុះប្រតិបត្តិការ។ ទិន្នន័យពាណិជ្ជកម្មលម្អិតអាចចែករំលែកតាមរយៈសង្ខេបវិនិយោគឯកជន។',
     'Core public products': 'ផលិតផលសាធារណៈស្នូល',
@@ -487,6 +527,10 @@ const pageTitleTranslations = {
   '/biz-platform': {
     en: 'Biz Platform | CamboBIA',
     km: 'វេទិកា Biz | CamboBIA'
+  },
+  '/bia-marketplace': {
+    en: 'BIA Marketplace | CamboBIA',
+    km: 'ទីផ្សារ BIA | CamboBIA'
   }
 };
 
@@ -502,6 +546,10 @@ const metaDescriptionTranslations = {
   '/biz-platform': {
     en: 'Biz Platform by CamboBIA presents a broader business workspace path for teams that need a practical operating layer around day-to-day business activity.',
     km: 'វេទិកា Biz របស់ CamboBIA បង្ហាញផ្លូវមួយសម្រាប់កន្លែងការងារអាជីវកម្មទូលំទូលាយ សម្រាប់ក្រុមដែលត្រូវការស្រទាប់ប្រតិបត្តិការជាក់ស្តែងជុំវិញសកម្មភាពអាជីវកម្មប្រចាំថ្ងៃ។'
+  },
+  '/bia-marketplace': {
+    en: 'BIA Marketplace by CamboBIA is an advisory marketplace for SMEs raising funds and investors looking to review potential SME opportunities.',
+    km: 'ទីផ្សារ BIA របស់ CamboBIA គឺជាទីផ្សារប្រឹក្សាសម្រាប់ SME ដែលកំពុងរៃអង្គាសមូលនិធិ និងវិនិយោគិនដែលចង់ពិនិត្យឱកាស SME ដែលមានសក្តានុពល។'
   }
 };
 
@@ -719,7 +767,7 @@ const siteAssistantCopy = {
     lending:
       'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records. It is a strong fit for micro lenders or hybrid operators who need more structure around lending books.',
     products:
-      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, and Biz Platform. If you tell me what kind of organization you are, I can narrow that down quickly.',
+      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, Biz Platform, and BIA Marketplace. If you tell me what kind of organization you are, I can narrow that down quickly.',
     moreBusiness:
       'A simple business path is Messenger Hub for outreach, CXDot for AI-led product conversation and order flow, then PayKH for payment completion. That is usually the clearest public-facing combination.',
     moreLearning:
@@ -765,7 +813,7 @@ const siteAssistantCopy = {
     lending:
       'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។ វាសមល្អសម្រាប់អ្នកឥណទានខ្នាតតូច ឬប្រតិបត្តិករចម្រុះដែលត្រូវការរចនាសម្ព័ន្ធកាន់តែច្បាស់ជុំវិញសៀវភៅឥណទាន។',
     products:
-      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH និងវេទិកា Biz។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
+      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, វេទិកា Biz និងទីផ្សារ BIA។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
     moreBusiness:
       'ផ្លូវអាជីវកម្មសាមញ្ញមួយគឺ៖ Messenger Hub សម្រាប់ការផ្សព្វផ្សាយ CXDot សម្រាប់ការសន្ទនាផលិតផល និងលំហូរការបញ្ជាទិញដោយជំនួយ AI ហើយបន្ទាប់មក PayKH សម្រាប់ការបញ្ចប់ការទូទាត់។ នេះជាការផ្គូផ្គងសាធារណៈដែលច្បាស់ជាងគេ។',
     moreLearning:
@@ -805,6 +853,11 @@ const siteAssistantProductActions = {
     href: '/biz-platform',
     en: 'Biz Platform',
     km: 'វេទិកា Biz'
+  },
+  bia_marketplace: {
+    href: '/bia-marketplace',
+    en: 'BIA Marketplace',
+    km: 'ទីផ្សារ BIA'
   },
   micro_lending_platform: {
     href: '/micro-lending-platform',
