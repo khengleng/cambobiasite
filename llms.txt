@@ -18,6 +18,7 @@ Core platform pages:
 - Banking Skills Academy: https://www.cambobia.com/banking-skills-academy
 - Micro-Lending Platform: https://www.cambobia.com/micro-lending-platform
 - Micro-SME Platform: https://www.cambobia.com/micro-sme-platform
+- PayChain: https://www.cambobia.com/paychain
 - PayKH: https://www.cambobia.com/paykh
 - Pair Me Up: https://www.cambobia.com/pair-me-up
 
@@ -29,6 +30,7 @@ Direct product domains:
 - https://dbank.cambobia.com
 - https://cxdot.cambobia.com
 - https://game.cambobia.com
+- https://paychain.cambobia.com
 - https://paykh.cambobia.com
 
 Audience summary:
@@ -40,6 +42,7 @@ Audience summary:
 - DBank is the micro-lending platform.
 - CXDot is the micro-SME platform for Telegram sales, inventory, and point of sale.
 - Pair Me Up is a browser-based focus and memory game.
+- PayChain is the payment operations and administration platform for wallets, reserve, treasury, compliance, reconciliation, and stablecoin-readiness review.
 - PayKH is the digital payment platform for merchant checkout, KHQR-ready collection flow, and transaction support.
 
 Contact:

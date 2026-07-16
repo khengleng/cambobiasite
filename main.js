@@ -40,6 +40,8 @@ const phraseTranslations = {
     'Pair Me Up for memory and attention practice': 'Pair Me Up សម្រាប់ហ្វឹកហាត់ការចងចាំ និងការផ្តោតអារម្មណ៍',
     Payments: 'ការទូទាត់',
     'PayKH for digital payment flow and merchant transaction support': 'PayKH សម្រាប់លំហូរការទូទាត់ឌីជីថល និងការគាំទ្រប្រតិបត្តិការអាជីវករ',
+    'Payment Ops': 'ប្រតិបត្តិការទូទាត់',
+    'PayChain for wallets, reserve, treasury, compliance, and reconciliation': 'PayChain សម្រាប់កាបូបប្រាក់ បម្រុង ទ្រព្យសម្បត្តិរតនាគារ ការអនុលោម និងការផ្សះផ្សា',
     'How organizations start': 'របៀបដែលអង្គការចាប់ផ្តើម',
     'Most teams begin with one visible workflow first: customer messaging, student learning, banking training, SME commerce, or lending records.':
       'ក្រុមភាគច្រើនចាប់ផ្តើមពីលំហូរការងារមួយដែលមើលឃើញជាមុនសិន៖ ការផ្ញើសារអតិថិជន ការសិក្សារបស់សិស្ស ការបណ្តុះបណ្តាលធនាគារ ពាណិជ្ជកម្ម SME ឬកំណត់ត្រាឥណទាន។',
@@ -58,6 +60,8 @@ const phraseTranslations = {
       'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ៩ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Ten public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
       'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ១០ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
+    'Eleven public platform paths, direct product pages, and clear policy links are already live for review and exploration.':
+      'ផ្លូវចូលវេទិកាសាធារណៈចំនួន ១១ ទំព័រផលិតផលដោយផ្ទាល់ និងតំណភ្ជាប់គោលការណ៍ច្បាស់លាស់ បានដាក់ឲ្យប្រើរួចហើយសម្រាប់ការពិនិត្យ និងស្វែងយល់។',
     'Visual Overview': 'ទិដ្ឋភាពសង្ខេប',
     'Cambodia in the digital and AI era': 'កម្ពុជាក្នុងយុគសម័យឌីជីថល និង AI',
     'Khmer-market software for messaging, learning, commerce, and finance.': 'សូហ្វវែរសម្រាប់ទីផ្សារខ្មែរ ផ្នែកផ្ញើសារ ការសិក្សា ពាណិជ្ជកម្ម និងហិរញ្ញវត្ថុ។',
@@ -71,6 +75,7 @@ const phraseTranslations = {
     'Banking Skill': 'ជំនាញធនាគារ',
     'Micro SME': 'Micro SME',
     Lending: 'ឥណទាន',
+    'Payment Operations': 'ប្រតិបត្តិការទូទាត់',
     'Business Ops': 'ប្រតិបត្តិការអាជីវកម្ម',
     Investment: 'ការវិនិយោគ',
     'Student Portal': 'វេទិកាសិស្ស',
@@ -81,6 +86,8 @@ const phraseTranslations = {
     'Broadcast messaging.': 'ការផ្សព្វផ្សាយសារជាក្រុម។',
     PayKH: 'PayKH',
     'Payment platform.': 'វេទិកាទូទាត់។',
+    'PayKH + PayChain': 'PayKH + PayChain',
+    'Payment flow and payment operations.': 'លំហូរការទូទាត់ និងប្រតិបត្តិការទូទាត់។',
     'Biz Platform': 'វេទិកា Biz',
     'BIA Marketplace': 'ទីផ្សារ BIA',
     'Fundraising': 'ការរៃអង្គាសមូលនិធិ',
@@ -99,9 +106,14 @@ const phraseTranslations = {
     'Merchant Checkout': 'ការទូទាត់របស់អាជីវករ',
     'Digital payment collection, KHQR-ready checkout support, and transaction flow for merchants.':
       'ការប្រមូលការទូទាត់ឌីជីថល ការគាំទ្រការទូទាត់ KHQR-ready និងលំហូរប្រតិបត្តិការសម្រាប់អាជីវករ។',
+    'Control Layer': 'ស្រទាប់គ្រប់គ្រង',
+    'Wallets, reserve, treasury, compliance, audit logs, and reconciliation for payment operators.':
+      'កាបូបប្រាក់ បម្រុង រតនាគារ ការអនុលោម កំណត់ហេតុសវនកម្ម និងការផ្សះផ្សា សម្រាប់អ្នកប្រតិបត្តិការទូទាត់។',
     'Company Thesis': 'ទិសដៅក្រុមហ៊ុន',
     'CamboBIA is building a focused digital platform portfolio across communication, education, and operational finance.':
       'CamboBIA កំពុងកសាងក្រុមវេទិកាឌីជីថលដែលផ្តោតលើការទំនាក់ទំនង ការអប់រំ និងហិរញ្ញវត្ថុប្រតិបត្តិការ។',
+    'CamboBIA is building a focused digital platform portfolio across communication, education, payments, and operational finance.':
+      'CamboBIA កំពុងកសាងក្រុមវេទិកាឌីជីថលដែលផ្តោតលើការទំនាក់ទំនង ការអប់រំ ការទូទាត់ និងហិរញ្ញវត្ថុប្រតិបត្តិការ។',
     'The company story is not seven unrelated products. The company story is applied software for markets where business workflows, learning workflows, and operational record-keeping still have large room for digitization.':
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៧ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'The company story is not eight unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, and operational record-keeping still have large room for digitization.':
@@ -110,6 +122,8 @@ const phraseTranslations = {
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ៩ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'The company story is not ten unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, fundraising access, and operational record-keeping still have large room for digitization.':
       'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ១០ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ ការចូលដល់ការរៃអង្គាសមូលនិធិ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
+    'The company story is not eleven unrelated products. The company story is applied software for markets where business workflows, learning workflows, commerce, payments, payment controls, fundraising access, and operational record-keeping still have large room for digitization.':
+      'រឿងរ៉ាវក្រុមហ៊ុនមិនមែនជាផលិតផល ១១ មុខដាច់ពីគ្នាទេ។ វាជាសូហ្វវែរ​ដែលអនុវត្តបានជាក់ស្តែងសម្រាប់ទីផ្សារដែលលំហូរអាជីវកម្ម ការសិក្សា ពាណិជ្ជកម្ម ការទូទាត់ ការគ្រប់គ្រងការទូទាត់ ការចូលដល់ការរៃអង្គាសមូលនិធិ និងកំណត់ត្រាប្រតិបត្តិការនៅតែមានឱកាសធំសម្រាប់ឌីជីថលកម្ម។',
     'Priority 01': 'អាទិភាព ០១',
     'Customer communication': 'ការទំនាក់ទំនងអតិថិជន',
     'Messenger Hub is the clearest growth entry for businesses that already depend on chat-based customer engagement.':
@@ -121,6 +135,9 @@ const phraseTranslations = {
     'Commerce and payments': 'ពាណិជ្ជកម្ម និងការទូទាត់',
     'Micro-SME Platform, PayKH, and Micro-Lending Platform address sales, checkout, and record-heavy financial workflows with clearer software operations.':
       'វេទិកា Micro-SME, PayKH និង Micro-Lending ជួយដល់ការលក់ ការទូទាត់ចុងក្រោយ និងលំហូរការងារហិរញ្ញវត្ថុដែលមានកំណត់ត្រាច្រើន ដោយមានប្រតិបត្តិការសូហ្វវែរច្បាស់លាស់ជាងមុន។',
+    'Commerce, payments, and control': 'ពាណិជ្ជកម្ម ការទូទាត់ និងការគ្រប់គ្រង',
+    'Micro-SME Platform, PayKH, PayChain, and Micro-Lending Platform address sales, checkout, payment operations, and record-heavy financial workflows with clearer software operations.':
+      'វេទិកា Micro-SME, PayKH, PayChain និង Micro-Lending ជួយដល់ការលក់ ការទូទាត់ចុងក្រោយ ប្រតិបត្តិការទូទាត់ និងលំហូរការងារហិរញ្ញវត្ថុដែលមានកំណត់ត្រាច្រើន ដោយមានប្រតិបត្តិការសូហ្វវែរច្បាស់លាស់ជាងមុន។',
     'Priority 03': 'អាទិភាព ០៣',
     'Education and training': 'ការអប់រំ និងការបណ្តុះបណ្តាល',
     'AI Learning Center creates a longer-term learning vertical across school and banking-training use cases.':
@@ -142,6 +159,8 @@ const phraseTranslations = {
       'សមស្របសម្រាប់ហាង អ្នកចែកចាយ ក្រុមសេវាកម្មអតិថិជន និងអ្នកប្រតិបត្តិការដែលត្រូវការទាំងការផ្សព្វផ្សាយ និងការលក់តាមការសន្ទនា។',
     'Typical fit: stores, resellers, customer-service teams, and operators who need outreach, conversation-based selling, and a clearer checkout path.':
       'សមស្របសម្រាប់ហាង អ្នកចែកចាយ ក្រុមសេវាកម្មអតិថិជន និងអ្នកប្រតិបត្តិការដែលត្រូវការការផ្សព្វផ្សាយ ការលក់តាមការសន្ទនា និងផ្លូវទូទាត់ដែលច្បាស់លាស់ជាងមុន។',
+    'Typical fit: stores, resellers, customer-service teams, and operators who need outreach, conversation-based selling, a clearer checkout path, and a future path into stronger payment operations.':
+      'សមស្របសម្រាប់ហាង អ្នកចែកចាយ ក្រុមសេវាកម្មអតិថិជន និងអ្នកប្រតិបត្តិការដែលត្រូវការការផ្សព្វផ្សាយ ការលក់តាមការសន្ទនា ផ្លូវទូទាត់ដែលច្បាស់លាស់ជាងមុន និងផ្លូវបន្តទៅកាន់ប្រតិបត្តិការទូទាត់ដែលខ្លាំងជាងមុន។',
     'See sales path': 'មើលផ្លូវលក់',
     Schools: 'សាលារៀន',
     'Support students, teachers, and revision.': 'គាំទ្រសិស្ស គ្រូ និងការរៀនត្រៀមប្រឡង។',
@@ -163,10 +182,14 @@ const phraseTranslations = {
       'ការចាប់ផ្តើមល្អបំផុត៖ Micro-Lending Platform សម្រាប់កំណត់ត្រាឥណទាន និង Micro-SME Platform សម្រាប់ស្តុក POS និងលំហូរការលក់។',
     'Best starting mix: Micro-Lending Platform for lending records, Micro-SME Platform for stock and sales flow, and PayKH for merchant collection.':
       'ការចាប់ផ្តើមល្អបំផុត៖ វេទិកា Micro-Lending សម្រាប់កំណត់ត្រាឥណទាន វេទិកា Micro-SME សម្រាប់ស្តុក និងលំហូរការលក់ និង PayKH សម្រាប់ការប្រមូលប្រាក់ពីអាជីវករ។',
+    'Best starting mix: Micro-Lending Platform for lending records, Micro-SME Platform for stock and sales flow, and PayKH for merchant collection, with PayChain as the operational control layer when payment infrastructure grows.':
+      'ការចាប់ផ្តើមល្អបំផុត៖ វេទិកា Micro-Lending សម្រាប់កំណត់ត្រាឥណទាន វេទិកា Micro-SME សម្រាប់ស្តុក និងលំហូរការលក់ និង PayKH សម្រាប់ការប្រមូលប្រាក់ពីអាជីវករ ដោយមាន PayChain ជាស្រទាប់គ្រប់គ្រងប្រតិបត្តិការ នៅពេលហេដ្ឋារចនាសម្ព័ន្ធទូទាត់រីកចម្រើន។',
     'Typical fit: microfinance operators, trading businesses, and hybrid SMEs that need both commerce tools and structured financial records.':
       'សមស្របសម្រាប់ប្រតិបត្តិករហិរញ្ញវត្ថុខ្នាតតូច អាជីវកម្មជួញដូរ និង SME ដែលរួមបញ្ចូលគ្នាដែលត្រូវការទាំងឧបករណ៍ពាណិជ្ជកម្ម និងកំណត់ត្រាហិរញ្ញវត្ថុដែលមានរបៀបរៀបរយ។',
     'Typical fit: microfinance operators, trading businesses, and hybrid SMEs that need commerce tools, payment support, and structured financial records.':
       'សមស្របសម្រាប់ប្រតិបត្តិករហិរញ្ញវត្ថុខ្នាតតូច អាជីវកម្មជួញដូរ និង SME ចម្រុះដែលត្រូវការឧបករណ៍ពាណិជ្ជកម្ម ការគាំទ្រការទូទាត់ និងកំណត់ត្រាហិរញ្ញវត្ថុដែលមានរបៀបរៀបរយ។',
+    'Typical fit: microfinance operators, trading businesses, hybrid SMEs, and finance-oriented teams that need commerce tools, payment support, stronger controls, and structured financial records.':
+      'សមស្របសម្រាប់ប្រតិបត្តិករហិរញ្ញវត្ថុខ្នាតតូច អាជីវកម្មជួញដូរ SME ចម្រុះ និងក្រុមការងារផ្នែកហិរញ្ញវត្ថុដែលត្រូវការឧបករណ៍ពាណិជ្ជកម្ម ការគាំទ្រការទូទាត់ ការគ្រប់គ្រងកាន់តែខ្លាំង និងកំណត់ត្រាហិរញ្ញវត្ថុដែលមានរបៀបរៀបរយ។',
     'See operations path': 'មើលផ្លូវប្រតិបត្តិការ',
     'SMEs and investors': 'SME និងវិនិយោគិន',
     'Raise funding or review opportunities.': 'រៃអង្គាសមូលនិធិ ឬពិនិត្យឱកាសវិនិយោគ។',
@@ -191,6 +214,8 @@ const phraseTranslations = {
       'សមស្របបំផុតពេលអាជីវកម្មត្រូវការឆានែលមួយសម្រាប់ការផ្សព្វផ្សាយទំហំធំ និងឆានែលមួយទៀតសម្រាប់ការសន្ទនាជាមួយអតិថិជនដែលនាំទៅរកការបញ្ជាទិញ។',
     'Best when the business wants one channel for high-volume promotion, another for guided customer conversations, and a dedicated layer for payment completion.':
       'សមស្របបំផុតពេលអាជីវកម្មត្រូវការឆានែលមួយសម្រាប់ការផ្សព្វផ្សាយទំហំធំ ឆានែលមួយទៀតសម្រាប់ការសន្ទនាជាមួយអតិថិជនដែលមានការណែនាំ និងស្រទាប់ឯកទេសសម្រាប់ការបញ្ចប់ការទូទាត់។',
+    'Best when the business wants one channel for high-volume promotion, another for guided customer conversations, and a dedicated layer for payment completion, with PayChain available later if controls and oversight become a bigger need.':
+      'សមស្របបំផុតពេលអាជីវកម្មត្រូវការឆានែលមួយសម្រាប់ការផ្សព្វផ្សាយទំហំធំ ឆានែលមួយទៀតសម្រាប់ការសន្ទនាជាមួយអតិថិជនដែលមានការណែនាំ និងស្រទាប់ឯកទេសសម្រាប់ការបញ្ចប់ការទូទាត់ ដោយមាន PayChain សម្រាប់ពេលក្រោយ ប្រសិនបើការគ្រប់គ្រង និងការត្រួតពិនិត្យក្លាយជាតម្រូវការធំជាងមុន។',
     'Reach customers': 'ឈានដល់អតិថិជន',
     'Capture orders': 'ទទួលការបញ្ជាទិញ',
     'Continue bot conversations': 'បន្តការសន្ទនាតាមបុត',
@@ -210,6 +235,9 @@ const phraseTranslations = {
       'សមស្របបំផុតពេលអាជីវកម្មតែមួយបម្រើអតិថិជនតាមរយៈការលក់ ហើយក៏គ្រប់គ្រងប្រាក់កម្ចី ការសងប្រាក់ ឬប្រតិបត្តិការអ្នកខ្ចីនៅខាងក្រោយផងដែរ។',
     'Best when the same business serves customers through sales, collects payments, and also manages loan, repayment, or borrower operations behind the scenes.':
       'សមស្របបំផុតពេលអាជីវកម្មតែមួយបម្រើអតិថិជនតាមរយៈការលក់ ប្រមូលការទូទាត់ ហើយក៏គ្រប់គ្រងប្រាក់កម្ចី ការសងប្រាក់ ឬប្រតិបត្តិការអ្នកខ្ចីនៅខាងក្រោយផងដែរ។',
+    'Best when the same business serves customers through sales, collects payments, and also manages loan, repayment, or borrower operations behind the scenes, with PayChain as the next step for stronger payment control and governance.':
+      'សមស្របបំផុតពេលអាជីវកម្មតែមួយបម្រើអតិថិជនតាមរយៈការលក់ ប្រមូលការទូទាត់ ហើយក៏គ្រប់គ្រងប្រាក់កម្ចី ការសងប្រាក់ ឬប្រតិបត្តិការអ្នកខ្ចីនៅខាងក្រោយផងដែរ ដោយមាន PayChain ជាជំហានបន្ទាប់សម្រាប់ការគ្រប់គ្រង និងអភិបាលកិច្ចផ្នែកទូទាត់កាន់តែខ្លាំង។',
+    'View PayChain': 'មើល PayChain',
     'Sell and trade': 'លក់ និងជួញដូរ',
     'Collect payments': 'ប្រមូលការទូទាត់',
     'Manage lending books': 'គ្រប់គ្រងសៀវភៅឥណទាន',
@@ -419,6 +447,8 @@ const phraseTranslations = {
       'ប្រើ PayKH សម្រាប់ការទូទាត់របស់អាជីវករ ការទទួលការទូទាត់ ការគាំទ្រលំហូរប្រតិបត្តិការ និងបទពិសោធន៍ប្រមូលប្រាក់ឌីជីថលដែលមានវិជ្ជាជីវៈជាងមុន។',
     'Pair PayKH with the Micro-SME Platform when the business needs conversational selling first, then a cleaner payment and checkout layer once the customer is ready to pay.':
       'ផ្គូផ្គង PayKH ជាមួយវេទិកា Micro-SME នៅពេលអាជីវកម្មត្រូវការការលក់តាមការសន្ទនាជាមុនសិន បន្ទាប់មកស្រទាប់ការទូទាត់ និង checkout ដែលស្អាតជាងមុន នៅពេលអតិថិជនត្រៀមរួចសម្រាប់ការបង់ប្រាក់។',
+    'Pair PayKH with the Micro-SME Platform when the business needs conversational selling first, then a cleaner payment and checkout layer once the customer is ready to pay. Add PayChain when the same environment also needs operational controls behind payment activity.':
+      'ផ្គូផ្គង PayKH ជាមួយវេទិកា Micro-SME នៅពេលអាជីវកម្មត្រូវការការលក់តាមការសន្ទនាជាមុនសិន បន្ទាប់មកស្រទាប់ការទូទាត់ និង checkout ដែលស្អាតជាងមុន នៅពេលអតិថិជនត្រៀមរួចសម្រាប់ការបង់ប្រាក់។ បន្ថែម PayChain នៅពេលបរិយាកាសដូចគ្នានោះត្រូវការការគ្រប់គ្រងប្រតិបត្តិការនៅខាងក្រោយសកម្មភាពទូទាត់ផងដែរ។',
     'Merchants, retailers, service operators, and SMEs that want payment collection to match the quality of their customer journey.':
       'អាជីវករ ហាងលក់រាយ អ្នកប្រតិបត្តិសេវាកម្ម និង SME ដែលចង់ឲ្យការប្រមូលប្រាក់សមនឹងគុណភាពនៃដំណើរអតិថិជនរបស់ពួកគេ។',
     'Cleaner checkout flow, stronger payment confidence, and better alignment between sales activity and collection.':
@@ -454,6 +484,11 @@ const phraseTranslations = {
       'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up, PayKH និងវេទិកា Biz ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
     'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, PayKH, Biz Platform, and BIA Marketplace are all publicly represented.':
       'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up, PayKH, វេទិកា Biz និងទីផ្សារ BIA ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
+    'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, Micro-SME Platform, Micro-Lending Platform, Pair Me Up, PayKH, PayChain, Biz Platform, and BIA Marketplace are all publicly represented.':
+      'Messenger Hub, Student Portal, Teacher Portal, Banking Skills Academy, វេទិកា Micro-SME, វេទិកា Micro-Lending, Pair Me Up, PayKH, PayChain, វេទិកា Biz និងទីផ្សារ BIA ត្រូវបានតំណាងជាសាធារណៈរួចហើយ។',
+    '5 operating lanes': 'ផ្លូវប្រតិបត្តិការ ៥',
+    'The portfolio is organized around business communication, education, business operations, payment infrastructure, fundraising access, and lending-related finance.':
+      'ក្រុមផលិតផលនេះត្រូវបានរៀបចំជុំវិញការទំនាក់ទំនងអាជីវកម្ម ការអប់រំ ប្រតិបត្តិការអាជីវកម្ម ហេដ្ឋារចនាសម្ព័ន្ធទូទាត់ ការចូលដល់ការរៃអង្គាសមូលនិធិ និងហិរញ្ញវត្ថុពាក់ព័ន្ធនឹងឥណទាន។',
     'The portfolio is organized around business communication, education, business operations, fundraising access, lending, and payment adjacency.':
       'ក្រុមផលិតផលត្រូវបានរៀបចំជុំវិញការទំនាក់ទំនងអាជីវកម្ម ការអប់រំ ប្រតិបត្តិការអាជីវកម្ម ការចូលដល់ការរៃអង្គាសមូលនិធិ ឥណទាន និងការទូទាត់ដែលភ្ជាប់គ្នា។',
     'These are public, visible signals of operating momentum. Detailed commercial metrics can be shared through a private investor brief.':
@@ -499,6 +534,8 @@ const phraseTranslations = {
       'ប្រើ Messenger Hub និងវេទិកា Micro-SME ដើម្បីបង្កើតចំណុចប៉ះពាល់អតិថិជនកាន់តែខ្លាំងតាមរយៈការផ្ញើសារ។',
     'Use Messenger Hub and the Micro-SME Platform to create stronger customer touchpoints through messaging, then bring PayKH into the flow when payment needs to happen cleanly.':
       'ប្រើ Messenger Hub និងវេទិកា Micro-SME ដើម្បីបង្កើតចំណុចប៉ះពាល់អតិថិជនកាន់តែខ្លាំងតាមរយៈការផ្ញើសារ បន្ទាប់មកនាំ PayKH ចូលក្នុងលំហូរ នៅពេលការទូទាត់ត្រូវការការប្រព្រឹត្តទៅយ៉ាងស្អាត។',
+    'Use Messenger Hub and the Micro-SME Platform to create stronger customer touchpoints through messaging, then bring PayKH into the flow when payment needs to happen cleanly and PayChain when payment operations need a stronger control layer.':
+      'ប្រើ Messenger Hub និងវេទិកា Micro-SME ដើម្បីបង្កើតចំណុចប៉ះពាល់អតិថិជនកាន់តែខ្លាំងតាមរយៈការផ្ញើសារ បន្ទាប់មកនាំ PayKH ចូលក្នុងលំហូរ នៅពេលការទូទាត់ត្រូវការការប្រព្រឹត្តទៅយ៉ាងស្អាត និងនាំ PayChain ចូល នៅពេលប្រតិបត្តិការទូទាត់ត្រូវការស្រទាប់គ្រប់គ្រងកាន់តែខ្លាំង។',
     Learn: 'រៀន',
     'Train and prepare people': 'បណ្តុះបណ្តាល និងរៀបចំមនុស្ស',
     'Use the student portal, admin portal, Banking Skills Academy, and Pair Me Up to improve learning outcomes and focus.':
@@ -509,6 +546,30 @@ const phraseTranslations = {
       'ប្រើវេទិកា Micro-SME និង Micro-Lending ដើម្បីគ្រប់គ្រងការលក់ ស្តុក កំណត់ត្រា និងសកម្មភាពឥណទាន។',
     'Use the Micro-SME Platform, PayKH, and Micro-Lending Platform to manage sales, checkout, stock, records, and lending activity.':
       'ប្រើវេទិកា Micro-SME, PayKH និងវេទិកា Micro-Lending ដើម្បីគ្រប់គ្រងការលក់ ការទូទាត់ចុងក្រោយ ស្តុក កំណត់ត្រា និងសកម្មភាពឥណទាន។',
+    'Use the Micro-SME Platform, PayKH, PayChain, and Micro-Lending Platform to manage sales, checkout, payment controls, stock, records, and lending activity.':
+      'ប្រើវេទិកា Micro-SME, PayKH, PayChain និងវេទិកា Micro-Lending ដើម្បីគ្រប់គ្រងការលក់ ការទូទាត់ចុងក្រោយ ការគ្រប់គ្រងការទូទាត់ ស្តុក កំណត់ត្រា និងសកម្មភាពឥណទាន។',
+    'Messenger Hub + Micro-SME Platform + PayKH': 'Messenger Hub + Micro-SME Platform + PayKH',
+    'Micro-SME Platform + PayKH + Micro-Lending Platform': 'Micro-SME Platform + PayKH + Micro-Lending Platform',
+    'For customer outreach, messaging campaigns, conversational selling, and stronger order flow from first contact to checkout and payment, with PayChain available when operational payment controls become necessary.':
+      'សម្រាប់ការឈានដល់អតិថិជន យុទ្ធនាការផ្ញើសារ ការលក់តាមការសន្ទនា និងលំហូរការបញ្ជាទិញកាន់តែខ្លាំងចាប់ពីការទាក់ទងដំបូងរហូតដល់ការទូទាត់ ដោយមាន PayChain នៅពេលការគ្រប់គ្រងប្រតិបត្តិការទូទាត់ក្លាយជាតម្រូវការ។',
+    'Messenger Hub, the Micro-SME Platform, and PayKH create a simple front-to-back sales path for outreach, product inquiry, order capture, and payment completion. PayChain adds the administrative layer later if the same payment environment needs wallet, reserve, or compliance oversight.':
+      'Messenger Hub, វេទិកា Micro-SME និង PayKH បង្កើតផ្លូវលក់សាមញ្ញពីមុខទៅក្រោយសម្រាប់ការផ្សព្វផ្សាយ សំណួរផលិតផល ការទទួលការបញ្ជាទិញ និងការបញ្ចប់ការទូទាត់។ PayChain បន្ថែមស្រទាប់រដ្ឋបាលនៅពេលក្រោយ ប្រសិនបើបរិយាកាសទូទាត់ដូចគ្នាត្រូវការការត្រួតពិនិត្យកាបូបប្រាក់ បម្រុង ឬការអនុលោម។',
+    'Payment operations platform for wallets, reserve, treasury, compliance, reconciliation, and audit-ready control workflows.':
+      'វេទិកាប្រតិបត្តិការទូទាត់សម្រាប់កាបូបប្រាក់ បម្រុង រតនាគារ ការអនុលោម ការផ្សះផ្សា និងលំហូរការងារគ្រប់គ្រងដែលត្រៀមរួចសម្រាប់សវនកម្ម។',
+    'Give operators a clearer administrative layer behind payment activity': 'ផ្តល់ស្រទាប់រដ្ឋបាលកាន់តែច្បាស់នៅខាងក្រោយសកម្មភាពទូទាត់',
+    'Support reserve review, treasury movement controls, and exception handling': 'គាំទ្រការពិនិត្យបម្រុង ការគ្រប់គ្រងចលនារតនាគារ និងការដោះស្រាយករណីលើកលែង',
+    'Make compliance, reconciliation, audit logs, and readiness steps more visible': 'ធ្វើឲ្យការអនុលោម ការផ្សះផ្សា កំណត់ហេតុសវនកម្ម និងជំហានត្រៀមរួច មើលឃើញបានច្បាស់ជាងមុន',
+    'Typical operating uses': 'ការប្រើប្រាស់ប្រតិបត្តិការធម្មតា',
+    'Use PayChain when payment operations need more than front-end collection, including wallet oversight, review queues, approvals, and control-heavy financial administration.':
+      'ប្រើ PayChain នៅពេលប្រតិបត្តិការទូទាត់ត្រូវការលើសពីការប្រមូលប្រាក់ខាងមុខ រួមទាំងការត្រួតពិនិត្យកាបូបប្រាក់ ជួរពិនិត្យ ការអនុម័ត និងការគ្រប់គ្រងហិរញ្ញវត្ថុដែលមានការគ្រប់គ្រងខ្ពស់។',
+    'Pair PayChain with PayKH when the same organization needs merchant-facing payment flow and a stronger back-office payment operations layer.':
+      'ផ្គូផ្គង PayChain ជាមួយ PayKH នៅពេលអង្គការដូចគ្នាត្រូវការលំហូរការទូទាត់មុខអាជីវករ និងស្រទាប់ប្រតិបត្តិការទូទាត់ខាងក្រោយការិយាល័យដែលខ្លាំងជាងមុន។',
+    'Payment operators, fintech teams, treasury reviewers, compliance teams, and founders building controlled payment infrastructure.':
+      'អ្នកប្រតិបត្តិការទូទាត់ ក្រុម fintech អ្នកពិនិត្យរតនាគារ ក្រុមការងារអនុលោម និងស្ថាបនិកដែលកំពុងកសាងហេដ្ឋារចនាសម្ព័ន្ធទូទាត់ដែលមានការគ្រប់គ្រង។',
+    'Stronger visibility, governance, and operational discipline across the payment environment.':
+      'ភាពមើលឃើញ អភិបាលកិច្ច និងវិន័យប្រតិបត្តិការកាន់តែខ្លាំងទូទាំងបរិយាកាសទូទាត់។',
+    'Best for: wallets, reserve, treasury, compliance, reconciliation': 'សមស្របសម្រាប់៖ កាបូបប្រាក់ បម្រុង រតនាគារ ការអនុលោម និងការផ្សះផ្សា',
+    'Visit PayChain': 'ចូលទៅ PayChain',
     'Team And Structure': 'ក្រុម និងរចនាសម្ព័ន្ធ',
     'What Makes It Useful': 'អ្វីដែលធ្វើឲ្យវាមានប្រយោជន៍',
     'How Customers Start': 'របៀបដែលអតិថិជនចាប់ផ្តើម'
@@ -759,26 +820,26 @@ const siteAssistantCopy = {
     contact:
       'The best direct contact is contact@cambobia.com. You can use it for demos, partnership discussion, investor questions, or business inquiries, and I can also help you decide what to mention before you email.',
     business:
-      'If your priority is customer outreach, start with Messenger Hub. If you also need conversational selling, stock, POS, or AI customer interaction, CXDot is the next fit, and PayKH comes in when payment completion matters.',
+      'If your priority is customer outreach, start with Messenger Hub. If you also need conversational selling, stock, POS, or AI customer interaction, CXDot is the next fit, and PayKH comes in when payment completion matters. PayChain becomes relevant when payment controls, wallets, reserve, or compliance also need attention.',
     learning:
       'For education, the best path is usually the AI Learning Center family: mytv for students, admintv for teachers and admin teams, skill for banking training, and Pair Me Up when learners need extra focus support.',
     payments:
-      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. It fits especially well when your business already has customer demand and now needs a cleaner payment step.',
+      'PayKH is the payment platform for merchant checkout, transaction support, and KHQR-ready collection flow. PayChain is the payment operations platform for wallets, reserve, treasury, compliance, and reconciliation. Use PayKH for the customer-facing payment step and PayChain for the control layer behind it.',
     lending:
       'DBank is the micro-lending platform for borrower profiles, loan tracking, repayments, and cleaner lending records. It is a strong fit for micro lenders or hybrid operators who need more structure around lending books.',
     products:
-      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, Biz Platform, and BIA Marketplace. If you tell me what kind of organization you are, I can narrow that down quickly.',
+      'CamboBIA currently presents Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, PayChain, Biz Platform, and BIA Marketplace. If you tell me what kind of organization you are, I can narrow that down quickly.',
     moreBusiness:
       'A simple business path is Messenger Hub for outreach, CXDot for AI-led product conversation and order flow, then PayKH for payment completion. That is usually the clearest public-facing combination.',
     moreLearning:
       'A simple learning path is mytv for student study, admintv for oversight and question management, skill for banking-related training, and Pair Me Up when learners benefit from extra focus support.',
     morePayments:
-      'PayKH is strongest when payment is not treated as a separate manual step. It works best when checkout is tied back to the customer journey created through Messenger Hub or CXDot.',
+      'PayKH is strongest when payment is not treated as a separate manual step. It works best when checkout is tied back to the customer journey created through Messenger Hub or CXDot. PayChain becomes important when the same environment also needs operational visibility, controls, and review workflows behind payment activity.',
     moreLending:
       'DBank becomes more useful as borrower records, repayments, and portfolio visibility grow. If the same operator also handles commerce, CXDot and PayKH can sit around it.',
     businessQuestion: 'Is your main goal customer outreach, conversational selling, or payment collection?',
     learningQuestion: 'Is your focus mainly students, teachers, or banking training?',
-    paymentsQuestion: 'Do you need merchant checkout only, or do you also want sales conversations to lead into payment?',
+    paymentsQuestion: 'Do you need merchant checkout only, or do you also need wallets, treasury, compliance, or reconciliation behind the payment flow?',
     lendingQuestion: 'Is this for a pure lending workflow, or for a business that also sells products or services?',
     contactQuestion: 'Would you like me to prepare the direct contact path, or help you choose the right product first?',
     generalQuestion: 'Tell me what kind of organization you are and what problem you want to solve.',
@@ -792,7 +853,7 @@ const siteAssistantCopy = {
     statusLive: 'ជជែកជាមួយក្រុមគាំទ្រ CamboBIA អំពីតម្រូវការអាជីវកម្ម សាលារៀន ការទូទាត់ ឬប្រតិបត្តិការ។',
     intro:
       'សួស្តី។ ខ្ញុំអាចជួយអ្នកយល់ថាវេទិកា CamboBIA មួយណាសមនឹងស្ថានភាពរបស់អ្នក និងជំហានបន្ទាប់គួរធ្វើអ្វី។',
-    inputPlaceholder: 'សួរអំពី Messenger Hub, CXDot, PayKH, ការសិក្សា ឬទំនាក់ទំនង...',
+    inputPlaceholder: 'សួរអំពី Messenger Hub, CXDot, PayKH, PayChain, ការសិក្សា ឬទំនាក់ទំនង...',
     send: 'ផ្ញើ',
     thinking: 'កំពុងគិត...',
     fallbackNotice: 'ជំនួយការ AI មិនអាចប្រើបានបណ្តោះអាសន្នទេ ប៉ុន្តែខ្ញុំនៅតែអាចណែនាំអ្នកដូចជាអ្នកប្រឹក្សាសេវាអតិថិជនម្នាក់បាន។',
@@ -805,26 +866,26 @@ const siteAssistantCopy = {
     contact:
       'ការទំនាក់ទំនងដោយផ្ទាល់ល្អបំផុតគឺ contact@cambobia.com។ អ្នកអាចប្រើវាសម្រាប់ demo ភាពជាដៃគូ សំណួរពីវិនិយោគិន ឬសំណួរអាជីវកម្ម ហើយខ្ញុំក៏អាចជួយអ្នកសម្រេចថាគួរនិយាយអ្វីមុនផ្ញើអ៊ីមែលផងដែរ។',
     business:
-      'បើអាទិភាពរបស់អ្នកគឺការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ បើត្រូវការការលក់តាមការសន្ទនា ស្តុក POS ឬការទំនាក់ទំនងអតិថិជនដោយ AI នោះ CXDot គឺសមបន្ទាប់ ហើយ PayKH ចូលមកនៅពេលការបញ្ចប់ការទូទាត់មានសារៈសំខាន់។',
+      'បើអាទិភាពរបស់អ្នកគឺការឈានដល់អតិថិជន សូមចាប់ផ្តើមពី Messenger Hub។ បើត្រូវការការលក់តាមការសន្ទនា ស្តុក POS ឬការទំនាក់ទំនងអតិថិជនដោយ AI នោះ CXDot គឺសមបន្ទាប់ ហើយ PayKH ចូលមកនៅពេលការបញ្ចប់ការទូទាត់មានសារៈសំខាន់។ PayChain ក្លាយជាជម្រើសសមនៅពេលការគ្រប់គ្រងការទូទាត់ កាបូបប្រាក់ បម្រុង ឬការអនុលោមក៏ត្រូវការការយកចិត្តទុកដាក់ផងដែរ។',
     learning:
       'សម្រាប់ការអប់រំ ផ្លូវដែលសមបំផុតជាទូទៅគឺគ្រួសារ AI Learning Center: mytv សម្រាប់សិស្ស admintv សម្រាប់គ្រូ និងក្រុមគ្រប់គ្រង skill សម្រាប់ការបណ្តុះបណ្តាលធនាគារ និង Pair Me Up នៅពេលអ្នកសិក្សាត្រូវការការគាំទ្រការផ្តោតអារម្មណ៍បន្ថែម។',
     payments:
-      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ វាសមជាពិសេសនៅពេលអាជីវកម្មមានតម្រូវការអតិថិជនរួចហើយ ហើយត្រូវការជំហានទូទាត់ដែលស្អាតជាងមុន។',
+      'PayKH គឺជាវេទិកាទូទាត់សម្រាប់ការទូទាត់របស់អាជីវករ ការគាំទ្រប្រតិបត្តិការ និងលំហូរប្រមូលប្រាក់ KHQR-ready។ PayChain គឺជាវេទិកាប្រតិបត្តិការទូទាត់សម្រាប់កាបូបប្រាក់ បម្រុង រតនាគារ ការអនុលោម និងការផ្សះផ្សា។ ប្រើ PayKH សម្រាប់ជំហានទូទាត់ដែលមើលឃើញដោយអតិថិជន និងប្រើ PayChain សម្រាប់ស្រទាប់គ្រប់គ្រងនៅខាងក្រោយវា។',
     lending:
       'DBank គឺជាវេទិកា micro-lending សម្រាប់ប្រវត្តិអ្នកខ្ចី ការតាមដានប្រាក់កម្ចី ការសងប្រាក់ និងកំណត់ត្រាឥណទានដែលមានរបៀបរៀបរយជាងមុន។ វាសមល្អសម្រាប់អ្នកឥណទានខ្នាតតូច ឬប្រតិបត្តិករចម្រុះដែលត្រូវការរចនាសម្ព័ន្ធកាន់តែច្បាស់ជុំវិញសៀវភៅឥណទាន។',
     products:
-      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, វេទិកា Biz និងទីផ្សារ BIA។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
+      'បច្ចុប្បន្ន CamboBIA បង្ហាញ Messenger Hub, AI Learning Center, Student Portal, Teacher Portal, Banking Skills Academy, CXDot, DBank, Pair Me Up, PayKH, PayChain, វេទិកា Biz និងទីផ្សារ BIA។ ខ្ញុំអាចជួយបង្រួមជម្រើសនេះ បើអ្នកប្រាប់ប្រភេទអង្គការរបស់អ្នក។',
     moreBusiness:
       'ផ្លូវអាជីវកម្មសាមញ្ញមួយគឺ៖ Messenger Hub សម្រាប់ការផ្សព្វផ្សាយ CXDot សម្រាប់ការសន្ទនាផលិតផល និងលំហូរការបញ្ជាទិញដោយជំនួយ AI ហើយបន្ទាប់មក PayKH សម្រាប់ការបញ្ចប់ការទូទាត់។ នេះជាការផ្គូផ្គងសាធារណៈដែលច្បាស់ជាងគេ។',
     moreLearning:
       'ផ្លូវសិក្សាសាមញ្ញមួយគឺ៖ mytv សម្រាប់ការសិក្សារបស់សិស្ស admintv សម្រាប់ការត្រួតពិនិត្យ និងការគ្រប់គ្រងសំណួរ skill សម្រាប់ការបណ្តុះបណ្តាលពាក់ព័ន្ធនឹងធនាគារ និង Pair Me Up នៅពេលអ្នកសិក្សាត្រូវការការគាំទ្រការផ្តោតអារម្មណ៍បន្ថែម។',
     morePayments:
-      'PayKH ខ្លាំងបំផុតនៅពេលការទូទាត់មិនត្រូវបានទុកជាជំហានដាច់ដោយឡែកដែលធ្វើដោយដៃ។ វាធ្វើការល្អបំផុតនៅពេល checkout ត្រូវបានភ្ជាប់ត្រឡប់ទៅដំណើរអតិថិជនដែលបង្កើតដោយ Messenger Hub ឬ CXDot។',
+      'PayKH ខ្លាំងបំផុតនៅពេលការទូទាត់មិនត្រូវបានទុកជាជំហានដាច់ដោយឡែកដែលធ្វើដោយដៃ។ វាធ្វើការល្អបំផុតនៅពេល checkout ត្រូវបានភ្ជាប់ត្រឡប់ទៅដំណើរអតិថិជនដែលបង្កើតដោយ Messenger Hub ឬ CXDot។ PayChain កាន់តែសំខាន់នៅពេលបរិយាកាសដូចគ្នានោះក៏ត្រូវការភាពមើលឃើញប្រតិបត្តិការ ការគ្រប់គ្រង និងលំហូរពិនិត្យនៅខាងក្រោយសកម្មភាពទូទាត់ផងដែរ។',
     moreLending:
       'DBank កាន់តែមានប្រយោជន៍នៅពេលកំណត់ត្រាអ្នកខ្ចី ការសងប្រាក់ និងភាពមើលឃើញនៃសៀវភៅឥណទានកើនឡើង។ បើប្រតិបត្តិករដូចគ្នាក៏គ្រប់គ្រងពាណិជ្ជកម្មដែរ CXDot និង PayKH អាចស្ថិតនៅជុំវិញវាបាន។',
     businessQuestion: 'តើគោលដៅសំខាន់របស់អ្នកគឺការផ្សព្វផ្សាយ ការលក់តាមការសន្ទនា ឬការប្រមូលការទូទាត់?',
     learningQuestion: 'តើការផ្តោតសំខាន់របស់អ្នកគឺសិស្ស គ្រូ ឬការបណ្តុះបណ្តាលធនាគារ?',
-    paymentsQuestion: 'តើអ្នកត្រូវការការទូទាត់សម្រាប់អាជីវករប៉ុណ្ណោះ ឬចង់ឲ្យការសន្ទនាលក់នាំទៅរកការទូទាត់ផងដែរ?',
+    paymentsQuestion: 'តើអ្នកត្រូវការការទូទាត់សម្រាប់អាជីវករប៉ុណ្ណោះ ឬក៏ត្រូវការកាបូបប្រាក់ រតនាគារ ការអនុលោម ឬការផ្សះផ្សានៅខាងក្រោយលំហូរទូទាត់ផងដែរ?',
     lendingQuestion: 'តើនេះសម្រាប់លំហូរឥណទានសុទ្ធៗ ឬសម្រាប់អាជីវកម្មដែលក៏លក់ផលិតផល ឬសេវាកម្មផងដែរ?',
     contactQuestion: 'តើអ្នកចង់ឲ្យខ្ញុំរៀបចំផ្លូវទំនាក់ទំនងដោយផ្ទាល់ ឬជួយអ្នកជ្រើសផលិតផលដែលត្រឹមត្រូវជាមុន?',
     generalQuestion: 'សូមប្រាប់ខ្ញុំថាអ្នកជាអង្គការប្រភេទណា និងបញ្ហាអ្វីដែលអ្នកចង់ដោះស្រាយ។',
@@ -848,6 +909,11 @@ const siteAssistantProductActions = {
     href: '/paykh',
     en: 'PayKH',
     km: 'PayKH'
+  },
+  paychain: {
+    href: '/paychain',
+    en: 'PayChain',
+    km: 'PayChain'
   },
   biz_platform: {
     href: '/biz-platform',
@@ -1041,8 +1107,15 @@ const mountSiteAssistant = () => {
 
     if (
       normalized.includes('payment') ||
+      normalized.includes('paychain') ||
       normalized.includes('paykh') ||
       normalized.includes('khqr') ||
+      normalized.includes('wallet') ||
+      normalized.includes('reserve') ||
+      normalized.includes('treasury') ||
+      normalized.includes('compliance') ||
+      normalized.includes('reconciliation') ||
+      normalized.includes('stablecoin') ||
       normalized.includes('ការទូទាត់')
     ) {
       return 'payments';
@@ -1163,9 +1236,9 @@ const mountSiteAssistant = () => {
     const productKeysByTopic = {
       business: ['messenger_hub', 'micro_sme_platform', 'paykh'],
       learning: ['ai_learning_center', 'student_portal', 'teacher_portal'],
-      payments: ['paykh', 'micro_sme_platform'],
+      payments: ['paykh', 'paychain', 'micro_sme_platform'],
       lending: ['micro_lending_platform', 'micro_sme_platform'],
-      products: ['messenger_hub', 'ai_learning_center', 'paykh'],
+      products: ['messenger_hub', 'paykh', 'paychain'],
       contact: []
     };
 

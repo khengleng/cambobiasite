@@ -78,6 +78,7 @@ const CLEAN_ROUTES = new Map([
   ['/messenger-hub', 'messenger-hub.html'],
   ['/micro-lending-platform', 'micro-lending-platform.html'],
   ['/micro-sme-platform', 'micro-sme-platform.html'],
+  ['/paychain', 'paychain.html'],
   ['/paykh', 'paykh.html'],
   ['/pair-me-up', 'pair-me-up.html'],
   ['/privacy-policy', 'privacy-policy.html'],
@@ -101,6 +102,11 @@ const ASSISTANT_PRODUCTS = {
     href: '/paykh',
     label: 'PayKH',
     summary: 'Support merchant checkout, KHQR-ready payment flow, and transaction collection.',
+  },
+  paychain: {
+    href: '/paychain',
+    label: 'PayChain',
+    summary: 'Support wallet operations, reserve visibility, treasury controls, compliance, and reconciliation.',
   },
   biz_platform: {
     href: '/biz-platform',
@@ -227,6 +233,7 @@ Business mapping:
 - Messenger Hub: outreach, announcements, promotions, broadcast messaging.
 - Micro-SME Platform: conversational selling, Telegram bot commerce, sales flow, inventory, POS, trade inquiries, AI customer interaction.
 - PayKH: payments, merchant checkout, KHQR-ready transaction flow.
+- PayChain: wallet operations, reserve, treasury, compliance, reconciliation, audit logs, and stablecoin-readiness administration.
 - BIA Marketplace: advisory marketplace for SMEs raising funds and investors reviewing potential SME opportunities.
 - Micro-Lending Platform / DBank: borrower records, loans, repayments, lending books.
 - AI Learning Center group: student learning, teacher oversight, banking-industry training, quizzes, curriculum support.
