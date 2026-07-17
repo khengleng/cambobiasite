@@ -106,7 +106,7 @@ const ASSISTANT_PRODUCTS = {
   paychain: {
     href: '/paychain',
     label: 'PayChain',
-    summary: 'Support wallet operations, reserve visibility, treasury controls, compliance, and reconciliation.',
+    summary: 'Support wallet-as-a-service infrastructure, operator controls, reserve visibility, compliance, and reconciliation.',
   },
   biz_platform: {
     href: '/biz-platform',
@@ -233,7 +233,7 @@ Business mapping:
 - Messenger Hub: outreach, announcements, promotions, broadcast messaging.
 - Micro-SME Platform: conversational selling, Telegram bot commerce, sales flow, inventory, POS, trade inquiries, AI customer interaction.
 - PayKH: payments, merchant checkout, KHQR-ready transaction flow.
-- PayChain: wallet operations, reserve, treasury, compliance, reconciliation, audit logs, and stablecoin-readiness administration.
+- PayChain: wallet-as-a-service infrastructure, wallet operations, reserve, treasury, compliance, reconciliation, audit logs, and stablecoin-readiness administration.
 - BIA Marketplace: advisory marketplace for SMEs raising funds and investors reviewing potential SME opportunities.
 - Micro-Lending Platform / DBank: borrower records, loans, repayments, lending books.
 - AI Learning Center group: student learning, teacher oversight, banking-industry training, quizzes, curriculum support.
